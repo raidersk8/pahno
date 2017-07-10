@@ -24,7 +24,7 @@ function theme_name_scripts() {
 	
 	//СТИЛИ
 	//Шрифты
-	wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic' );
+	wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Sans:400,400i,700,700i&amp;subset=cyrillic' );
 	
 	wp_enqueue_style( 'fancybox', get_template_directory_uri() . '/fancybox/source/jquery.fancybox.css' );
 	wp_enqueue_style( 'main', get_template_directory_uri() . '/css/main.css' );	

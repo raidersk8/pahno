@@ -34,4 +34,6 @@ if ( have_posts() ) : the_post(); ?>
 if(!is_front_page()) : ?>
 <?php endif; ?>
 
+<?php //Меню ?>
+<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container_class' => 'menu', 'menu_class' => '' ) ); ?>
 <?php get_footer(); ?>
