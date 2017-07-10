@@ -1,0 +1,228 @@
+.form-group {
+	margin-bottom: 47px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 0;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: $main-color;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  border-bottom: 2px solid #4D4249;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+.form-control:focus {
+  border-color: #E1CDC8;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #999;
+}
+.form-control::-webkit-input-placeholder {
+  color: #999;
+}
+.form-control::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+
+
+blockquote {
+    padding: 2px 20px 0px;
+	margin: 34px 0 34px;
+    font-size: inherit;
+    border-left: 2px solid #E1CDC8;
+}
+.caret {
+	@include bottom-arrow (1px, 7px, 7px, $main-color)
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 300;
+	font-size: 12px;
+	color: #907E8A;
+	line-height: 14px;
+}
+
+.btn {
+	font-size: 16px;
+	border-radius: 0;
+	padding: 8px 10px;
+    letter-spacing: 0.7px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.btn-group.open .dropdown-toggle {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: 0;
+  outline: 0;
+  outline-offset: 0;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+
+.btn-transparent {
+  color: $main-color;
+  background-color: transparent;
+  border-color: #E1CDC8;
+}
+.light-text .btn-transparent {
+  color: #E1CDC8;	
+}
+.btn-transparent:focus,
+.btn-transparent.focus {
+  color: $main-color;
+  background-color: transparent;
+  border-color: #E1CDC8;
+}
+.light-text .btn-transparent:focus,
+.light-text .btn-transparent.focus {
+  color: #E1CDC8;	
+}
+.btn-transparent:hover {
+  color: #fff;
+  background-color: #E1CDC8;
+  border-color: #E1CDC8;
+}
+.light-text .btn-transparent:hover {
+  color: #E1CDC8;	
+}
+.dark-bg .btn-transparent:hover {
+  color: $main-color;	
+}
+.btn-transparent:active,
+.btn-transparent.active,
+.open > .dropdown-toggle.btn-transparent {
+	color: $main-color;
+	background-color: transparent;
+	border-color: #E1CDC8;
+}
+.light-text .btn-transparent:active,
+.light-text .btn-transparent.active,
+.light-text .open > .dropdown-toggle.btn-transparent {
+	color: #E1CDC8;	
+}
+
+
+
+.btn-selectpicker {
+  color: $main-color;
+  background-color: transparent;
+  padding: 0 0 9px 0;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid $main-color;
+}
+.btn-selectpicker:focus,
+.btn-selectpicker.focus {
+  color: $main-color;
+  background-color: transparent;
+  border-color: $main-color;
+}
+.btn-selectpicker:hover {
+  color: $main-color;
+  background-color: transparent;
+  border-color: $main-color;
+}
+.btn-selectpicker:active,
+.btn-selectpicker.active,
+.open > .dropdown-toggle.btn-selectpicker {
+  color: $main-color;
+  background-color: transparent;
+  border-color: $main-color;
+}
+.btn-selectpicker:active:hover,
+.btn-selectpicker.active:hover,
+.open > .dropdown-toggle.btn-selectpicker:hover,
+.btn-selectpicker:active:focus,
+.btn-selectpicker.active:focus,
+.open > .dropdown-toggle.btn-selectpicker:focus,
+.btn-selectpicker:active.focus,
+.btn-selectpicker.active.focus,
+.open > .dropdown-toggle.btn-selectpicker.focus {
+  color: $main-color;
+  background-color: transparent;
+  border-color: $main-color;
+}
+.btn-selectpicker:active,
+.btn-selectpicker.active,
+.open > .dropdown-toggle.btn-selectpicker {
+  background-image: none;
+}
+.btn-selectpicker.disabled:hover,
+.btn-selectpicker[disabled]:hover,
+fieldset[disabled] .btn-selectpicker:hover,
+.btn-selectpicker.disabled:focus,
+.btn-selectpicker[disabled]:focus,
+fieldset[disabled] .btn-selectpicker:focus,
+.btn-selectpicker.disabled.focus,
+.btn-selectpicker[disabled].focus,
+fieldset[disabled] .btn-selectpicker.focus {
+  background-color: transparent;
+  border-color: $main-color;
+}
+.btn-selectpicker .badge {
+  color: #5bc0de;
+  background-color: transparent;
+}
+
+
+.btn-lg, .btn-group-lg > .btn {
+   padding: 18px 10px 17px;
+    font-size: 16px;
+    line-height: 1.3333333;
+    border-radius: 0;
+}
+
+
+
+
+
+
+
+h1, .h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+    font-size: 48px;
+    line-height: 70px;
+    font-weight: 300;
+	margin: 0 0 32px;
+	text-transform: uppercase;
+}
+h2, .h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+    font-size: 36px;
+    line-height: 56px;
+    font-weight: 300;
+	margin: 0 0 32px;
+}

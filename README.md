@@ -1,1 +1,2 @@
-# pahno
+# malton
+theme for wordpress

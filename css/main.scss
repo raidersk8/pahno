@@ -1,0 +1,39 @@
+//Функции и переменные
+@import 'sass/root/setting';
+//bootstrap
+@import 'sass/plagins/bootstrap';
+//Тут добавляем или модифицируем класы для каждого сайта
+@import 'sass/plagins/bootstrap-modification';
+//Вспомогательные стили для верстки 
+@import 'sass/root/addition-bootstrap';
+//Стандартные стили ворпресса
+@import 'sass/root/base-wordpress';
+//Дополнительные классы
+@import 'sass/root/total-class';
+
+//Основные стили темы
+@import 'sass/root/base';
+//Стили темы
+@import 'sass/template';
+@import 'sass/front-page';
+@import 'sass/page-about';
+@import 'sass/examples';
+@import 'sass/single-services';
+@import 'sass/contacts';
+
+
+//Респонсивность
+
+//Мобильная версия
+
+//Плагины
+
+@import 'sass/plagins/fancybox';
+
+@import 'sass/plagins/fullPage';
+
+@import 'sass/plagins/bootstrap-select/bootstrap-select';
+
+@import 'sass/plagins/jquery-ui';
+
+@import 'sass/plagins/jcarousel.scss';
