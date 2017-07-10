@@ -30,5 +30,8 @@ if ( have_posts() ) : the_post(); ?>
 <?php //Пример вывода картинки из шаблона ?>
 <img src="<?php echo get_bloginfo('template_url'); ?>"/img/img.png" alt="" />
 
+<?php 
+if(!is_front_page()) : ?>
+<?php endif; ?>
 
 <?php get_footer(); ?>
