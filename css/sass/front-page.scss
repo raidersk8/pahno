@@ -1,0 +1,50 @@
+.front-page .first-screen {
+	position: relative;
+	padding-top: 60px;
+	background: url(../img/front-page-first-screen-bg.png) center center no-repeat;
+	background-size: cover;
+	height: 730px;
+}
+.front-page .first-screen .logo {
+	padding: 37px 0 0 126px;
+	height: 189px;
+	background: url(../svg/logo.svg) left top no-repeat;
+	font-size: 35px;
+	line-height: 42px;
+	color: #667884;
+	font-family: 'PT Sans Narrow', sans-serif;
+	letter-spacing: 0.5px;
+	margin: 0 0 59px;
+}
+.front-page .first-screen .logo .text {
+	font-size: 74px;
+	color: #00B6AD;
+	line-height: 75px;
+	text-transform: uppercase;    
+	letter-spacing: 0px;
+}
+.front-page .first-screen .first-text {
+	font-size: 36px;
+	line-height: 48px;
+	font-weight: bold;
+	color: $a-color;
+	margin-bottom: 47px;
+}
+.front-page .first-screen .phones {
+	font-size: 30px;
+    line-height: 57px;
+	margin-bottom: 12px;
+}
+.front-page .first-screen .address {
+	font-size: 24px;
+    line-height: 50px;
+	letter-spacing: -0.3px
+}
+.front-page .first-screen .right-part {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 475px;
+	height: 100%;
+	background: url(../img/front-page-first-screen-right-img.png) right bottom no-repeat;
+}

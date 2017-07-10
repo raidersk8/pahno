@@ -1,7 +1,17 @@
+body {
+	padding-top: 70px;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #667884;
+}
 header .menu {
-	font-size: 30px;
+	font-size: 24px;
 	text-transform: uppercase;
-	font-family: 'PT Sans Narrow', sans-serif;
+	letter-spacing: 1px;
 }
 header .menu ul {
 	display: block;
@@ -11,10 +21,23 @@ header .menu ul {
 }
 header .menu ul li {
 	display: inline-block;
-	margin: 0;
+	margin: 0 80px 0 0;
 	padding: 0;
 }
 header .menu ul li a {
+	display: inline-block;
 	color: #fff;
 	text-decoration: none;
+	padding: 21px 0 19px;
+}
+header .social {
+	position: absolute;
+	right: 30px;	
+	top: 20px;
+}
+
+header .social a {
+    display: inline-block;
+    margin: 0 0 0 19px;
+	color: #fff;
 }

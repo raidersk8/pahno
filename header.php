@@ -24,4 +24,11 @@
 			</div>
 		</div>
 	</div>
+	<div class="social">
+		<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+	</div>
   </header>

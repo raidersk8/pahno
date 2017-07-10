@@ -4,10 +4,8 @@ Template Name: example-template
 Template Post Type: example
 */
 ?>
-<?php 
-//Пример подключения файла
-get_template_part('blocks/examples/example'); 
-?>
+<?php //Пример подключения файла ?>
+<?php get_template_part('blocks/examples/example'); ?>
 <?php get_header(); ?>	
 <?php 
 //Пример инициализации поста перед выводом
