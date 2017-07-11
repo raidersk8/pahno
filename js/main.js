@@ -1,4 +1,31 @@
 
+//Для инициализации плагинов которым важно дождаться загрузки картинок
+$(window).load(
+	function() {	
+		$('#sliderScrollbar').sliderScrollbar({
+			responsivecountitem: 4,
+		});
+		$('#preloader').hide();
+		fullWindowHeight();
+		$('.example-gallery .wrap-jcarousel').wrapJcarousel();		
+	}
+);
+$( window ).resize(function() {
+	fullWindowHeight();
+});
+function fullWindowHeight() {
+	//Делаем блоки с классом full-window-height на всю ширину
+	if(!$('body').hasClass('is-tablet')) {
+		if($('.full-window-height').length) {
+			var fullScreenHeight = $(window).innerHeight();
+			if(!$('body').hasClass('is-front-page')) {
+				fullScreenHeight -= $('.header').height();
+			}
+			$('.full-window-height').innerHeight(fullScreenHeight);
+		}
+	}
+}
+/*
 //Иницализация костомных selectov
 $('.selectpicker').selectpicker({
   style: 'btn-selectpicker'
@@ -29,17 +56,7 @@ $(".fancybox").fancybox({
 	margin: [0,0 ,0, 0],
 	padding: [40, 40, 0, 0],
 });
-//Для инициализации плагинов которым важно дождаться загрузки картинок
-$(window).load(
-	function() {	
-		$('#preloader').hide();
-		fullWindowHeight();
-		$('.example-gallery .wrap-jcarousel').wrapJcarousel();		
-	}
-);
-$( window ).resize(function() {
-	fullWindowHeight();
-});
+
 function initInputSlider($element) {
 	//Инпут в стиле слайдера
 	$element.each(function(){
@@ -98,18 +115,6 @@ $(function() {
 	//Паралакс
 	$.stellar();
 });
-function fullWindowHeight() {
-	//Делаем блоки с классом full-window-height на всю ширину
-	if(!$('body').hasClass('is-tablet')) {
-		if($('.full-window-height').length) {
-			var fullScreenHeight = $(window).innerHeight();
-			if(!$('body').hasClass('is-front-page')) {
-				fullScreenHeight -= $('.header').height();
-			}
-			$('.full-window-height').innerHeight(fullScreenHeight);
-		}
-	}
-}
 
 
 
@@ -172,4 +177,4 @@ function runMultipleFancyboxClose()
 		window.clearTimeout(timerMultiFancyboxClose);
 		$.fancybox.open('<div class="fancybox-message">'+text+'</div>');
 	}
-}
+}*/

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Июл 10 2017 г., 17:57
+-- Время создания: Июл 11 2017 г., 19:56
 -- Версия сервера: 5.5.25
 -- Версия PHP: 5.3.13
 
@@ -111,7 +111,7 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=291 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=346 ;
 
 --
 -- Дамп данных таблицы `wp_options`
@@ -146,11 +146,11 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (26, 'comment_moderation', '0', 'yes'),
 (27, 'moderation_notify', '1', 'yes'),
 (28, 'permalink_structure', '/%year%/%monthnum%/%day%/%postname%/', 'yes'),
-(29, 'rewrite_rules', 'a:157:{s:11:"^wp-json/?$";s:22:"index.php?rest_route=/";s:14:"^wp-json/(.*)?";s:33:"index.php?rest_route=/$matches[1]";s:21:"^index.php/wp-json/?$";s:22:"index.php?rest_route=/";s:24:"^index.php/wp-json/(.*)?";s:33:"index.php?rest_route=/$matches[1]";s:7:"shop/?$";s:27:"index.php?post_type=product";s:37:"shop/feed/(feed|rdf|rss|rss2|atom)/?$";s:44:"index.php?post_type=product&feed=$matches[1]";s:32:"shop/(feed|rdf|rss|rss2|atom)/?$";s:44:"index.php?post_type=product&feed=$matches[1]";s:24:"shop/page/([0-9]{1,})/?$";s:45:"index.php?post_type=product&paged=$matches[1]";s:22:"^wc-api/v([1-3]{1})/?$";s:51:"index.php?wc-api-version=$matches[1]&wc-api-route=/";s:24:"^wc-api/v([1-3]{1})(.*)?";s:61:"index.php?wc-api-version=$matches[1]&wc-api-route=$matches[2]";s:24:"^wc-auth/v([1]{1})/(.*)?";s:63:"index.php?wc-auth-version=$matches[1]&wc-auth-route=$matches[2]";s:47:"category/(.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:42:"category/(.+?)/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:23:"category/(.+?)/embed/?$";s:46:"index.php?category_name=$matches[1]&embed=true";s:35:"category/(.+?)/page/?([0-9]{1,})/?$";s:53:"index.php?category_name=$matches[1]&paged=$matches[2]";s:32:"category/(.+?)/wc-api(/(.*))?/?$";s:54:"index.php?category_name=$matches[1]&wc-api=$matches[3]";s:17:"category/(.+?)/?$";s:35:"index.php?category_name=$matches[1]";s:44:"tag/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:39:"tag/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:20:"tag/([^/]+)/embed/?$";s:36:"index.php?tag=$matches[1]&embed=true";s:32:"tag/([^/]+)/page/?([0-9]{1,})/?$";s:43:"index.php?tag=$matches[1]&paged=$matches[2]";s:29:"tag/([^/]+)/wc-api(/(.*))?/?$";s:44:"index.php?tag=$matches[1]&wc-api=$matches[3]";s:14:"tag/([^/]+)/?$";s:25:"index.php?tag=$matches[1]";s:45:"type/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:40:"type/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:21:"type/([^/]+)/embed/?$";s:44:"index.php?post_format=$matches[1]&embed=true";s:33:"type/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?post_format=$matches[1]&paged=$matches[2]";s:15:"type/([^/]+)/?$";s:33:"index.php?post_format=$matches[1]";s:35:"product/[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:45:"product/[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:65:"product/[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:60:"product/[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:60:"product/[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:41:"product/[^/]+/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:24:"product/([^/]+)/embed/?$";s:40:"index.php?product=$matches[1]&embed=true";s:28:"product/([^/]+)/trackback/?$";s:34:"index.php?product=$matches[1]&tb=1";s:48:"product/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:46:"index.php?product=$matches[1]&feed=$matches[2]";s:43:"product/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:46:"index.php?product=$matches[1]&feed=$matches[2]";s:36:"product/([^/]+)/page/?([0-9]{1,})/?$";s:47:"index.php?product=$matches[1]&paged=$matches[2]";s:43:"product/([^/]+)/comment-page-([0-9]{1,})/?$";s:47:"index.php?product=$matches[1]&cpage=$matches[2]";s:33:"product/([^/]+)/wc-api(/(.*))?/?$";s:48:"index.php?product=$matches[1]&wc-api=$matches[3]";s:39:"product/[^/]+/([^/]+)/wc-api(/(.*))?/?$";s:51:"index.php?attachment=$matches[1]&wc-api=$matches[3]";s:50:"product/[^/]+/attachment/([^/]+)/wc-api(/(.*))?/?$";s:51:"index.php?attachment=$matches[1]&wc-api=$matches[3]";s:32:"product/([^/]+)(?:/([0-9]+))?/?$";s:46:"index.php?product=$matches[1]&page=$matches[2]";s:24:"product/[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:34:"product/[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:54:"product/[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:49:"product/[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:49:"product/[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:30:"product/[^/]+/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:55:"product-category/(.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?product_cat=$matches[1]&feed=$matches[2]";s:50:"product-category/(.+?)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?product_cat=$matches[1]&feed=$matches[2]";s:31:"product-category/(.+?)/embed/?$";s:44:"index.php?product_cat=$matches[1]&embed=true";s:43:"product-category/(.+?)/page/?([0-9]{1,})/?$";s:51:"index.php?product_cat=$matches[1]&paged=$matches[2]";s:25:"product-category/(.+?)/?$";s:33:"index.php?product_cat=$matches[1]";s:52:"product-tag/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?product_tag=$matches[1]&feed=$matches[2]";s:47:"product-tag/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?product_tag=$matches[1]&feed=$matches[2]";s:28:"product-tag/([^/]+)/embed/?$";s:44:"index.php?product_tag=$matches[1]&embed=true";s:40:"product-tag/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?product_tag=$matches[1]&paged=$matches[2]";s:22:"product-tag/([^/]+)/?$";s:33:"index.php?product_tag=$matches[1]";s:12:"robots\\.txt$";s:18:"index.php?robots=1";s:48:".*wp-(atom|rdf|rss|rss2|feed|commentsrss2)\\.php$";s:18:"index.php?feed=old";s:20:".*wp-app\\.php(/.*)?$";s:19:"index.php?error=403";s:18:".*wp-register.php$";s:23:"index.php?register=true";s:32:"feed/(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:27:"(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:8:"embed/?$";s:21:"index.php?&embed=true";s:20:"page/?([0-9]{1,})/?$";s:28:"index.php?&paged=$matches[1]";s:17:"wc-api(/(.*))?/?$";s:29:"index.php?&wc-api=$matches[2]";s:41:"comments/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:36:"comments/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:17:"comments/embed/?$";s:21:"index.php?&embed=true";s:26:"comments/wc-api(/(.*))?/?$";s:29:"index.php?&wc-api=$matches[2]";s:44:"search/(.+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:39:"search/(.+)/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:20:"search/(.+)/embed/?$";s:34:"index.php?s=$matches[1]&embed=true";s:32:"search/(.+)/page/?([0-9]{1,})/?$";s:41:"index.php?s=$matches[1]&paged=$matches[2]";s:29:"search/(.+)/wc-api(/(.*))?/?$";s:42:"index.php?s=$matches[1]&wc-api=$matches[3]";s:14:"search/(.+)/?$";s:23:"index.php?s=$matches[1]";s:47:"author/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:42:"author/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:23:"author/([^/]+)/embed/?$";s:44:"index.php?author_name=$matches[1]&embed=true";s:35:"author/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?author_name=$matches[1]&paged=$matches[2]";s:32:"author/([^/]+)/wc-api(/(.*))?/?$";s:52:"index.php?author_name=$matches[1]&wc-api=$matches[3]";s:17:"author/([^/]+)/?$";s:33:"index.php?author_name=$matches[1]";s:69:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:64:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:45:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/embed/?$";s:74:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&embed=true";s:57:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:81:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&paged=$matches[4]";s:54:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/wc-api(/(.*))?/?$";s:82:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&wc-api=$matches[5]";s:39:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/?$";s:63:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]";s:56:"([0-9]{4})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:51:"([0-9]{4})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:32:"([0-9]{4})/([0-9]{1,2})/embed/?$";s:58:"index.php?year=$matches[1]&monthnum=$matches[2]&embed=true";s:44:"([0-9]{4})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:65:"index.php?year=$matches[1]&monthnum=$matches[2]&paged=$matches[3]";s:41:"([0-9]{4})/([0-9]{1,2})/wc-api(/(.*))?/?$";s:66:"index.php?year=$matches[1]&monthnum=$matches[2]&wc-api=$matches[4]";s:26:"([0-9]{4})/([0-9]{1,2})/?$";s:47:"index.php?year=$matches[1]&monthnum=$matches[2]";s:43:"([0-9]{4})/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:38:"([0-9]{4})/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:19:"([0-9]{4})/embed/?$";s:37:"index.php?year=$matches[1]&embed=true";s:31:"([0-9]{4})/page/?([0-9]{1,})/?$";s:44:"index.php?year=$matches[1]&paged=$matches[2]";s:28:"([0-9]{4})/wc-api(/(.*))?/?$";s:45:"index.php?year=$matches[1]&wc-api=$matches[3]";s:13:"([0-9]{4})/?$";s:26:"index.php?year=$matches[1]";s:58:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:68:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:88:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:83:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:83:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:64:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:53:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/embed/?$";s:91:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&embed=true";s:57:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/trackback/?$";s:85:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&tb=1";s:77:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:97:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&feed=$matches[5]";s:72:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:97:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&feed=$matches[5]";s:65:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/page/?([0-9]{1,})/?$";s:98:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&paged=$matches[5]";s:72:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/comment-page-([0-9]{1,})/?$";s:98:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&cpage=$matches[5]";s:62:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/wc-api(/(.*))?/?$";s:99:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&wc-api=$matches[6]";s:62:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/wc-api(/(.*))?/?$";s:51:"index.php?attachment=$matches[1]&wc-api=$matches[3]";s:73:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/wc-api(/(.*))?/?$";s:51:"index.php?attachment=$matches[1]&wc-api=$matches[3]";s:61:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)(?:/([0-9]+))?/?$";s:97:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&page=$matches[5]";s:47:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:57:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:77:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:72:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:72:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:53:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:64:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/comment-page-([0-9]{1,})/?$";s:81:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&cpage=$matches[4]";s:51:"([0-9]{4})/([0-9]{1,2})/comment-page-([0-9]{1,})/?$";s:65:"index.php?year=$matches[1]&monthnum=$matches[2]&cpage=$matches[3]";s:38:"([0-9]{4})/comment-page-([0-9]{1,})/?$";s:44:"index.php?year=$matches[1]&cpage=$matches[2]";s:27:".?.+?/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:".?.+?/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:".?.+?/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:33:".?.+?/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:16:"(.?.+?)/embed/?$";s:41:"index.php?pagename=$matches[1]&embed=true";s:20:"(.?.+?)/trackback/?$";s:35:"index.php?pagename=$matches[1]&tb=1";s:40:"(.?.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:35:"(.?.+?)/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:28:"(.?.+?)/page/?([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&paged=$matches[2]";s:35:"(.?.+?)/comment-page-([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&cpage=$matches[2]";s:28:"(.?.+?)/order-pay(/(.*))?/?$";s:52:"index.php?pagename=$matches[1]&order-pay=$matches[3]";s:33:"(.?.+?)/order-received(/(.*))?/?$";s:57:"index.php?pagename=$matches[1]&order-received=$matches[3]";s:25:"(.?.+?)/orders(/(.*))?/?$";s:49:"index.php?pagename=$matches[1]&orders=$matches[3]";s:29:"(.?.+?)/view-order(/(.*))?/?$";s:53:"index.php?pagename=$matches[1]&view-order=$matches[3]";s:28:"(.?.+?)/downloads(/(.*))?/?$";s:52:"index.php?pagename=$matches[1]&downloads=$matches[3]";s:31:"(.?.+?)/edit-account(/(.*))?/?$";s:55:"index.php?pagename=$matches[1]&edit-account=$matches[3]";s:31:"(.?.+?)/edit-address(/(.*))?/?$";s:55:"index.php?pagename=$matches[1]&edit-address=$matches[3]";s:34:"(.?.+?)/payment-methods(/(.*))?/?$";s:58:"index.php?pagename=$matches[1]&payment-methods=$matches[3]";s:32:"(.?.+?)/lost-password(/(.*))?/?$";s:56:"index.php?pagename=$matches[1]&lost-password=$matches[3]";s:34:"(.?.+?)/customer-logout(/(.*))?/?$";s:58:"index.php?pagename=$matches[1]&customer-logout=$matches[3]";s:37:"(.?.+?)/add-payment-method(/(.*))?/?$";s:61:"index.php?pagename=$matches[1]&add-payment-method=$matches[3]";s:40:"(.?.+?)/delete-payment-method(/(.*))?/?$";s:64:"index.php?pagename=$matches[1]&delete-payment-method=$matches[3]";s:45:"(.?.+?)/set-default-payment-method(/(.*))?/?$";s:69:"index.php?pagename=$matches[1]&set-default-payment-method=$matches[3]";s:25:"(.?.+?)/wc-api(/(.*))?/?$";s:49:"index.php?pagename=$matches[1]&wc-api=$matches[3]";s:31:".?.+?/([^/]+)/wc-api(/(.*))?/?$";s:51:"index.php?attachment=$matches[1]&wc-api=$matches[3]";s:42:".?.+?/attachment/([^/]+)/wc-api(/(.*))?/?$";s:51:"index.php?attachment=$matches[1]&wc-api=$matches[3]";s:24:"(.?.+?)(?:/([0-9]+))?/?$";s:47:"index.php?pagename=$matches[1]&page=$matches[2]";}', 'yes'),
+(29, 'rewrite_rules', 'a:108:{s:11:"^wp-json/?$";s:22:"index.php?rest_route=/";s:14:"^wp-json/(.*)?";s:33:"index.php?rest_route=/$matches[1]";s:21:"^index.php/wp-json/?$";s:22:"index.php?rest_route=/";s:24:"^index.php/wp-json/(.*)?";s:33:"index.php?rest_route=/$matches[1]";s:47:"category/(.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:42:"category/(.+?)/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:23:"category/(.+?)/embed/?$";s:46:"index.php?category_name=$matches[1]&embed=true";s:35:"category/(.+?)/page/?([0-9]{1,})/?$";s:53:"index.php?category_name=$matches[1]&paged=$matches[2]";s:17:"category/(.+?)/?$";s:35:"index.php?category_name=$matches[1]";s:44:"tag/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:39:"tag/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:20:"tag/([^/]+)/embed/?$";s:36:"index.php?tag=$matches[1]&embed=true";s:32:"tag/([^/]+)/page/?([0-9]{1,})/?$";s:43:"index.php?tag=$matches[1]&paged=$matches[2]";s:14:"tag/([^/]+)/?$";s:25:"index.php?tag=$matches[1]";s:45:"type/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:40:"type/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:21:"type/([^/]+)/embed/?$";s:44:"index.php?post_format=$matches[1]&embed=true";s:33:"type/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?post_format=$matches[1]&paged=$matches[2]";s:15:"type/([^/]+)/?$";s:33:"index.php?post_format=$matches[1]";s:36:"products/[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:46:"products/[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:66:"products/[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:61:"products/[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:61:"products/[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:42:"products/[^/]+/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:25:"products/([^/]+)/embed/?$";s:41:"index.php?products=$matches[1]&embed=true";s:29:"products/([^/]+)/trackback/?$";s:35:"index.php?products=$matches[1]&tb=1";s:37:"products/([^/]+)/page/?([0-9]{1,})/?$";s:48:"index.php?products=$matches[1]&paged=$matches[2]";s:44:"products/([^/]+)/comment-page-([0-9]{1,})/?$";s:48:"index.php?products=$matches[1]&cpage=$matches[2]";s:33:"products/([^/]+)(?:/([0-9]+))?/?$";s:47:"index.php?products=$matches[1]&page=$matches[2]";s:25:"products/[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:35:"products/[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:55:"products/[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:50:"products/[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:50:"products/[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:31:"products/[^/]+/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:12:"robots\\.txt$";s:18:"index.php?robots=1";s:48:".*wp-(atom|rdf|rss|rss2|feed|commentsrss2)\\.php$";s:18:"index.php?feed=old";s:20:".*wp-app\\.php(/.*)?$";s:19:"index.php?error=403";s:18:".*wp-register.php$";s:23:"index.php?register=true";s:32:"feed/(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:27:"(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:8:"embed/?$";s:21:"index.php?&embed=true";s:20:"page/?([0-9]{1,})/?$";s:28:"index.php?&paged=$matches[1]";s:27:"comment-page-([0-9]{1,})/?$";s:38:"index.php?&page_id=2&cpage=$matches[1]";s:41:"comments/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:36:"comments/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:17:"comments/embed/?$";s:21:"index.php?&embed=true";s:44:"search/(.+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:39:"search/(.+)/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:20:"search/(.+)/embed/?$";s:34:"index.php?s=$matches[1]&embed=true";s:32:"search/(.+)/page/?([0-9]{1,})/?$";s:41:"index.php?s=$matches[1]&paged=$matches[2]";s:14:"search/(.+)/?$";s:23:"index.php?s=$matches[1]";s:47:"author/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:42:"author/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:23:"author/([^/]+)/embed/?$";s:44:"index.php?author_name=$matches[1]&embed=true";s:35:"author/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?author_name=$matches[1]&paged=$matches[2]";s:17:"author/([^/]+)/?$";s:33:"index.php?author_name=$matches[1]";s:69:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:64:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:45:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/embed/?$";s:74:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&embed=true";s:57:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:81:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&paged=$matches[4]";s:39:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/?$";s:63:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]";s:56:"([0-9]{4})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:51:"([0-9]{4})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:32:"([0-9]{4})/([0-9]{1,2})/embed/?$";s:58:"index.php?year=$matches[1]&monthnum=$matches[2]&embed=true";s:44:"([0-9]{4})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:65:"index.php?year=$matches[1]&monthnum=$matches[2]&paged=$matches[3]";s:26:"([0-9]{4})/([0-9]{1,2})/?$";s:47:"index.php?year=$matches[1]&monthnum=$matches[2]";s:43:"([0-9]{4})/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:38:"([0-9]{4})/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:19:"([0-9]{4})/embed/?$";s:37:"index.php?year=$matches[1]&embed=true";s:31:"([0-9]{4})/page/?([0-9]{1,})/?$";s:44:"index.php?year=$matches[1]&paged=$matches[2]";s:13:"([0-9]{4})/?$";s:26:"index.php?year=$matches[1]";s:58:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:68:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:88:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:83:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:83:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:64:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:53:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/embed/?$";s:91:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&embed=true";s:57:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/trackback/?$";s:85:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&tb=1";s:77:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:97:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&feed=$matches[5]";s:72:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:97:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&feed=$matches[5]";s:65:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/page/?([0-9]{1,})/?$";s:98:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&paged=$matches[5]";s:72:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/comment-page-([0-9]{1,})/?$";s:98:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&cpage=$matches[5]";s:61:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)(?:/([0-9]+))?/?$";s:97:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&page=$matches[5]";s:47:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:57:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:77:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:72:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:72:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:53:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:64:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/comment-page-([0-9]{1,})/?$";s:81:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&cpage=$matches[4]";s:51:"([0-9]{4})/([0-9]{1,2})/comment-page-([0-9]{1,})/?$";s:65:"index.php?year=$matches[1]&monthnum=$matches[2]&cpage=$matches[3]";s:38:"([0-9]{4})/comment-page-([0-9]{1,})/?$";s:44:"index.php?year=$matches[1]&cpage=$matches[2]";s:27:".?.+?/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:".?.+?/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:".?.+?/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:33:".?.+?/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:16:"(.?.+?)/embed/?$";s:41:"index.php?pagename=$matches[1]&embed=true";s:20:"(.?.+?)/trackback/?$";s:35:"index.php?pagename=$matches[1]&tb=1";s:40:"(.?.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:35:"(.?.+?)/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:28:"(.?.+?)/page/?([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&paged=$matches[2]";s:35:"(.?.+?)/comment-page-([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&cpage=$matches[2]";s:24:"(.?.+?)(?:/([0-9]+))?/?$";s:47:"index.php?pagename=$matches[1]&page=$matches[2]";}', 'yes'),
 (30, 'hack_file', '0', 'yes'),
 (31, 'blog_charset', 'UTF-8', 'yes'),
 (32, 'moderation_keys', '', 'no'),
-(33, 'active_plugins', 'a:1:{i:0;s:27:"woocommerce/woocommerce.php";}', 'yes'),
+(33, 'active_plugins', 'a:2:{i:0;s:34:"advanced-custom-fields-pro/acf.php";i:1;s:43:"custom-post-type-ui/custom-post-type-ui.php";}', 'yes'),
 (34, 'category_base', '', 'yes'),
 (35, 'ping_sites', 'http://rpc.pingomatic.com/', 'yes'),
 (36, 'comment_max_links', '2', 'yes'),
@@ -170,7 +170,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (50, 'upload_path', '', 'yes'),
 (51, 'blog_public', '0', 'yes'),
 (52, 'default_link_category', '2', 'yes'),
-(53, 'show_on_front', 'posts', 'yes'),
+(53, 'show_on_front', 'page', 'yes'),
 (54, 'tag_base', '', 'yes'),
 (55, 'show_avatars', '1', 'yes'),
 (56, 'avatar_rating', 'G', 'yes'),
@@ -200,8 +200,8 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (80, 'widget_rss', 'a:0:{}', 'yes'),
 (81, 'uninstall_plugins', 'a:0:{}', 'no'),
 (82, 'timezone_string', '', 'yes'),
-(83, 'page_for_posts', '0', 'yes'),
-(84, 'page_on_front', '0', 'yes'),
+(83, 'page_for_posts', '36', 'yes'),
+(84, 'page_on_front', '2', 'yes'),
 (85, 'default_post_format', '0', 'yes'),
 (86, 'link_manager_enabled', '0', 'yes'),
 (87, 'finished_splitting_shared_terms', '1', 'yes'),
@@ -225,29 +225,17 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (105, 'widget_media_video', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (106, 'widget_tag_cloud', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (107, 'widget_nav_menu', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
-(108, 'cron', 'a:10:{i:1499695077;a:1:{s:32:"woocommerce_cancel_unpaid_orders";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:2:{s:8:"schedule";b:0;s:4:"args";a:0:{}}}}i:1499713404;a:1:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1499713405;a:2:{s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1499720400;a:1:{s:27:"woocommerce_scheduled_sales";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1499721556;a:1:{s:28:"woocommerce_cleanup_sessions";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1499762524;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1499764757;a:1:{s:30:"woocommerce_tracker_send_event";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1499764803;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1501545600;a:1:{s:25:"woocommerce_geoip_updater";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:7:"monthly";s:4:"args";a:0:{}s:8:"interval";i:2635200;}}}s:7:"version";i:2;}', 'yes'),
+(108, 'cron', 'a:5:{i:1499799804;a:1:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1499799805;a:2:{s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1499848924;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1499851203;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
 (109, 'theme_mods_twentyseventeen', 'a:2:{s:18:"custom_css_post_id";i:-1;s:16:"sidebars_widgets";a:2:{s:4:"time";i:1499676188;s:4:"data";a:4:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:9:"sidebar-2";a:0:{}s:9:"sidebar-3";a:0:{}}}}', 'yes'),
 (119, '_site_transient_timeout_browser_ba081c70c62b1a73f7586809b37ba98f', '1500275038', 'no'),
 (120, '_site_transient_browser_ba081c70c62b1a73f7586809b37ba98f', 'a:9:{s:8:"platform";s:7:"Windows";s:4:"name";s:6:"Chrome";s:7:"version";s:13:"59.0.3071.115";s:10:"update_url";s:28:"http://www.google.com/chrome";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/chrome.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/chrome.png";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'no'),
-(121, '_site_transient_timeout_community-events-1aecf33ab8525ff212ebdffbb438372e', '1499713440', 'no'),
-(122, '_site_transient_community-events-1aecf33ab8525ff212ebdffbb438372e', 'a:2:{s:8:"location";a:1:{s:2:"ip";s:9:"127.0.0.0";}s:6:"events";a:1:{i:0;a:7:{s:4:"type";s:8:"wordcamp";s:5:"title";s:15:"WordCamp Moscow";s:3:"url";s:32:"https://2017.moscow.wordcamp.org";s:6:"meetup";N;s:10:"meetup_url";N;s:4:"date";s:19:"2017-08-12 00:00:00";s:8:"location";a:4:{s:8:"location";s:14:"Moscow, Russia";s:7:"country";s:2:"RU";s:8:"latitude";d:55.740815699999999;s:9:"longitude";d:37.608924999999999;}}}}', 'no'),
 (123, 'can_compress_scripts', '1', 'no'),
-(124, '_transient_timeout_feed_ac0b00fe65abe10e0c5b588f3ed8c7ca', '1499713442', 'no'),
-(125, '_transient_timeout_feed_mod_ac0b00fe65abe10e0c5b588f3ed8c7ca', '1499713443', 'no'),
-(126, '_transient_feed_mod_ac0b00fe65abe10e0c5b588f3ed8c7ca', '1499670243', 'no'),
-(127, '_transient_timeout_feed_d117b5738fbd35bd8c0391cda1f2b5d9', '1499713444', 'no'),
-(128, '_transient_timeout_feed_mod_d117b5738fbd35bd8c0391cda1f2b5d9', '1499713444', 'no'),
-(129, '_transient_feed_mod_d117b5738fbd35bd8c0391cda1f2b5d9', '1499670244', 'no'),
-(130, '_transient_timeout_dash_v2_f69de0bbfe7eaa113146875f40c02000', '1499713445', 'no'),
-(131, '_transient_dash_v2_f69de0bbfe7eaa113146875f40c02000', '<div class="rss-widget"><ul><li><a class=''rsswidget'' href=''https://wordpress.org/news/2017/07/the-month-in-wordpress-june-2017/''>The Month in WordPress: June 2017</a></li></ul></div><div class="rss-widget"><ul><li><a class=''rsswidget'' href=''https://wptavern.com/lets-encrypt-passes-100-million-certificates-issued-will-offer-wildcard-certificates-in-january-2018''>WPTavern: Let’s Encrypt Passes 100 Million Certificates Issued, Will Offer Wildcard Certificates in January 2018</a></li><li><a class=''rsswidget'' href=''https://wptavern.com/wangguard-plugin-author-shuts-down-splog-hunting-service-due-to-trauma-and-death-threats''>WPTavern: WangGuard Plugin Author Shuts Down Splog Hunting Service Due to Trauma and Death Threats</a></li><li><a class=''rsswidget'' href=''https://wptavern.com/wordsesh-asia-now-in-planning-for-2018-wordcamp-asia-targeted-for-2019''>WPTavern: WordSesh Asia Now in Planning for 2018, WordCamp Asia Targeted for 2019</a></li></ul></div>', 'no'),
 (135, 'current_theme', 'malton', 'yes'),
 (136, 'theme_mods_malton', 'a:3:{i:0;b:0;s:18:"custom_css_post_id";i:-1;s:18:"nav_menu_locations";a:1:{s:9:"main-menu";i:15;}}', 'yes'),
 (137, 'theme_switched', '', 'yes'),
-(138, '_transient_timeout_plugin_slugs', '1499764761', 'no'),
-(139, '_transient_plugin_slugs', 'a:3:{i:0;s:19:"akismet/akismet.php";i:1;s:9:"hello.php";i:2;s:27:"woocommerce/woocommerce.php";}', 'no'),
-(140, 'recently_activated', 'a:0:{}', 'yes'),
-(141, '_site_transient_timeout_poptags_40cd750bba9870f18aada2478b24840a', '1499687186', 'no'),
-(142, '_site_transient_poptags_40cd750bba9870f18aada2478b24840a', 'O:8:"stdClass":100:{s:6:"widget";a:3:{s:4:"name";s:6:"widget";s:4:"slug";s:6:"widget";s:5:"count";i:4347;}s:4:"post";a:3:{s:4:"name";s:4:"post";s:4:"slug";s:4:"post";s:5:"count";i:2487;}s:5:"admin";a:3:{s:4:"name";s:5:"admin";s:4:"slug";s:5:"admin";s:5:"count";i:2355;}s:11:"woocommerce";a:3:{s:4:"name";s:11:"woocommerce";s:4:"slug";s:11:"woocommerce";s:5:"count";i:2184;}s:5:"posts";a:3:{s:4:"name";s:5:"posts";s:4:"slug";s:5:"posts";s:5:"count";i:1822;}s:8:"comments";a:3:{s:4:"name";s:8:"comments";s:4:"slug";s:8:"comments";s:5:"count";i:1590;}s:9:"shortcode";a:3:{s:4:"name";s:9:"shortcode";s:4:"slug";s:9:"shortcode";s:5:"count";i:1566;}s:7:"twitter";a:3:{s:4:"name";s:7:"twitter";s:4:"slug";s:7:"twitter";s:5:"count";i:1431;}s:6:"google";a:3:{s:4:"name";s:6:"google";s:4:"slug";s:6:"google";s:5:"count";i:1346;}s:6:"images";a:3:{s:4:"name";s:6:"images";s:4:"slug";s:6:"images";s:5:"count";i:1331;}s:8:"facebook";a:3:{s:4:"name";s:8:"facebook";s:4:"slug";s:8:"facebook";s:5:"count";i:1326;}s:7:"sidebar";a:3:{s:4:"name";s:7:"sidebar";s:4:"slug";s:7:"sidebar";s:5:"count";i:1268;}s:5:"image";a:3:{s:4:"name";s:5:"image";s:4:"slug";s:5:"image";s:5:"count";i:1263;}s:3:"seo";a:3:{s:4:"name";s:3:"seo";s:4:"slug";s:3:"seo";s:5:"count";i:1111;}s:7:"gallery";a:3:{s:4:"name";s:7:"gallery";s:4:"slug";s:7:"gallery";s:5:"count";i:1051;}s:4:"page";a:3:{s:4:"name";s:4:"page";s:4:"slug";s:4:"page";s:5:"count";i:1039;}s:6:"social";a:3:{s:4:"name";s:6:"social";s:4:"slug";s:6:"social";s:5:"count";i:992;}s:5:"email";a:3:{s:4:"name";s:5:"email";s:4:"slug";s:5:"email";s:5:"count";i:937;}s:5:"links";a:3:{s:4:"name";s:5:"links";s:4:"slug";s:5:"links";s:5:"count";i:816;}s:9:"ecommerce";a:3:{s:4:"name";s:9:"ecommerce";s:4:"slug";s:9:"ecommerce";s:5:"count";i:797;}s:5:"login";a:3:{s:4:"name";s:5:"login";s:4:"slug";s:5:"login";s:5:"count";i:796;}s:7:"widgets";a:3:{s:4:"name";s:7:"widgets";s:4:"slug";s:7:"widgets";s:5:"count";i:769;}s:5:"video";a:3:{s:4:"name";s:5:"video";s:4:"slug";s:5:"video";s:5:"count";i:762;}s:3:"rss";a:3:{s:4:"name";s:3:"rss";s:4:"slug";s:3:"rss";s:5:"count";i:667;}s:7:"content";a:3:{s:4:"name";s:7:"content";s:4:"slug";s:7:"content";s:5:"count";i:660;}s:10:"buddypress";a:3:{s:4:"name";s:10:"buddypress";s:4:"slug";s:10:"buddypress";s:5:"count";i:658;}s:4:"spam";a:3:{s:4:"name";s:4:"spam";s:4:"slug";s:4:"spam";s:5:"count";i:651;}s:5:"pages";a:3:{s:4:"name";s:5:"pages";s:4:"slug";s:5:"pages";s:5:"count";i:644;}s:6:"jquery";a:3:{s:4:"name";s:6:"jquery";s:4:"slug";s:6:"jquery";s:5:"count";i:636;}s:8:"security";a:3:{s:4:"name";s:8:"security";s:4:"slug";s:8:"security";s:5:"count";i:633;}s:6:"slider";a:3:{s:4:"name";s:6:"slider";s:4:"slug";s:6:"slider";s:5:"count";i:615;}s:5:"media";a:3:{s:4:"name";s:5:"media";s:4:"slug";s:5:"media";s:5:"count";i:597;}s:4:"ajax";a:3:{s:4:"name";s:4:"ajax";s:4:"slug";s:4:"ajax";s:5:"count";i:591;}s:4:"feed";a:3:{s:4:"name";s:4:"feed";s:4:"slug";s:4:"feed";s:5:"count";i:585;}s:9:"analytics";a:3:{s:4:"name";s:9:"analytics";s:4:"slug";s:9:"analytics";s:5:"count";i:582;}s:6:"search";a:3:{s:4:"name";s:6:"search";s:4:"slug";s:6:"search";s:5:"count";i:573;}s:8:"category";a:3:{s:4:"name";s:8:"category";s:4:"slug";s:8:"category";s:5:"count";i:571;}s:10:"e-commerce";a:3:{s:4:"name";s:10:"e-commerce";s:4:"slug";s:10:"e-commerce";s:5:"count";i:561;}s:4:"menu";a:3:{s:4:"name";s:4:"menu";s:4:"slug";s:4:"menu";s:5:"count";i:552;}s:4:"form";a:3:{s:4:"name";s:4:"form";s:4:"slug";s:4:"form";s:5:"count";i:539;}s:5:"embed";a:3:{s:4:"name";s:5:"embed";s:4:"slug";s:5:"embed";s:5:"count";i:537;}s:10:"javascript";a:3:{s:4:"name";s:10:"javascript";s:4:"slug";s:10:"javascript";s:5:"count";i:533;}s:4:"link";a:3:{s:4:"name";s:4:"link";s:4:"slug";s:4:"link";s:5:"count";i:519;}s:3:"css";a:3:{s:4:"name";s:3:"css";s:4:"slug";s:3:"css";s:5:"count";i:507;}s:5:"share";a:3:{s:4:"name";s:5:"share";s:4:"slug";s:5:"share";s:5:"count";i:499;}s:7:"youtube";a:3:{s:4:"name";s:7:"youtube";s:4:"slug";s:7:"youtube";s:5:"count";i:493;}s:7:"comment";a:3:{s:4:"name";s:7:"comment";s:4:"slug";s:7:"comment";s:5:"count";i:489;}s:5:"theme";a:3:{s:4:"name";s:5:"theme";s:4:"slug";s:5:"theme";s:5:"count";i:477;}s:6:"custom";a:3:{s:4:"name";s:6:"custom";s:4:"slug";s:6:"custom";s:5:"count";i:468;}s:10:"responsive";a:3:{s:4:"name";s:10:"responsive";s:4:"slug";s:10:"responsive";s:5:"count";i:468;}s:9:"dashboard";a:3:{s:4:"name";s:9:"dashboard";s:4:"slug";s:9:"dashboard";s:5:"count";i:467;}s:10:"categories";a:3:{s:4:"name";s:10:"categories";s:4:"slug";s:10:"categories";s:5:"count";i:464;}s:3:"ads";a:3:{s:4:"name";s:3:"ads";s:4:"slug";s:3:"ads";s:5:"count";i:443;}s:9:"affiliate";a:3:{s:4:"name";s:9:"affiliate";s:4:"slug";s:9:"affiliate";s:5:"count";i:438;}s:4:"tags";a:3:{s:4:"name";s:4:"tags";s:4:"slug";s:4:"tags";s:5:"count";i:435;}s:6:"button";a:3:{s:4:"name";s:6:"button";s:4:"slug";s:6:"button";s:5:"count";i:435;}s:6:"editor";a:3:{s:4:"name";s:6:"editor";s:4:"slug";s:6:"editor";s:5:"count";i:433;}s:5:"photo";a:3:{s:4:"name";s:5:"photo";s:4:"slug";s:5:"photo";s:5:"count";i:422;}s:12:"contact-form";a:3:{s:4:"name";s:12:"contact form";s:4:"slug";s:12:"contact-form";s:5:"count";i:420;}s:4:"user";a:3:{s:4:"name";s:4:"user";s:4:"slug";s:4:"user";s:5:"count";i:410;}s:9:"slideshow";a:3:{s:4:"name";s:9:"slideshow";s:4:"slug";s:9:"slideshow";s:5:"count";i:407;}s:6:"mobile";a:3:{s:4:"name";s:6:"mobile";s:4:"slug";s:6:"mobile";s:5:"count";i:402;}s:5:"stats";a:3:{s:4:"name";s:5:"stats";s:4:"slug";s:5:"stats";s:5:"count";i:399;}s:7:"contact";a:3:{s:4:"name";s:7:"contact";s:4:"slug";s:7:"contact";s:5:"count";i:399;}s:5:"users";a:3:{s:4:"name";s:5:"users";s:4:"slug";s:5:"users";s:5:"count";i:398;}s:6:"photos";a:3:{s:4:"name";s:6:"photos";s:4:"slug";s:6:"photos";s:5:"count";i:394;}s:3:"api";a:3:{s:4:"name";s:3:"api";s:4:"slug";s:3:"api";s:5:"count";i:379;}s:10:"statistics";a:3:{s:4:"name";s:10:"statistics";s:4:"slug";s:10:"statistics";s:5:"count";i:378;}s:6:"events";a:3:{s:4:"name";s:6:"events";s:4:"slug";s:6:"events";s:5:"count";i:371;}s:10:"navigation";a:3:{s:4:"name";s:10:"navigation";s:4:"slug";s:10:"navigation";s:5:"count";i:369;}s:4:"news";a:3:{s:4:"name";s:4:"news";s:4:"slug";s:4:"news";s:5:"count";i:350;}s:8:"calendar";a:3:{s:4:"name";s:8:"calendar";s:4:"slug";s:8:"calendar";s:5:"count";i:342;}s:9:"multisite";a:3:{s:4:"name";s:9:"multisite";s:4:"slug";s:9:"multisite";s:5:"count";i:333;}s:7:"plugins";a:3:{s:4:"name";s:7:"plugins";s:4:"slug";s:7:"plugins";s:5:"count";i:331;}s:12:"social-media";a:3:{s:4:"name";s:12:"social media";s:4:"slug";s:12:"social-media";s:5:"count";i:331;}s:10:"shortcodes";a:3:{s:4:"name";s:10:"shortcodes";s:4:"slug";s:10:"shortcodes";s:5:"count";i:327;}s:7:"payment";a:3:{s:4:"name";s:7:"payment";s:4:"slug";s:7:"payment";s:5:"count";i:327;}s:4:"code";a:3:{s:4:"name";s:4:"code";s:4:"slug";s:4:"code";s:5:"count";i:322;}s:10:"newsletter";a:3:{s:4:"name";s:10:"newsletter";s:4:"slug";s:10:"newsletter";s:5:"count";i:321;}s:4:"meta";a:3:{s:4:"name";s:4:"meta";s:4:"slug";s:4:"meta";s:5:"count";i:320;}s:4:"list";a:3:{s:4:"name";s:4:"list";s:4:"slug";s:4:"list";s:5:"count";i:320;}s:3:"url";a:3:{s:4:"name";s:3:"url";s:4:"slug";s:3:"url";s:5:"count";i:314;}s:5:"popup";a:3:{s:4:"name";s:5:"popup";s:4:"slug";s:5:"popup";s:5:"count";i:310;}s:9:"marketing";a:3:{s:4:"name";s:9:"marketing";s:4:"slug";s:9:"marketing";s:5:"count";i:299;}s:6:"simple";a:3:{s:4:"name";s:6:"simple";s:4:"slug";s:6:"simple";s:5:"count";i:298;}s:4:"chat";a:3:{s:4:"name";s:4:"chat";s:4:"slug";s:4:"chat";s:5:"count";i:291;}s:3:"tag";a:3:{s:4:"name";s:3:"tag";s:4:"slug";s:3:"tag";s:5:"count";i:290;}s:8:"redirect";a:3:{s:4:"name";s:8:"redirect";s:4:"slug";s:8:"redirect";s:5:"count";i:289;}s:16:"custom-post-type";a:3:{s:4:"name";s:16:"custom post type";s:4:"slug";s:16:"custom-post-type";s:5:"count";i:287;}s:11:"advertising";a:3:{s:4:"name";s:11:"advertising";s:4:"slug";s:11:"advertising";s:5:"count";i:283;}s:6:"author";a:3:{s:4:"name";s:6:"author";s:4:"slug";s:6:"author";s:5:"count";i:282;}s:4:"html";a:3:{s:4:"name";s:4:"html";s:4:"slug";s:4:"html";s:5:"count";i:279;}s:7:"adsense";a:3:{s:4:"name";s:7:"adsense";s:4:"slug";s:7:"adsense";s:5:"count";i:278;}s:15:"payment-gateway";a:3:{s:4:"name";s:15:"payment gateway";s:4:"slug";s:15:"payment-gateway";s:5:"count";i:276;}s:5:"forms";a:3:{s:4:"name";s:5:"forms";s:4:"slug";s:5:"forms";s:5:"count";i:273;}s:8:"lightbox";a:3:{s:4:"name";s:8:"lightbox";s:4:"slug";s:8:"lightbox";s:5:"count";i:273;}s:14:"administration";a:3:{s:4:"name";s:14:"administration";s:4:"slug";s:14:"administration";s:5:"count";i:265;}s:7:"captcha";a:3:{s:4:"name";s:7:"captcha";s:4:"slug";s:7:"captcha";s:5:"count";i:264;}s:5:"cache";a:3:{s:4:"name";s:5:"cache";s:4:"slug";s:5:"cache";s:5:"count";i:264;}s:12:"notification";a:3:{s:4:"name";s:12:"notification";s:4:"slug";s:12:"notification";s:5:"count";i:263;}}', 'no'),
+(138, '_transient_timeout_plugin_slugs', '1499859803', 'no'),
+(139, '_transient_plugin_slugs', 'a:4:{i:0;s:34:"advanced-custom-fields-pro/acf.php";i:1;s:19:"akismet/akismet.php";i:2;s:43:"custom-post-type-ui/custom-post-type-ui.php";i:3;s:9:"hello.php";}', 'no'),
+(140, 'recently_activated', 'a:1:{s:27:"woocommerce/woocommerce.php";i:1499771705;}', 'yes'),
 (147, 'woocommerce_default_country', 'GB', 'yes'),
 (148, 'woocommerce_allowed_countries', 'all', 'yes'),
 (149, 'woocommerce_all_except_countries', '', 'yes'),
@@ -333,8 +321,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (229, 'woocommerce_logout_endpoint', 'customer-logout', 'yes'),
 (230, 'woocommerce_email_from_name', 'pahno', 'no'),
 (231, 'woocommerce_email_from_address', 'romangalchenkov@gmail.com', 'no'),
-(232, 'woocommerce_email_header_image', '', 'no');
-INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
+(232, 'woocommerce_email_header_image', '', 'no'),
 (233, 'woocommerce_email_footer_text', 'pahno - Работает на WooCommerce', 'no'),
 (234, 'woocommerce_email_base_color', '#96588a', 'no'),
 (235, 'woocommerce_email_background_color', '#f7f7f7', 'no'),
@@ -357,10 +344,6 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (257, 'widget_woocommerce_rating_filter', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (260, '_transient_wc_count_comments', 'O:8:"stdClass":7:{s:8:"approved";s:1:"1";s:14:"total_comments";i:1;s:3:"all";i:1;s:9:"moderated";i:0;s:4:"spam";i:0;s:5:"trash";i:0;s:12:"post-trashed";i:0;}', 'yes'),
 (261, 'woocommerce_meta_box_errors', 'a:0:{}', 'yes'),
-(262, '_transient_timeout_wc_report_sales_by_date', '1499771210', 'no'),
-(263, '_transient_wc_report_sales_by_date', 'a:24:{s:32:"149e20b2c8a898baa5a039daa0e423e4";a:0:{}s:32:"c69d9b14408c3e3bb271d08c380b5d10";a:0:{}s:32:"8bd3145cd1ccc96b6fbdd2c8acc662c4";a:0:{}s:32:"9516fa41217fd1ec0294020ebedef9ea";N;s:32:"8d9286b7b6907a5f692b208cbc39a6c3";a:0:{}s:32:"e52f66ff81b150b572a701f5b4cb52e9";a:0:{}s:32:"6f21d3b86e7aae2fdbfaaba28125aa52";a:0:{}s:32:"8abac55b0f004b733cc3f7dd9cbb20fd";a:0:{}s:32:"5525cc26af265e8cd369e775e3a31b35";a:0:{}s:32:"cb86f9ba96899d52582e64625c298150";a:0:{}s:32:"c2ff5978d88fb1dd8f4b530dc5887cce";a:0:{}s:32:"997a033b588a90c1ea3f5ff0f494c860";N;s:32:"22fda114ac53801ae7abeb72f9f1e857";a:0:{}s:32:"7d85201135d3b754009a929c51aa82ce";a:0:{}s:32:"a52463557237a73c97b6daf2bb26c6cc";a:0:{}s:32:"c5e404fd95ad421792f78ccfca5bcc83";a:0:{}s:32:"2234ef6c78920623764fdb18f7768de1";a:0:{}s:32:"9f0923c6d72f5a850004444f806b379f";a:0:{}s:32:"1844a54d85228cac8ded4bf12c9a1845";a:0:{}s:32:"775460b062cbd574bafc8986e3444c66";N;s:32:"2a95d069b1a00b4f958252dd32aafc33";a:0:{}s:32:"bcac0258488f30ee0529dacfb8b0100d";a:0:{}s:32:"1d24794b978adb55898d3e4c514a1dfb";a:0:{}s:32:"c6d7e3c9dddd821f8a479806ea4dad12";a:0:{}}', 'no'),
-(264, '_transient_timeout_wc_admin_report', '1499763408', 'no'),
-(265, '_transient_wc_admin_report', 'a:1:{s:32:"98aa17c1be8959b412c712b82077fc4a";a:0:{}}', 'no'),
 (266, '_transient_timeout_wc_low_stock_count', '1502269008', 'no'),
 (267, '_transient_wc_low_stock_count', '0', 'no'),
 (268, '_transient_timeout_wc_outofstock_count', '1502269008', 'no'),
@@ -371,16 +354,44 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (273, '_transient_geoip_127.0.0.1', '', 'no'),
 (274, '_transient_timeout_geoip_77.244.76.169', '1500282657', 'no'),
 (275, '_transient_geoip_77.244.76.169', 'RU', 'no'),
-(277, '_site_transient_timeout_theme_roots', '1499679944', 'no'),
-(278, '_site_transient_theme_roots', 'a:4:{s:6:"malton";s:7:"/themes";s:13:"twentyfifteen";s:7:"/themes";s:15:"twentyseventeen";s:7:"/themes";s:13:"twentysixteen";s:7:"/themes";}', 'no'),
-(279, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:1:{i:0;O:8:"stdClass":10:{s:8:"response";s:6:"latest";s:8:"download";s:63:"https://downloads.wordpress.org/release/ru_RU/wordpress-4.8.zip";s:6:"locale";s:5:"ru_RU";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:63:"https://downloads.wordpress.org/release/ru_RU/wordpress-4.8.zip";s:10:"no_content";b:0;s:11:"new_bundled";b:0;s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:3:"4.8";s:7:"version";s:3:"4.8";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.7";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1499678348;s:15:"version_checked";s:3:"4.8";s:12:"translations";a:0:{}}', 'no'),
-(280, '_site_transient_update_plugins', 'O:8:"stdClass":5:{s:12:"last_checked";i:1499678351;s:7:"checked";a:3:{s:19:"akismet/akismet.php";s:5:"3.3.2";s:9:"hello.php";s:3:"1.6";s:27:"woocommerce/woocommerce.php";s:5:"3.1.0";}s:8:"response";a:0:{}s:12:"translations";a:0:{}s:9:"no_update";a:3:{s:19:"akismet/akismet.php";O:8:"stdClass":6:{s:2:"id";s:21:"w.org/plugins/akismet";s:4:"slug";s:7:"akismet";s:6:"plugin";s:19:"akismet/akismet.php";s:11:"new_version";s:5:"3.3.2";s:3:"url";s:38:"https://wordpress.org/plugins/akismet/";s:7:"package";s:56:"https://downloads.wordpress.org/plugin/akismet.3.3.2.zip";}s:9:"hello.php";O:8:"stdClass":6:{s:2:"id";s:25:"w.org/plugins/hello-dolly";s:4:"slug";s:11:"hello-dolly";s:6:"plugin";s:9:"hello.php";s:11:"new_version";s:3:"1.6";s:3:"url";s:42:"https://wordpress.org/plugins/hello-dolly/";s:7:"package";s:58:"https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip";}s:27:"woocommerce/woocommerce.php";O:8:"stdClass":6:{s:2:"id";s:25:"w.org/plugins/woocommerce";s:4:"slug";s:11:"woocommerce";s:6:"plugin";s:27:"woocommerce/woocommerce.php";s:11:"new_version";s:5:"3.1.0";s:3:"url";s:42:"https://wordpress.org/plugins/woocommerce/";s:7:"package";s:60:"https://downloads.wordpress.org/plugin/woocommerce.3.1.0.zip";}}}', 'no'),
-(281, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1499678351;s:7:"checked";a:4:{s:6:"malton";s:3:"1.0";s:13:"twentyfifteen";s:3:"1.8";s:15:"twentyseventeen";s:3:"1.3";s:13:"twentysixteen";s:3:"1.3";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'no'),
+(279, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:1:{i:0;O:8:"stdClass":10:{s:8:"response";s:6:"latest";s:8:"download";s:63:"https://downloads.wordpress.org/release/ru_RU/wordpress-4.8.zip";s:6:"locale";s:5:"ru_RU";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:63:"https://downloads.wordpress.org/release/ru_RU/wordpress-4.8.zip";s:10:"no_content";b:0;s:11:"new_bundled";b:0;s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:3:"4.8";s:7:"version";s:3:"4.8";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.7";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1499773418;s:15:"version_checked";s:3:"4.8";s:12:"translations";a:0:{}}', 'no'),
+(281, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1499773420;s:7:"checked";a:4:{s:6:"malton";s:3:"1.0";s:13:"twentyfifteen";s:3:"1.8";s:15:"twentyseventeen";s:3:"1.3";s:13:"twentysixteen";s:3:"1.3";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'no'),
 (282, 'woocommerce_db_version', '3.1.0', 'yes'),
 (283, 'woocommerce_version', '3.1.0', 'yes'),
 (284, '_transient_wc_attribute_taxonomies', 'a:0:{}', 'yes'),
 (286, '_transient_product_query-transient-version', '1499678403', 'yes'),
-(289, 'nav_menu_options', 'a:2:{i:0;b:0;s:8:"auto_add";a:0:{}}', 'yes');
+(289, 'nav_menu_options', 'a:2:{i:0;b:0;s:8:"auto_add";a:0:{}}', 'yes'),
+(301, '_transient_timeout_wc_report_sales_by_date', '1499858080', 'no'),
+(302, '_transient_wc_report_sales_by_date', 'a:8:{s:32:"f9dde49bd4cde31b0b40431630118fcc";a:0:{}s:32:"7b8a68b49ba9ef21d50be703782179d9";a:0:{}s:32:"12309ac0af58933a84a5075d668d96b8";a:0:{}s:32:"c44964906943425b214923306c1c75c6";N;s:32:"aed10860156f68baed6a900c20e552d3";a:0:{}s:32:"e6a67307cfa3188e965de34af2d5a85a";a:0:{}s:32:"82f46374f57b5622b7378c390ba7bb73";a:0:{}s:32:"256019a80f4619b98a5e8ebfcdf941f8";a:0:{}}', 'no'),
+(303, '_transient_timeout_wc_admin_report', '1499858080', 'no'),
+(304, '_transient_wc_admin_report', 'a:1:{s:32:"98aa17c1be8959b412c712b82077fc4a";a:0:{}}', 'no'),
+(305, '_site_transient_timeout_community-events-1aecf33ab8525ff212ebdffbb438372e', '1499814884', 'no'),
+(306, '_site_transient_community-events-1aecf33ab8525ff212ebdffbb438372e', 'a:2:{s:8:"location";a:1:{s:2:"ip";s:9:"127.0.0.0";}s:6:"events";a:1:{i:0;a:7:{s:4:"type";s:8:"wordcamp";s:5:"title";s:15:"WordCamp Moscow";s:3:"url";s:32:"https://2017.moscow.wordcamp.org";s:6:"meetup";N;s:10:"meetup_url";N;s:4:"date";s:19:"2017-08-12 00:00:00";s:8:"location";a:4:{s:8:"location";s:14:"Moscow, Russia";s:7:"country";s:2:"RU";s:8:"latitude";d:55.740815699999999;s:9:"longitude";d:37.608924999999999;}}}}', 'no'),
+(307, '_transient_timeout_feed_ac0b00fe65abe10e0c5b588f3ed8c7ca', '1499814886', 'no'),
+(308, '_transient_timeout_feed_mod_ac0b00fe65abe10e0c5b588f3ed8c7ca', '1499814886', 'no'),
+(309, '_transient_feed_mod_ac0b00fe65abe10e0c5b588f3ed8c7ca', '1499771686', 'no'),
+(310, '_transient_timeout_feed_d117b5738fbd35bd8c0391cda1f2b5d9', '1499814888', 'no'),
+(311, '_transient_timeout_feed_mod_d117b5738fbd35bd8c0391cda1f2b5d9', '1499814889', 'no'),
+(312, '_transient_feed_mod_d117b5738fbd35bd8c0391cda1f2b5d9', '1499771689', 'no'),
+(313, '_transient_timeout_dash_v2_f69de0bbfe7eaa113146875f40c02000', '1499814889', 'no'),
+(314, '_transient_dash_v2_f69de0bbfe7eaa113146875f40c02000', '<div class="rss-widget"><ul><li><a class=''rsswidget'' href=''https://wordpress.org/news/2017/07/the-month-in-wordpress-june-2017/''>The Month in WordPress: June 2017</a></li></ul></div><div class="rss-widget"><ul><li><a class=''rsswidget'' href=''https://odd.blog/2017/07/11/thank-you-translators/''>Donncha: Thank you Translators!</a></li><li><a class=''rsswidget'' href=''https://wptavern.com/interview-with-wordcamp-us-2017-organizers-dustin-meza-and-laura-byrne-cristiano''>WPTavern: Interview with WordCamp US 2017 Organizers Dustin Meza and Laura Byrne-Cristiano</a></li><li><a class=''rsswidget'' href=''https://wptavern.com/wpcampus-2017-will-be-streamed-live-for-free''>WPTavern: WPCampus 2017 Will Be Streamed Live for Free</a></li></ul></div>', 'no'),
+(315, '_transient_timeout__woocommerce_helper_subscriptions', '1499772595', 'no'),
+(316, '_transient__woocommerce_helper_subscriptions', 'a:0:{}', 'no'),
+(317, '_site_transient_timeout_theme_roots', '1499773495', 'no'),
+(318, '_site_transient_theme_roots', 'a:4:{s:6:"malton";s:7:"/themes";s:13:"twentyfifteen";s:7:"/themes";s:15:"twentyseventeen";s:7:"/themes";s:13:"twentysixteen";s:7:"/themes";}', 'no'),
+(319, '_transient_timeout__woocommerce_helper_updates', '1499814896', 'no'),
+(320, '_transient__woocommerce_helper_updates', 'a:4:{s:4:"hash";s:32:"d751713988987e9331980363e24189ce";s:7:"updated";i:1499771695;s:8:"products";a:0:{}s:6:"errors";a:1:{i:0;s:10:"http-error";}}', 'no'),
+(321, '_site_transient_timeout_poptags_40cd750bba9870f18aada2478b24840a', '1499782640', 'no'),
+(322, '_site_transient_poptags_40cd750bba9870f18aada2478b24840a', 'O:8:"stdClass":100:{s:6:"widget";a:3:{s:4:"name";s:6:"widget";s:4:"slug";s:6:"widget";s:5:"count";i:4348;}s:4:"post";a:3:{s:4:"name";s:4:"post";s:4:"slug";s:4:"post";s:5:"count";i:2487;}s:5:"admin";a:3:{s:4:"name";s:5:"admin";s:4:"slug";s:5:"admin";s:5:"count";i:2356;}s:11:"woocommerce";a:3:{s:4:"name";s:11:"woocommerce";s:4:"slug";s:11:"woocommerce";s:5:"count";i:2185;}s:5:"posts";a:3:{s:4:"name";s:5:"posts";s:4:"slug";s:5:"posts";s:5:"count";i:1822;}s:8:"comments";a:3:{s:4:"name";s:8:"comments";s:4:"slug";s:8:"comments";s:5:"count";i:1590;}s:9:"shortcode";a:3:{s:4:"name";s:9:"shortcode";s:4:"slug";s:9:"shortcode";s:5:"count";i:1567;}s:7:"twitter";a:3:{s:4:"name";s:7:"twitter";s:4:"slug";s:7:"twitter";s:5:"count";i:1431;}s:6:"google";a:3:{s:4:"name";s:6:"google";s:4:"slug";s:6:"google";s:5:"count";i:1346;}s:6:"images";a:3:{s:4:"name";s:6:"images";s:4:"slug";s:6:"images";s:5:"count";i:1333;}s:8:"facebook";a:3:{s:4:"name";s:8:"facebook";s:4:"slug";s:8:"facebook";s:5:"count";i:1326;}s:7:"sidebar";a:3:{s:4:"name";s:7:"sidebar";s:4:"slug";s:7:"sidebar";s:5:"count";i:1269;}s:5:"image";a:3:{s:4:"name";s:5:"image";s:4:"slug";s:5:"image";s:5:"count";i:1264;}s:3:"seo";a:3:{s:4:"name";s:3:"seo";s:4:"slug";s:3:"seo";s:5:"count";i:1111;}s:7:"gallery";a:3:{s:4:"name";s:7:"gallery";s:4:"slug";s:7:"gallery";s:5:"count";i:1050;}s:4:"page";a:3:{s:4:"name";s:4:"page";s:4:"slug";s:4:"page";s:5:"count";i:1039;}s:6:"social";a:3:{s:4:"name";s:6:"social";s:4:"slug";s:6:"social";s:5:"count";i:990;}s:5:"email";a:3:{s:4:"name";s:5:"email";s:4:"slug";s:5:"email";s:5:"count";i:937;}s:5:"links";a:3:{s:4:"name";s:5:"links";s:4:"slug";s:5:"links";s:5:"count";i:816;}s:9:"ecommerce";a:3:{s:4:"name";s:9:"ecommerce";s:4:"slug";s:9:"ecommerce";s:5:"count";i:798;}s:5:"login";a:3:{s:4:"name";s:5:"login";s:4:"slug";s:5:"login";s:5:"count";i:796;}s:7:"widgets";a:3:{s:4:"name";s:7:"widgets";s:4:"slug";s:7:"widgets";s:5:"count";i:769;}s:5:"video";a:3:{s:4:"name";s:5:"video";s:4:"slug";s:5:"video";s:5:"count";i:762;}s:3:"rss";a:3:{s:4:"name";s:3:"rss";s:4:"slug";s:3:"rss";s:5:"count";i:667;}s:7:"content";a:3:{s:4:"name";s:7:"content";s:4:"slug";s:7:"content";s:5:"count";i:660;}s:10:"buddypress";a:3:{s:4:"name";s:10:"buddypress";s:4:"slug";s:10:"buddypress";s:5:"count";i:658;}s:4:"spam";a:3:{s:4:"name";s:4:"spam";s:4:"slug";s:4:"spam";s:5:"count";i:651;}s:5:"pages";a:3:{s:4:"name";s:5:"pages";s:4:"slug";s:5:"pages";s:5:"count";i:644;}s:6:"jquery";a:3:{s:4:"name";s:6:"jquery";s:4:"slug";s:6:"jquery";s:5:"count";i:636;}s:8:"security";a:3:{s:4:"name";s:8:"security";s:4:"slug";s:8:"security";s:5:"count";i:634;}s:6:"slider";a:3:{s:4:"name";s:6:"slider";s:4:"slug";s:6:"slider";s:5:"count";i:615;}s:5:"media";a:3:{s:4:"name";s:5:"media";s:4:"slug";s:5:"media";s:5:"count";i:598;}s:4:"ajax";a:3:{s:4:"name";s:4:"ajax";s:4:"slug";s:4:"ajax";s:5:"count";i:591;}s:4:"feed";a:3:{s:4:"name";s:4:"feed";s:4:"slug";s:4:"feed";s:5:"count";i:585;}s:9:"analytics";a:3:{s:4:"name";s:9:"analytics";s:4:"slug";s:9:"analytics";s:5:"count";i:582;}s:6:"search";a:3:{s:4:"name";s:6:"search";s:4:"slug";s:6:"search";s:5:"count";i:573;}s:8:"category";a:3:{s:4:"name";s:8:"category";s:4:"slug";s:8:"category";s:5:"count";i:571;}s:10:"e-commerce";a:3:{s:4:"name";s:10:"e-commerce";s:4:"slug";s:10:"e-commerce";s:5:"count";i:561;}s:4:"menu";a:3:{s:4:"name";s:4:"menu";s:4:"slug";s:4:"menu";s:5:"count";i:552;}s:4:"form";a:3:{s:4:"name";s:4:"form";s:4:"slug";s:4:"form";s:5:"count";i:538;}s:5:"embed";a:3:{s:4:"name";s:5:"embed";s:4:"slug";s:5:"embed";s:5:"count";i:537;}s:10:"javascript";a:3:{s:4:"name";s:10:"javascript";s:4:"slug";s:10:"javascript";s:5:"count";i:533;}s:4:"link";a:3:{s:4:"name";s:4:"link";s:4:"slug";s:4:"link";s:5:"count";i:519;}s:3:"css";a:3:{s:4:"name";s:3:"css";s:4:"slug";s:3:"css";s:5:"count";i:507;}s:5:"share";a:3:{s:4:"name";s:5:"share";s:4:"slug";s:5:"share";s:5:"count";i:498;}s:7:"youtube";a:3:{s:4:"name";s:7:"youtube";s:4:"slug";s:7:"youtube";s:5:"count";i:493;}s:7:"comment";a:3:{s:4:"name";s:7:"comment";s:4:"slug";s:7:"comment";s:5:"count";i:490;}s:5:"theme";a:3:{s:4:"name";s:5:"theme";s:4:"slug";s:5:"theme";s:5:"count";i:478;}s:9:"dashboard";a:3:{s:4:"name";s:9:"dashboard";s:4:"slug";s:9:"dashboard";s:5:"count";i:469;}s:6:"custom";a:3:{s:4:"name";s:6:"custom";s:4:"slug";s:6:"custom";s:5:"count";i:468;}s:10:"responsive";a:3:{s:4:"name";s:10:"responsive";s:4:"slug";s:10:"responsive";s:5:"count";i:468;}s:10:"categories";a:3:{s:4:"name";s:10:"categories";s:4:"slug";s:10:"categories";s:5:"count";i:464;}s:3:"ads";a:3:{s:4:"name";s:3:"ads";s:4:"slug";s:3:"ads";s:5:"count";i:444;}s:9:"affiliate";a:3:{s:4:"name";s:9:"affiliate";s:4:"slug";s:9:"affiliate";s:5:"count";i:438;}s:4:"tags";a:3:{s:4:"name";s:4:"tags";s:4:"slug";s:4:"tags";s:5:"count";i:435;}s:6:"button";a:3:{s:4:"name";s:6:"button";s:4:"slug";s:6:"button";s:5:"count";i:435;}s:6:"editor";a:3:{s:4:"name";s:6:"editor";s:4:"slug";s:6:"editor";s:5:"count";i:434;}s:5:"photo";a:3:{s:4:"name";s:5:"photo";s:4:"slug";s:5:"photo";s:5:"count";i:422;}s:12:"contact-form";a:3:{s:4:"name";s:12:"contact form";s:4:"slug";s:12:"contact-form";s:5:"count";i:420;}s:4:"user";a:3:{s:4:"name";s:4:"user";s:4:"slug";s:4:"user";s:5:"count";i:410;}s:9:"slideshow";a:3:{s:4:"name";s:9:"slideshow";s:4:"slug";s:9:"slideshow";s:5:"count";i:407;}s:6:"mobile";a:3:{s:4:"name";s:6:"mobile";s:4:"slug";s:6:"mobile";s:5:"count";i:402;}s:5:"stats";a:3:{s:4:"name";s:5:"stats";s:4:"slug";s:5:"stats";s:5:"count";i:399;}s:7:"contact";a:3:{s:4:"name";s:7:"contact";s:4:"slug";s:7:"contact";s:5:"count";i:399;}s:5:"users";a:3:{s:4:"name";s:5:"users";s:4:"slug";s:5:"users";s:5:"count";i:398;}s:6:"photos";a:3:{s:4:"name";s:6:"photos";s:4:"slug";s:6:"photos";s:5:"count";i:394;}s:3:"api";a:3:{s:4:"name";s:3:"api";s:4:"slug";s:3:"api";s:5:"count";i:379;}s:10:"statistics";a:3:{s:4:"name";s:10:"statistics";s:4:"slug";s:10:"statistics";s:5:"count";i:378;}s:6:"events";a:3:{s:4:"name";s:6:"events";s:4:"slug";s:6:"events";s:5:"count";i:371;}s:10:"navigation";a:3:{s:4:"name";s:10:"navigation";s:4:"slug";s:10:"navigation";s:5:"count";i:368;}s:4:"news";a:3:{s:4:"name";s:4:"news";s:4:"slug";s:4:"news";s:5:"count";i:350;}s:8:"calendar";a:3:{s:4:"name";s:8:"calendar";s:4:"slug";s:8:"calendar";s:5:"count";i:342;}s:9:"multisite";a:3:{s:4:"name";s:9:"multisite";s:4:"slug";s:9:"multisite";s:5:"count";i:333;}s:7:"plugins";a:3:{s:4:"name";s:7:"plugins";s:4:"slug";s:7:"plugins";s:5:"count";i:331;}s:12:"social-media";a:3:{s:4:"name";s:12:"social media";s:4:"slug";s:12:"social-media";s:5:"count";i:330;}s:7:"payment";a:3:{s:4:"name";s:7:"payment";s:4:"slug";s:7:"payment";s:5:"count";i:328;}s:10:"shortcodes";a:3:{s:4:"name";s:10:"shortcodes";s:4:"slug";s:10:"shortcodes";s:5:"count";i:327;}s:4:"code";a:3:{s:4:"name";s:4:"code";s:4:"slug";s:4:"code";s:5:"count";i:322;}s:10:"newsletter";a:3:{s:4:"name";s:10:"newsletter";s:4:"slug";s:10:"newsletter";s:5:"count";i:321;}s:4:"meta";a:3:{s:4:"name";s:4:"meta";s:4:"slug";s:4:"meta";s:5:"count";i:320;}s:4:"list";a:3:{s:4:"name";s:4:"list";s:4:"slug";s:4:"list";s:5:"count";i:320;}s:3:"url";a:3:{s:4:"name";s:3:"url";s:4:"slug";s:3:"url";s:5:"count";i:316;}s:5:"popup";a:3:{s:4:"name";s:5:"popup";s:4:"slug";s:5:"popup";s:5:"count";i:310;}s:9:"marketing";a:3:{s:4:"name";s:9:"marketing";s:4:"slug";s:9:"marketing";s:5:"count";i:300;}s:6:"simple";a:3:{s:4:"name";s:6:"simple";s:4:"slug";s:6:"simple";s:5:"count";i:298;}s:4:"chat";a:3:{s:4:"name";s:4:"chat";s:4:"slug";s:4:"chat";s:5:"count";i:292;}s:3:"tag";a:3:{s:4:"name";s:3:"tag";s:4:"slug";s:3:"tag";s:5:"count";i:290;}s:8:"redirect";a:3:{s:4:"name";s:8:"redirect";s:4:"slug";s:8:"redirect";s:5:"count";i:289;}s:16:"custom-post-type";a:3:{s:4:"name";s:16:"custom post type";s:4:"slug";s:16:"custom-post-type";s:5:"count";i:287;}s:11:"advertising";a:3:{s:4:"name";s:11:"advertising";s:4:"slug";s:11:"advertising";s:5:"count";i:283;}s:6:"author";a:3:{s:4:"name";s:6:"author";s:4:"slug";s:6:"author";s:5:"count";i:282;}s:4:"html";a:3:{s:4:"name";s:4:"html";s:4:"slug";s:4:"html";s:5:"count";i:279;}s:7:"adsense";a:3:{s:4:"name";s:7:"adsense";s:4:"slug";s:7:"adsense";s:5:"count";i:278;}s:15:"payment-gateway";a:3:{s:4:"name";s:15:"payment gateway";s:4:"slug";s:15:"payment-gateway";s:5:"count";i:276;}s:5:"forms";a:3:{s:4:"name";s:5:"forms";s:4:"slug";s:5:"forms";s:5:"count";i:273;}s:8:"lightbox";a:3:{s:4:"name";s:8:"lightbox";s:4:"slug";s:8:"lightbox";s:5:"count";i:273;}s:14:"administration";a:3:{s:4:"name";s:14:"administration";s:4:"slug";s:14:"administration";s:5:"count";i:265;}s:7:"captcha";a:3:{s:4:"name";s:7:"captcha";s:4:"slug";s:7:"captcha";s:5:"count";i:264;}s:5:"cache";a:3:{s:4:"name";s:5:"cache";s:4:"slug";s:5:"cache";s:5:"count";i:264;}s:12:"notification";a:3:{s:4:"name";s:12:"notification";s:4:"slug";s:12:"notification";s:5:"count";i:263;}}', 'no'),
+(327, 'cptui_new_install', 'false', 'yes');
+INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
+(328, 'cptui_post_types', 'a:1:{s:8:"products";a:28:{s:4:"name";s:8:"products";s:5:"label";s:12:"Товары";s:14:"singular_label";s:12:"Товары";s:11:"description";s:0:"";s:6:"public";s:4:"true";s:18:"publicly_queryable";s:4:"true";s:7:"show_ui";s:4:"true";s:17:"show_in_nav_menus";s:4:"true";s:12:"show_in_rest";s:5:"false";s:9:"rest_base";s:0:"";s:11:"has_archive";s:5:"false";s:18:"has_archive_string";s:0:"";s:19:"exclude_from_search";s:5:"false";s:15:"capability_type";s:4:"post";s:12:"hierarchical";s:5:"false";s:7:"rewrite";s:4:"true";s:12:"rewrite_slug";s:0:"";s:17:"rewrite_withfront";s:4:"true";s:9:"query_var";s:4:"true";s:14:"query_var_slug";s:0:"";s:13:"menu_position";s:0:"";s:12:"show_in_menu";s:4:"true";s:19:"show_in_menu_string";s:0:"";s:9:"menu_icon";s:0:"";s:8:"supports";a:4:{i:0;s:5:"title";i:1;s:6:"editor";i:2;s:9:"thumbnail";i:3;s:7:"excerpt";}s:10:"taxonomies";a:0:{}s:6:"labels";a:23:{s:9:"menu_name";s:12:"Товары";s:9:"all_items";s:6:"Все";s:7:"add_new";s:16:"Добавить";s:12:"add_new_item";s:16:"Добавить";s:9:"edit_item";s:26:"Редактировать";s:8:"new_item";s:10:"Новый";s:9:"view_item";s:16:"Просмотр";s:10:"view_items";s:16:"Просмотр";s:12:"search_items";s:10:"Поиск";s:9:"not_found";s:10:"Пусто";s:18:"not_found_in_trash";s:0:"";s:17:"parent_item_colon";s:0:"";s:14:"featured_image";s:0:"";s:18:"set_featured_image";s:0:"";s:21:"remove_featured_image";s:0:"";s:18:"use_featured_image";s:0:"";s:8:"archives";s:0:"";s:16:"insert_into_item";s:0:"";s:21:"uploaded_to_this_item";s:0:"";s:17:"filter_items_list";s:0:"";s:21:"items_list_navigation";s:0:"";s:10:"items_list";s:0:"";s:10:"attributes";s:0:"";}s:15:"custom_supports";s:0:"";}}', 'yes'),
+(336, '_transient_timeout_acf_pro_get_remote_info', '1499816554', 'no'),
+(337, '_transient_acf_pro_get_remote_info', 'a:15:{s:4:"name";s:26:"Advanced Custom Fields PRO";s:4:"slug";s:26:"advanced-custom-fields-pro";s:8:"homepage";s:37:"https://www.advancedcustomfields.com/";s:7:"version";s:6:"5.5.14";s:6:"author";s:13:"Elliot Condon";s:10:"author_url";s:28:"http://www.elliotcondon.com/";s:12:"contributors";s:12:"elliotcondon";s:8:"requires";s:5:"3.6.0";s:6:"tested";s:5:"4.8.0";s:4:"tags";a:62:{i:0;s:11:"5.6.0-beta2";i:1;s:11:"5.6.0-beta1";i:2;s:5:"5.5.9";i:3;s:5:"5.5.7";i:4;s:5:"5.5.5";i:5;s:5:"5.5.3";i:6;s:5:"5.5.2";i:7;s:6:"5.5.13";i:8;s:6:"5.5.12";i:9;s:6:"5.5.11";i:10;s:6:"5.5.10";i:11;s:5:"5.5.1";i:12;s:5:"5.5.0";i:13;s:5:"5.4.8";i:14;s:5:"5.4.7";i:15;s:5:"5.4.6";i:16;s:5:"5.4.5";i:17;s:5:"5.4.4";i:18;s:5:"5.4.3";i:19;s:5:"5.4.2";i:20;s:5:"5.4.1";i:21;s:5:"5.4.0";i:22;s:5:"5.3.8";i:23;s:5:"5.3.7";i:24;s:5:"5.3.6";i:25;s:5:"5.3.5";i:26;s:5:"5.3.4";i:27;s:5:"5.3.3";i:28;s:5:"5.3.2";i:29;s:6:"5.3.10";i:30;s:5:"5.3.1";i:31;s:5:"5.3.0";i:32;s:5:"5.2.9";i:33;s:5:"5.2.8";i:34;s:5:"5.2.7";i:35;s:5:"5.2.6";i:36;s:5:"5.2.5";i:37;s:5:"5.2.4";i:38;s:5:"5.2.3";i:39;s:5:"5.2.2";i:40;s:5:"5.2.1";i:41;s:5:"5.2.0";i:42;s:5:"5.1.9";i:43;s:5:"5.1.8";i:44;s:5:"5.1.7";i:45;s:5:"5.1.6";i:46;s:5:"5.1.5";i:47;s:5:"5.1.4";i:48;s:5:"5.1.3";i:49;s:5:"5.1.2";i:50;s:5:"5.1.1";i:51;s:5:"5.1.0";i:52;s:5:"5.0.9";i:53;s:5:"5.0.8";i:54;s:5:"5.0.7";i:55;s:5:"5.0.6";i:56;s:5:"5.0.5";i:57;s:5:"5.0.4";i:58;s:5:"5.0.3";i:59;s:5:"5.0.2";i:60;s:5:"5.0.1";i:61;s:5:"5.0.0";}s:6:"tagged";s:123:"acf, advanced, custom, field, fields, custom field, custom fields, simple fields, magic fields, more fields, repeater, edit";s:11:"description";s:4337:"<p>Advanced Custom Fields is the perfect solution for any WordPress website which needs more flexible data like other Content Management Systems. </p>\n<ul><li>Visually create your Fields</li><li>Select from multiple input types (text, textarea, wysiwyg, image, file, page link, post object, relationship, select, checkbox, radio buttons, date picker, true / false, repeater, flexible content, gallery and more to come!)</li><li>Assign your fields to multiple edit pages (via custom location rules)</li><li>Easily load data through a simple and friendly API</li><li>Uses the native WordPress custom post type for ease of use and fast processing</li><li>Uses the native WordPress metadata for ease of use and fast processing</li></ul>\n<h4> Field Types </h4>\n<ul><li>Text (type text, api returns text)</li><li>Text Area (type text, api returns text)</li><li>Number (type number, api returns integer)</li><li>Email (type email, api returns text)</li><li>Password (type password, api returns text)</li><li>WYSIWYG (a WordPress wysiwyg editor, api returns html)</li><li>Image (upload an image, api returns the url)</li><li>File (upload a file, api returns the url)</li><li>Select (drop down list of choices, api returns chosen item)</li><li>Checkbox (tickbox list of choices, api returns array of choices)</li><li>Radio Buttons ( radio button list of choices, api returns chosen item)</li><li>True / False (tick box with message, api returns true or false)</li><li>Page Link (select 1 or more page, post or custom post types, api returns the selected url)</li><li>Post Object (select 1 or more page, post or custom post types, api returns the selected post objects)</li><li>Relationship (search, select and order post objects with a tidy interface, api returns the selected post objects)</li><li>Taxonomy (select taxonomy terms with options to load, display and save, api returns the selected term objects)</li><li>User (select 1 or more WP users, api returns the selected user objects)</li><li>Google Maps (interactive map, api returns lat,lng,address data)</li><li>Date Picker (jquery date picker, options for format, api returns string)</li><li>Color Picker (WP color swatch picker)</li><li>Tab (Group fields into tabs)</li><li>Message (Render custom messages into the fields)</li><li>Repeater (ability to create repeatable blocks of fields!)</li><li>Flexible Content (ability to create flexible blocks of fields!)</li><li>Gallery (Add, edit and order multiple images in 1 simple field)</li><li>[Custom](<a href="https://www.advancedcustomfields.com/resources/tutorials/creating-a-new-field-type/)">www.advancedcustomfields.com/resources/tutorials/creating-a-new-field-type/)</a> (Create your own field type!)</li></ul>\n<h4> Tested on </h4>\n<ul><li>Mac Firefox 	:)</li><li>Mac Safari 	:)</li><li>Mac Chrome	:)</li><li>PC Safari 	:)</li><li>PC Chrome		:)</li><li>PC Firefox	:)</li><li>iPhone Safari :)</li><li>iPad Safari 	:)</li><li>PC ie7		:S</li></ul>\n<h4> Website </h4>\n<p><a href="https://www.advancedcustomfields.com/">www.advancedcustomfields.com/</a></p>\n<h4> Documentation </h4>\n<ul><li>[Getting Started](<a href="https://www.advancedcustomfields.com/resources/#getting-started)">www.advancedcustomfields.com/resources/#getting-started)</a></li><li>[Field Types](<a href="https://www.advancedcustomfields.com/resources/#field-types)">www.advancedcustomfields.com/resources/#field-types)</a></li><li>[Functions](<a href="https://www.advancedcustomfields.com/resources/#functions)">www.advancedcustomfields.com/resources/#functions)</a></li><li>[Actions](<a href="https://www.advancedcustomfields.com/resources/#actions)">www.advancedcustomfields.com/resources/#actions)</a></li><li>[Filters](<a href="https://www.advancedcustomfields.com/resources/#filters)">www.advancedcustomfields.com/resources/#filters)</a></li><li>[How to guides](<a href="https://www.advancedcustomfields.com/resources/#how-to)">www.advancedcustomfields.com/resources/#how-to)</a></li><li>[Tutorials](<a href="https://www.advancedcustomfields.com/resources/#tutorials)">www.advancedcustomfields.com/resources/#tutorials)</a></li></ul>\n<h4> Bug Submission and Forum Support </h4>\n<p><a href="http://support.advancedcustomfields.com/">support.advancedcustomfields.com/</a></p>\n<h4> Please Vote and Enjoy </h4>\n<p>Your votes really make a difference! Thanks.</p>\n";s:12:"installation";s:467:"<ol><li>Upload <code>advanced-custom-fields</code> to the <code>/wp-content/plugins/</code> directory</li><li>Activate the plugin through the <code>Plugins</code> menu in WordPress</li><li>Click on the new menu item "Custom Fields" and create your first Custom Field Group!</li><li>Your custom field group will now appear on the page / post / template you specified in the field group''s location rules!</li><li>Read the documentation to display your data: </li></ol>\n";s:9:"changelog";s:4168:"<h4> 5.5.14 </h4>\n<ul><li>Core: Minor bug fixes</li></ul>\n<h4> 5.5.13 </h4>\n<ul><li>Clone field: Improved <code>Fields</code> setting to show all fields within a matching field group search</li><li>Flexible Content field: Fixed bug causing <code>layout_title</code> filter to fail when field is cloned</li><li>Flexible Content field: Added missing <code>translate_field</code> function</li><li>WYSIWYG field: Fixed JS error when using CKEditor plugin</li><li>Date Picker field: Improved <code>Display Format</code> and <code>Return Format</code> settings UI</li><li>Time Picker field: Same as above</li><li>Datetime Picker field: Same as above</li><li>Core: Added new <code>remove_wp_meta_box</code> setting</li><li>Core: Added constants ACF, ACF_PRO, ACF_VERSION and ACF_PATH</li><li>Core: Improved compatibility with Select2 v4 including sortable functionality</li><li>Language: Updated Portuguese translation - thanks to Pedro Mendonça</li></ul>\n<h4> 5.5.12 </h4>\n<ul><li>Tab field: Allowed HTML within field label to show in tab</li><li>Core: Improved plugin update class</li><li>Language: Updated Portuguese translation - thanks to Pedro Mendonça</li><li>Language: Updated Brazilian Portuguese translation - thanks to Rafael Ribeiro</li></ul>\n<h4> 5.5.11 </h4>\n<ul><li>Google Map field: Added new <code>google_map_init</code> JS action</li><li>Core: Minor fixes and improvements</li><li>Language: Updated Swiss German translation - thanks to Raphael Hüni</li><li>Language: Updated French translation - thanks to Maxime Bernard-Jacquet</li></ul>\n<h4> 5.5.10 </h4>\n<ul><li>API: Added new functionality to the `acf_form()` function:</li><li>- added new <code>html_updated_message</code> setting</li><li>- added new <code>html_submit_button</code> setting</li><li>- added new <code>html_submit_spinner</code> setting</li><li>- added new <code>acf/pre_submit_form</code> filter run when form is successfully submit (before saving $_POST)</li><li>- added new <code>acf/submit_form</code> action run when form is successfully submit (after saving $_POST)</li><li>- added new <code>%post_id%</code> replace string to the <code>return</code> setting</li><li>- added new encryption logic to prevent $_POST exploits</li><li>- added new `acf_register_form()` function</li><li>Core: Fixed bug preventing values being loaded on a new post/page preview</li><li>Core: Fixed missing <code>Bulk Actions</code> dropdown on sync screen when no field groups exist</li><li>Core: Fixed bug ignoring PHP field groups if exists in JSON</li><li>Core: Minor fixes and improvements</li></ul>\n<h4> 5.5.9 </h4>\n<ul><li>Core: Fixed bug causing ACF4 PHP field groups to be ignored if missing ‘key’ setting</li></ul>\n<h4> 5.5.8 </h4>\n<ul><li>Flexible Content: Added logic to better <code>clean up</code> data when re-ordering layouts</li><li>oEmbed field: Fixed bug causing incorrect width and height settings in embed HTML</li><li>Core: Fixed bug causing incorrect Select2 CSS version loading for WooCommerce 2.7</li><li>Core: Fixed bug preventing <code>min-height</code> style being applied to floating width fields</li><li>Core: Added new JS <code>init</code> actions for wysiwyg, date, datetime, time and select2 fields</li><li>Core: Minor fixes and improvements</li></ul>\n<h4> 5.5.7 </h4>\n<ul><li>Core: Fixed bug causing `get_field()` to return incorrect data for sub fields registered via PHP code.</li></ul>\n<h4> 5.5.6 </h4>\n<ul><li>Core: Fixed bug causing license key to be ignored after changing url from http to https</li><li>Core: Fixed Select2 (v4) bug where <code>allow null</code> setting would not correctly save empty value</li><li>Core: Added new <code>acf/validate_field</code> filter</li><li>Core: Added new <code>acf/validate_field_group</code> filter</li><li>Core: Added new <code>acf/validate_post_id</code> filter</li><li>Core: Added new <code>row_index_offset</code> setting</li><li>Core: Fixed bug causing value loading issues for a taxonomy term in WP < 4.4</li><li>Core: Minor fixes and improvements</li></ul>\n<h4> 5.5.5 </h4>\n<ul><li>File field: Fixed bug creating draft post when saving an empty value</li><li>Image field: Fixed bug mentioned above</li></ul>\n";s:14:"upgrade_notice";s:551:"<h4> 5.2.7 </h4>\n<ul><li>Field class names have changed slightly in v5.2.7 from `field_type-{$type}` to `acf-field-{$type}`. This change was introduced to better optimise JS performance. The previous class names can be added back in with the following filter: <a href="https://www.advancedcustomfields.com/resources/acfcompatibility/">www.advancedcustomfields.com/resources/acfcompatibility/</a></li></ul>\n<h4> 3.0.0 </h4>\n<ul><li>Editor is broken in WordPress 3.3</li></ul>\n<h4> 2.1.4 </h4>\n<ul><li>Adds post_id column back into acf_values</li></ul>\n";}', 'no'),
+(338, 'acf_version', '5.5.14', 'yes'),
+(340, 'acf_pro_license', 'YToyOntzOjM6ImtleSI7czo3MjoiYjNKa1pYSmZhV1E5TlRRME5qSjhkSGx3WlQxa1pYWmxiRzl3WlhKOFpHRjBaVDB5TURFMUxUQTBMVEl3SURFd09qUTBPakF5IjtzOjM6InVybCI7czoxMjoiaHR0cDovL3BhaG5vIjt9', 'yes'),
+(341, '_site_transient_update_plugins', 'O:8:"stdClass":4:{s:12:"last_checked";i:1499773418;s:8:"response";a:0:{}s:12:"translations";a:0:{}s:9:"no_update";a:3:{s:19:"akismet/akismet.php";O:8:"stdClass":6:{s:2:"id";s:21:"w.org/plugins/akismet";s:4:"slug";s:7:"akismet";s:6:"plugin";s:19:"akismet/akismet.php";s:11:"new_version";s:5:"3.3.2";s:3:"url";s:38:"https://wordpress.org/plugins/akismet/";s:7:"package";s:56:"https://downloads.wordpress.org/plugin/akismet.3.3.2.zip";}s:43:"custom-post-type-ui/custom-post-type-ui.php";O:8:"stdClass":6:{s:2:"id";s:33:"w.org/plugins/custom-post-type-ui";s:4:"slug";s:19:"custom-post-type-ui";s:6:"plugin";s:43:"custom-post-type-ui/custom-post-type-ui.php";s:11:"new_version";s:5:"1.5.4";s:3:"url";s:50:"https://wordpress.org/plugins/custom-post-type-ui/";s:7:"package";s:68:"https://downloads.wordpress.org/plugin/custom-post-type-ui.1.5.4.zip";}s:9:"hello.php";O:8:"stdClass":6:{s:2:"id";s:25:"w.org/plugins/hello-dolly";s:4:"slug";s:11:"hello-dolly";s:6:"plugin";s:9:"hello.php";s:11:"new_version";s:3:"1.6";s:3:"url";s:42:"https://wordpress.org/plugins/hello-dolly/";s:7:"package";s:58:"https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip";}}}', 'no'),
+(344, 'category_children', 'a:0:{}', 'yes');
 
 -- --------------------------------------------------------
 
@@ -396,7 +407,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=103 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=204 ;
 
 --
 -- Дамп данных таблицы `wp_postmeta`
@@ -416,42 +427,6 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (11, 9, '_menu_item_xfn', ''),
 (12, 9, '_menu_item_url', 'http://pahno/'),
 (13, 9, '_menu_item_orphaned', '1499684935'),
-(14, 10, '_menu_item_type', 'post_type'),
-(15, 10, '_menu_item_menu_item_parent', '0'),
-(16, 10, '_menu_item_object_id', '5'),
-(17, 10, '_menu_item_object', 'page'),
-(18, 10, '_menu_item_target', ''),
-(19, 10, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
-(20, 10, '_menu_item_xfn', ''),
-(21, 10, '_menu_item_url', ''),
-(22, 10, '_menu_item_orphaned', '1499684936'),
-(23, 11, '_menu_item_type', 'post_type'),
-(24, 11, '_menu_item_menu_item_parent', '0'),
-(25, 11, '_menu_item_object_id', '4'),
-(26, 11, '_menu_item_object', 'page'),
-(27, 11, '_menu_item_target', ''),
-(28, 11, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
-(29, 11, '_menu_item_xfn', ''),
-(30, 11, '_menu_item_url', ''),
-(31, 11, '_menu_item_orphaned', '1499684936'),
-(32, 12, '_menu_item_type', 'post_type'),
-(33, 12, '_menu_item_menu_item_parent', '0'),
-(34, 12, '_menu_item_object_id', '7'),
-(35, 12, '_menu_item_object', 'page'),
-(36, 12, '_menu_item_target', ''),
-(37, 12, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
-(38, 12, '_menu_item_xfn', ''),
-(39, 12, '_menu_item_url', ''),
-(40, 12, '_menu_item_orphaned', '1499684937'),
-(41, 13, '_menu_item_type', 'post_type'),
-(42, 13, '_menu_item_menu_item_parent', '0'),
-(43, 13, '_menu_item_object_id', '6'),
-(44, 13, '_menu_item_object', 'page'),
-(45, 13, '_menu_item_target', ''),
-(46, 13, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
-(47, 13, '_menu_item_xfn', ''),
-(48, 13, '_menu_item_url', ''),
-(49, 13, '_menu_item_orphaned', '1499684939'),
 (50, 14, '_menu_item_type', 'post_type'),
 (51, 14, '_menu_item_menu_item_parent', '0'),
 (52, 14, '_menu_item_object_id', '2'),
@@ -500,7 +475,91 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (99, 19, '_menu_item_target', ''),
 (100, 19, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
 (101, 19, '_menu_item_xfn', ''),
-(102, 19, '_menu_item_url', '#');
+(102, 19, '_menu_item_url', '#'),
+(103, 21, '_wp_attached_file', '2017/07/prod-1.png'),
+(104, 21, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:70;s:6:"height";i:200;s:4:"file";s:18:"2017/07/prod-1.png";s:5:"sizes";a:2:{s:9:"thumbnail";a:4:{s:4:"file";s:17:"prod-1-70x150.png";s:5:"width";i:70;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:14:"image-auto-200";a:4:{s:4:"file";s:17:"prod-1-70x200.png";s:5:"width";i:70;s:6:"height";i:200;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}'),
+(105, 22, '_wp_attached_file', '2017/07/prod-2.png'),
+(106, 22, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:219;s:6:"height";i:200;s:4:"file";s:18:"2017/07/prod-2.png";s:5:"sizes";a:2:{s:9:"thumbnail";a:4:{s:4:"file";s:18:"prod-2-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:14:"image-auto-200";a:4:{s:4:"file";s:18:"prod-2-219x200.png";s:5:"width";i:219;s:6:"height";i:200;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}'),
+(107, 23, '_wp_attached_file', '2017/07/prod-3.png'),
+(108, 23, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:70;s:6:"height";i:200;s:4:"file";s:18:"2017/07/prod-3.png";s:5:"sizes";a:2:{s:9:"thumbnail";a:4:{s:4:"file";s:17:"prod-3-70x150.png";s:5:"width";i:70;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:14:"image-auto-200";a:4:{s:4:"file";s:17:"prod-3-70x200.png";s:5:"width";i:70;s:6:"height";i:200;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}'),
+(109, 24, '_wp_attached_file', '2017/07/prod-4.png'),
+(110, 24, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:128;s:6:"height";i:200;s:4:"file";s:18:"2017/07/prod-4.png";s:5:"sizes";a:2:{s:9:"thumbnail";a:4:{s:4:"file";s:18:"prod-4-128x150.png";s:5:"width";i:128;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:14:"image-auto-200";a:4:{s:4:"file";s:18:"prod-4-128x200.png";s:5:"width";i:128;s:6:"height";i:200;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}'),
+(111, 20, '_edit_last', '1'),
+(112, 20, '_edit_lock', '1499788034:1'),
+(113, 20, '_thumbnail_id', '23'),
+(114, 25, '_edit_last', '1'),
+(115, 25, '_edit_lock', '1499788034:1'),
+(116, 25, '_thumbnail_id', '22'),
+(117, 26, '_edit_last', '1'),
+(118, 26, '_edit_lock', '1499788033:1'),
+(119, 26, '_thumbnail_id', '23'),
+(120, 27, '_edit_last', '1'),
+(121, 27, '_edit_lock', '1499788033:1'),
+(139, 2, '_edit_lock', '1499787522:1'),
+(140, 2, '_edit_last', '1'),
+(141, 36, '_edit_last', '1'),
+(142, 36, '_edit_lock', '1499773517:1'),
+(143, 38, '_edit_last', '1'),
+(144, 38, '_edit_lock', '1499775190:1'),
+(145, 2, 'popular-goods', ''),
+(146, 2, '_popular-goods', 'field_5964bb23455c9'),
+(147, 40, 'popular-goods', 'a:4:{i:0;s:2:"26";i:1;s:2:"27";i:2;s:2:"25";i:3;s:2:"20";}'),
+(148, 40, '_popular-goods', 'field_5964bb23455c9'),
+(149, 41, 'popular-goods', ''),
+(150, 41, '_popular-goods', 'field_5964bb23455c9'),
+(151, 2, 'popular_goods', 'a:4:{i:0;s:2:"27";i:1;s:2:"26";i:2;s:2:"25";i:3;s:2:"20";}'),
+(152, 2, '_popular_goods', 'field_5964bb23455c9'),
+(153, 42, 'popular-goods', ''),
+(154, 42, '_popular-goods', 'field_5964bb23455c9'),
+(155, 42, 'popular_goods', 'a:4:{i:0;s:2:"20";i:1;s:2:"25";i:2;s:2:"27";i:3;s:2:"26";}'),
+(156, 42, '_popular_goods', 'field_5964bb23455c9'),
+(157, 27, '_thumbnail_id', '24'),
+(158, 43, 'popular-goods', ''),
+(159, 43, '_popular-goods', 'field_5964bb23455c9'),
+(160, 43, 'popular_goods', 'a:3:{i:0;s:2:"20";i:1;s:2:"25";i:2;s:2:"27";}'),
+(161, 43, '_popular_goods', 'field_5964bb23455c9'),
+(162, 44, 'popular-goods', ''),
+(163, 44, '_popular-goods', 'field_5964bb23455c9'),
+(164, 44, 'popular_goods', 'a:4:{i:0;s:2:"20";i:1;s:2:"25";i:2;s:2:"27";i:3;s:2:"26";}'),
+(165, 44, '_popular_goods', 'field_5964bb23455c9'),
+(166, 45, 'popular-goods', ''),
+(167, 45, '_popular-goods', 'field_5964bb23455c9'),
+(168, 45, 'popular_goods', 'a:4:{i:0;s:2:"20";i:1;s:2:"27";i:2;s:2:"25";i:3;s:2:"26";}'),
+(169, 45, '_popular_goods', 'field_5964bb23455c9'),
+(170, 46, 'popular-goods', ''),
+(171, 46, '_popular-goods', 'field_5964bb23455c9'),
+(172, 46, 'popular_goods', 'a:4:{i:0;s:2:"27";i:1;s:2:"20";i:2;s:2:"25";i:3;s:2:"26";}'),
+(173, 46, '_popular_goods', 'field_5964bb23455c9'),
+(174, 47, 'popular-goods', ''),
+(175, 47, '_popular-goods', 'field_5964bb23455c9'),
+(176, 47, 'popular_goods', 'a:4:{i:0;s:2:"27";i:1;s:2:"26";i:2;s:2:"25";i:3;s:2:"20";}'),
+(177, 47, '_popular_goods', 'field_5964bb23455c9'),
+(178, 48, '_edit_last', '1'),
+(179, 48, '_edit_lock', '1499788404:1'),
+(180, 27, 'price', '14 740'),
+(181, 27, '_price', 'field_5964f1a897d92'),
+(182, 27, 'old_price', '18 740'),
+(183, 27, '_old_price', 'field_5964f1c097d93'),
+(184, 27, 'dose', '150 мл.'),
+(185, 27, '_dose', 'field_5964f1da97d94'),
+(186, 25, 'price', '2880'),
+(187, 25, '_price', 'field_5964f1a897d92'),
+(188, 25, 'old_price', ''),
+(189, 25, '_old_price', 'field_5964f1c097d93'),
+(190, 25, 'dose', '500 мл.'),
+(191, 25, '_dose', 'field_5964f1da97d94'),
+(192, 20, 'price', '1800'),
+(193, 20, '_price', 'field_5964f1a897d92'),
+(194, 20, 'old_price', ''),
+(195, 20, '_old_price', 'field_5964f1c097d93'),
+(196, 20, 'dose', '30 мл.'),
+(197, 20, '_dose', 'field_5964f1da97d94'),
+(198, 26, 'price', '4100'),
+(199, 26, '_price', 'field_5964f1a897d92'),
+(200, 26, 'old_price', ''),
+(201, 26, '_old_price', 'field_5964f1c097d93'),
+(202, 26, 'dose', '50 мл.'),
+(203, 26, '_dose', 'field_5964f1da97d94');
 
 -- --------------------------------------------------------
 
@@ -537,7 +596,7 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=20 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=52 ;
 
 --
 -- Дамп данных таблицы `wp_posts`
@@ -545,24 +604,42 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
 
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
 (1, 1, '2017-07-10 10:03:22', '2017-07-10 07:03:22', 'Добро пожаловать в WordPress. Это ваша первая запись. Отредактируйте или удалите её, затем пишите!', 'Привет, мир!', '', 'publish', 'open', 'open', '', '%d0%bf%d1%80%d0%b8%d0%b2%d0%b5%d1%82-%d0%bc%d0%b8%d1%80', '', '', '2017-07-10 10:03:22', '2017-07-10 07:03:22', '', 0, 'http://pahno/?p=1', 0, 'post', '', 1),
-(2, 1, '2017-07-10 10:03:22', '2017-07-10 07:03:22', 'Это пример страницы. От записей в блоге она отличается тем, что остаётся на одном месте и отображается в меню сайта (в большинстве тем). На странице &laquo;Детали&raquo; владельцы сайтов обычно рассказывают о себе потенциальным посетителям. Например, так:\n\n<blockquote>Привет! Днём я курьер, а вечером &#8212; подающий надежды актёр. Это мой блог. Я живу в Ростове-на-Дону, люблю своего пса Джека и пинаколаду. (И ещё попадать под дождь.)</blockquote>\n\n...или так:\n\n<blockquote>Компания &laquo;Штучки XYZ&raquo; была основана в 1971 году и с тех пор производит качественные штучки. Компания находится в Готэм-сити, имеет штат из более чем 2000 сотрудников и приносит много пользы жителям Готэма.</blockquote>\n\nПерейдите <a href="http://pahno/wp-admin/">в консоль</a>, чтобы удалить эту страницу и создать новые. Успехов!', 'Пример страницы', '', 'publish', 'closed', 'open', '', 'sample-page', '', '', '2017-07-10 10:03:22', '2017-07-10 07:03:22', '', 0, 'http://pahno/?page_id=2', 0, 'page', '', 0),
+(2, 1, '2017-07-10 10:03:22', '2017-07-10 07:03:22', '', 'Главная', '', 'publish', 'closed', 'open', '', 'sample-page', '', '', '2017-07-11 17:29:23', '2017-07-11 14:29:23', '', 0, 'http://pahno/?page_id=2', 0, 'page', '', 0),
 (3, 1, '2017-07-10 10:03:58', '0000-00-00 00:00:00', '', 'Черновик', '', 'auto-draft', 'open', 'open', '', '', '', '', '2017-07-10 10:03:58', '0000-00-00 00:00:00', '', 0, 'http://pahno/?p=3', 0, 'post', '', 0),
-(4, 1, '2017-07-10 12:10:51', '2017-07-10 09:10:51', '', 'Магазин', '', 'publish', 'closed', 'closed', '', 'shop', '', '', '2017-07-10 12:10:51', '2017-07-10 09:10:51', '', 0, 'http://pahno/shop/', 0, 'page', '', 0),
-(5, 1, '2017-07-10 12:10:51', '2017-07-10 09:10:51', '[woocommerce_cart]', 'Корзина', '', 'publish', 'closed', 'closed', '', 'cart', '', '', '2017-07-10 12:10:51', '2017-07-10 09:10:51', '', 0, 'http://pahno/cart/', 0, 'page', '', 0),
-(6, 1, '2017-07-10 12:10:51', '2017-07-10 09:10:51', '[woocommerce_checkout]', 'Оформление заказа', '', 'publish', 'closed', 'closed', '', 'checkout', '', '', '2017-07-10 12:10:51', '2017-07-10 09:10:51', '', 0, 'http://pahno/checkout/', 0, 'page', '', 0),
-(7, 1, '2017-07-10 12:10:52', '2017-07-10 09:10:52', '[woocommerce_my_account]', 'Мой аккаунт', '', 'publish', 'closed', 'closed', '', 'my-account', '', '', '2017-07-10 12:10:52', '2017-07-10 09:10:52', '', 0, 'http://pahno/my-account/', 0, 'page', '', 0),
 (8, 1, '2017-07-10 12:20:03', '0000-00-00 00:00:00', '', 'AUTO-DRAFT', '', 'auto-draft', 'open', 'closed', '', '', '', '', '2017-07-10 12:20:03', '0000-00-00 00:00:00', '', 0, 'http://pahno/?post_type=product&p=8', 0, 'product', '', 0),
 (9, 1, '2017-07-10 14:08:54', '0000-00-00 00:00:00', '', 'Главная', '', 'draft', 'closed', 'closed', '', '', '', '', '2017-07-10 14:08:54', '0000-00-00 00:00:00', '', 0, 'http://pahno/?p=9', 1, 'nav_menu_item', '', 0),
-(10, 1, '2017-07-10 14:08:55', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'closed', 'closed', '', '', '', '', '2017-07-10 14:08:55', '0000-00-00 00:00:00', '', 0, 'http://pahno/?p=10', 1, 'nav_menu_item', '', 0),
-(11, 1, '2017-07-10 14:08:56', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'closed', 'closed', '', '', '', '', '2017-07-10 14:08:56', '0000-00-00 00:00:00', '', 0, 'http://pahno/?p=11', 1, 'nav_menu_item', '', 0),
-(12, 1, '2017-07-10 14:08:56', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'closed', 'closed', '', '', '', '', '2017-07-10 14:08:56', '0000-00-00 00:00:00', '', 0, 'http://pahno/?p=12', 1, 'nav_menu_item', '', 0),
-(13, 1, '2017-07-10 14:08:58', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'closed', 'closed', '', '', '', '', '2017-07-10 14:08:58', '0000-00-00 00:00:00', '', 0, 'http://pahno/?p=13', 1, 'nav_menu_item', '', 0),
 (14, 1, '2017-07-10 14:08:59', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'closed', 'closed', '', '', '', '', '2017-07-10 14:08:59', '0000-00-00 00:00:00', '', 0, 'http://pahno/?p=14', 1, 'nav_menu_item', '', 0),
 (15, 1, '2017-07-10 14:11:10', '2017-07-10 11:11:10', '', 'О нас', '', 'publish', 'closed', 'closed', '', '%d0%be-%d0%bd%d0%b0%d1%81', '', '', '2017-07-10 14:11:10', '2017-07-10 11:11:10', '', 0, 'http://pahno/?p=15', 1, 'nav_menu_item', '', 0),
 (16, 1, '2017-07-10 14:11:10', '2017-07-10 11:11:10', '', 'Услуги', '', 'publish', 'closed', 'closed', '', '%d1%83%d1%81%d0%bb%d1%83%d0%b3%d0%b8', '', '', '2017-07-10 14:11:10', '2017-07-10 11:11:10', '', 0, 'http://pahno/?p=16', 2, 'nav_menu_item', '', 0),
 (17, 1, '2017-07-10 14:11:10', '2017-07-10 11:11:10', '', 'Космецевтика', '', 'publish', 'closed', 'closed', '', '%d0%ba%d0%be%d1%81%d0%bc%d0%b5%d1%86%d0%b5%d0%b2%d1%82%d0%b8%d0%ba%d0%b0', '', '', '2017-07-10 14:11:10', '2017-07-10 11:11:10', '', 0, 'http://pahno/?p=17', 3, 'nav_menu_item', '', 0),
 (18, 1, '2017-07-10 14:11:10', '2017-07-10 11:11:10', '', 'Публикации', '', 'publish', 'closed', 'closed', '', '%d0%bf%d1%83%d0%b1%d0%bb%d0%b8%d0%ba%d0%b0%d1%86%d0%b8%d0%b8', '', '', '2017-07-10 14:11:10', '2017-07-10 11:11:10', '', 0, 'http://pahno/?p=18', 4, 'nav_menu_item', '', 0),
-(19, 1, '2017-07-10 14:11:10', '2017-07-10 11:11:10', '', 'Контакты', '', 'publish', 'closed', 'closed', '', '%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d1%8b', '', '', '2017-07-10 14:11:10', '2017-07-10 11:11:10', '', 0, 'http://pahno/?p=19', 5, 'nav_menu_item', '', 0);
+(19, 1, '2017-07-10 14:11:10', '2017-07-10 11:11:10', '', 'Контакты', '', 'publish', 'closed', 'closed', '', '%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d1%8b', '', '', '2017-07-10 14:11:10', '2017-07-10 11:11:10', '', 0, 'http://pahno/?p=19', 5, 'nav_menu_item', '', 0),
+(20, 1, '2017-07-11 14:37:26', '2017-07-11 11:37:26', 'Для ухода за кожей, подвергшейся ветру, холоду и солнцу.', 'TEOSYAL Бальзам «Глубокое восстановление»', 'Для ухода за кожей, подвергшейся ветру, холоду и солнцу.', 'publish', 'closed', 'closed', '', 'teosyal-%d0%b1%d0%b0%d0%bb%d1%8c%d0%b7%d0%b0%d0%bc-%d0%b3%d0%bb%d1%83%d0%b1%d0%be%d0%ba%d0%be%d0%b5-%d0%b2%d0%be%d1%81%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5', '', '', '2017-07-11 18:49:33', '2017-07-11 15:49:33', '', 0, 'http://pahno/?post_type=products&#038;p=20', 0, 'products', '', 0),
+(21, 1, '2017-07-11 14:36:40', '2017-07-11 11:36:40', '', 'prod-1', '', 'inherit', 'open', 'closed', '', 'prod-1', '', '', '2017-07-11 14:36:40', '2017-07-11 11:36:40', '', 20, 'http://pahno/wp-content/uploads/2017/07/prod-1.png', 0, 'attachment', 'image/png', 0),
+(22, 1, '2017-07-11 14:36:41', '2017-07-11 11:36:41', '', 'prod-2', '', 'inherit', 'open', 'closed', '', 'prod-2', '', '', '2017-07-11 14:36:41', '2017-07-11 11:36:41', '', 20, 'http://pahno/wp-content/uploads/2017/07/prod-2.png', 0, 'attachment', 'image/png', 0),
+(23, 1, '2017-07-11 14:36:42', '2017-07-11 11:36:42', '', 'prod-3', '', 'inherit', 'open', 'closed', '', 'prod-3', '', '', '2017-07-11 14:36:42', '2017-07-11 11:36:42', '', 20, 'http://pahno/wp-content/uploads/2017/07/prod-3.png', 0, 'attachment', 'image/png', 0),
+(24, 1, '2017-07-11 14:36:43', '2017-07-11 11:36:43', '', 'prod-4', '', 'inherit', 'open', 'closed', '', 'prod-4', '', '', '2017-07-11 14:36:43', '2017-07-11 11:36:43', '', 20, 'http://pahno/wp-content/uploads/2017/07/prod-4.png', 0, 'attachment', 'image/png', 0),
+(25, 1, '2017-07-11 14:38:35', '2017-07-11 11:38:35', 'Diamond Premium Black Pearl Гидрогелевые патчи для кожи вокруг глаз', 'Hydrogel Eye Patch Diamond Premium Black Pearl', 'Diamond Premium Black Pearl Гидрогелевые патчи для кожи вокруг глаз', 'publish', 'closed', 'closed', '', 'hydrogel-eye-patch-diamond-premium-black-pearl', '', '', '2017-07-11 18:49:31', '2017-07-11 15:49:31', '', 0, 'http://pahno/?post_type=products&#038;p=25', 0, 'products', '', 0),
+(26, 1, '2017-07-11 14:39:17', '2017-07-11 11:39:17', 'Крем увлажняющий с SPF15, для сухой кожи. Если название короткое, то краткое описание нужно придумать подлиннее, чтобы блок с товаром смотрелся ровно с остальными.', 'DM Bio-Lift', 'Крем увлажняющий с SPF15, для сухой кожи. Если название короткое, то краткое описание нужно придумать подлиннее, чтобы блок с товаром смотрелся ровно с остальными.', 'publish', 'closed', 'closed', '', 'dm-bio-lift', '', '', '2017-07-11 18:49:29', '2017-07-11 15:49:29', '', 0, 'http://pahno/?post_type=products&#038;p=26', 0, 'products', '', 0),
+(27, 1, '2017-07-11 14:40:02', '2017-07-11 11:40:02', 'Крем для улучшения кровообращения и коррекции целлюлита. Если название короткое, то краткое описание нужно придумать подлиннее.', 'GERnetic Vasco Artera', 'Крем для улучшения кровообращения и коррекции целлюлита. Если название короткое, то краткое описание нужно придумать подлиннее.', 'publish', 'closed', 'closed', '', 'gernetic-vasco-artera', '', '', '2017-07-11 18:49:25', '2017-07-11 15:49:25', '', 0, 'http://pahno/?post_type=products&#038;p=27', 0, 'products', '', 0),
+(30, 1, '2017-07-11 14:44:38', '0000-00-00 00:00:00', '', 'Черновик', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2017-07-11 14:44:38', '0000-00-00 00:00:00', '', 0, 'http://pahno/?post_type=acf-field-group&p=30', 0, 'acf-field-group', '', 0),
+(35, 1, '2017-07-11 14:47:07', '2017-07-11 11:47:07', '', 'Главная', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2017-07-11 14:47:07', '2017-07-11 11:47:07', '', 2, 'http://pahno/2017/07/11/2-revision-v1/', 0, 'revision', '', 0),
+(36, 1, '2017-07-11 14:47:22', '2017-07-11 11:47:22', '', 'Блог', '', 'publish', 'closed', 'closed', '', 'blog', '', '', '2017-07-11 14:47:34', '2017-07-11 11:47:34', '', 0, 'http://pahno/?page_id=36', 0, 'page', '', 0),
+(37, 1, '2017-07-11 14:47:22', '2017-07-11 11:47:22', '', 'Блог', '', 'inherit', 'closed', 'closed', '', '36-revision-v1', '', '', '2017-07-11 14:47:22', '2017-07-11 11:47:22', '', 36, 'http://pahno/2017/07/11/36-revision-v1/', 0, 'revision', '', 0),
+(38, 1, '2017-07-11 14:50:08', '2017-07-11 11:50:08', 'a:7:{s:8:"location";a:1:{i:0;a:1:{i:0;a:3:{s:5:"param";s:9:"page_type";s:8:"operator";s:2:"==";s:5:"value";s:10:"front_page";}}}s:8:"position";s:6:"normal";s:5:"style";s:7:"default";s:15:"label_placement";s:3:"top";s:21:"instruction_placement";s:5:"label";s:14:"hide_on_screen";s:0:"";s:11:"description";s:0:"";}', 'Дополнительные поля для главной страницы', '%d0%b4%d0%be%d0%bf%d0%be%d0%bb%d0%bd%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d1%8b%d0%b5-%d0%bf%d0%be%d0%bb%d1%8f-%d0%b4%d0%bb%d1%8f-%d0%b3%d0%bb%d0%b0%d0%b2%d0%bd%d0%be%d0%b9-%d1%81%d1%82%d1%80%d0%b0', 'publish', 'closed', 'closed', '', 'group_5964bb0f85a02', '', '', '2017-07-11 14:58:17', '2017-07-11 11:58:17', '', 0, 'http://pahno/?post_type=acf-field-group&#038;p=38', 0, 'acf-field-group', '', 0),
+(39, 1, '2017-07-11 14:50:08', '2017-07-11 11:50:08', 'a:12:{s:4:"type";s:12:"relationship";s:12:"instructions";s:0:"";s:8:"required";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:9:"post_type";a:1:{i:0;s:8:"products";}s:8:"taxonomy";a:0:{}s:7:"filters";a:3:{i:0;s:6:"search";i:1;s:9:"post_type";i:2;s:8:"taxonomy";}s:8:"elements";s:0:"";s:3:"min";s:0:"";s:3:"max";s:0:"";s:13:"return_format";s:6:"object";s:17:"conditional_logic";i:0;}', 'Популярные товары', 'popular_goods', 'publish', 'closed', 'closed', '', 'field_5964bb23455c9', '', '', '2017-07-11 14:58:17', '2017-07-11 11:58:17', '', 38, 'http://pahno/?post_type=acf-field&#038;p=39', 0, 'acf-field', '', 0),
+(40, 1, '2017-07-11 14:50:55', '2017-07-11 11:50:55', '', 'Главная', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2017-07-11 14:50:55', '2017-07-11 11:50:55', '', 2, 'http://pahno/2017/07/11/2-revision-v1/', 0, 'revision', '', 0),
+(41, 1, '2017-07-11 14:58:05', '2017-07-11 11:58:05', '', 'Главная', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2017-07-11 14:58:05', '2017-07-11 11:58:05', '', 2, 'http://pahno/2017/07/11/2-revision-v1/', 0, 'revision', '', 0),
+(42, 1, '2017-07-11 14:58:49', '2017-07-11 11:58:49', '', 'Главная', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2017-07-11 14:58:49', '2017-07-11 11:58:49', '', 2, 'http://pahno/2017/07/11/2-revision-v1/', 0, 'revision', '', 0),
+(43, 1, '2017-07-11 16:45:55', '2017-07-11 13:45:55', '', 'Главная', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2017-07-11 16:45:55', '2017-07-11 13:45:55', '', 2, 'http://pahno/2017/07/11/2-revision-v1/', 0, 'revision', '', 0),
+(44, 1, '2017-07-11 16:51:26', '2017-07-11 13:51:26', '', 'Главная', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2017-07-11 16:51:26', '2017-07-11 13:51:26', '', 2, 'http://pahno/2017/07/11/2-revision-v1/', 0, 'revision', '', 0),
+(45, 1, '2017-07-11 17:11:54', '2017-07-11 14:11:54', '', 'Главная', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2017-07-11 17:11:54', '2017-07-11 14:11:54', '', 2, 'http://pahno/2017/07/11/2-revision-v1/', 0, 'revision', '', 0),
+(46, 1, '2017-07-11 17:12:12', '2017-07-11 14:12:12', '', 'Главная', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2017-07-11 17:12:12', '2017-07-11 14:12:12', '', 2, 'http://pahno/2017/07/11/2-revision-v1/', 0, 'revision', '', 0),
+(47, 1, '2017-07-11 17:29:23', '2017-07-11 14:29:23', '', 'Главная', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2017-07-11 17:29:23', '2017-07-11 14:29:23', '', 2, 'http://pahno/2017/07/11/2-revision-v1/', 0, 'revision', '', 0),
+(48, 1, '2017-07-11 18:42:41', '2017-07-11 15:42:41', 'a:7:{s:8:"location";a:1:{i:0;a:1:{i:0;a:3:{s:5:"param";s:9:"post_type";s:8:"operator";s:2:"==";s:5:"value";s:8:"products";}}}s:8:"position";s:6:"normal";s:5:"style";s:7:"default";s:15:"label_placement";s:3:"top";s:21:"instruction_placement";s:5:"label";s:14:"hide_on_screen";s:0:"";s:11:"description";s:0:"";}', 'Дополнительные поля для товаров', '%d0%b4%d0%be%d0%bf%d0%be%d0%bb%d0%bd%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d1%8b%d0%b5-%d0%bf%d0%be%d0%bb%d1%8f-%d0%b4%d0%bb%d1%8f-%d1%82%d0%be%d0%b2%d0%b0%d1%80%d0%be%d0%b2', 'publish', 'closed', 'closed', '', 'group_5964f197c370d', '', '', '2017-07-11 18:42:43', '2017-07-11 15:42:43', '', 0, 'http://pahno/?post_type=acf-field-group&#038;p=48', 0, 'acf-field-group', '', 0),
+(49, 1, '2017-07-11 18:42:42', '2017-07-11 15:42:42', 'a:10:{s:4:"type";s:4:"text";s:12:"instructions";s:0:"";s:8:"required";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:9:"maxlength";s:0:"";s:17:"conditional_logic";i:0;}', 'Цена', 'price', 'publish', 'closed', 'closed', '', 'field_5964f1a897d92', '', '', '2017-07-11 18:42:42', '2017-07-11 15:42:42', '', 48, 'http://pahno/?post_type=acf-field&p=49', 0, 'acf-field', '', 0),
+(50, 1, '2017-07-11 18:42:42', '2017-07-11 15:42:42', 'a:10:{s:4:"type";s:4:"text";s:12:"instructions";s:0:"";s:8:"required";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:9:"maxlength";s:0:"";s:17:"conditional_logic";i:0;}', 'Старая цена', 'old_price', 'publish', 'closed', 'closed', '', 'field_5964f1c097d93', '', '', '2017-07-11 18:42:42', '2017-07-11 15:42:42', '', 48, 'http://pahno/?post_type=acf-field&p=50', 1, 'acf-field', '', 0),
+(51, 1, '2017-07-11 18:42:43', '2017-07-11 15:42:43', 'a:10:{s:4:"type";s:4:"text";s:12:"instructions";s:0:"";s:8:"required";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:9:"maxlength";s:0:"";s:17:"conditional_logic";i:0;}', 'Доза', 'dose', 'publish', 'closed', 'closed', '', 'field_5964f1da97d94', '', '', '2017-07-11 18:42:43', '2017-07-11 15:42:43', '', 48, 'http://pahno/?post_type=acf-field&p=51', 2, 'acf-field', '', 0);
 
 -- --------------------------------------------------------
 
@@ -696,7 +773,7 @@ CREATE TABLE IF NOT EXISTS `wp_usermeta` (
   PRIMARY KEY (`umeta_id`),
   KEY `user_id` (`user_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=20 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=22 ;
 
 --
 -- Дамп данных таблицы `wp_usermeta`
@@ -721,7 +798,9 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (16, 1, 'wp_dashboard_quick_press_last_post_id', '3'),
 (17, 1, 'community-events-location', 'a:1:{s:2:"ip";s:9:"127.0.0.0";}'),
 (18, 1, 'managenav-menuscolumnshidden', 'a:5:{i:0;s:11:"link-target";i:1;s:11:"css-classes";i:2;s:3:"xfn";i:3;s:11:"description";i:4;s:15:"title-attribute";}'),
-(19, 1, 'metaboxhidden_nav-menus', 'a:4:{i:0;s:21:"add-post-type-product";i:1;s:12:"add-post_tag";i:2;s:15:"add-product_cat";i:3;s:15:"add-product_tag";}');
+(19, 1, 'metaboxhidden_nav-menus', 'a:4:{i:0;s:21:"add-post-type-product";i:1;s:12:"add-post_tag";i:2;s:15:"add-product_cat";i:3;s:15:"add-product_tag";}'),
+(20, 1, 'wp_user-settings', 'libraryContent=browse&editor=html'),
+(21, 1, 'wp_user-settings-time', '1499773042');
 
 -- --------------------------------------------------------
 
@@ -752,255 +831,6 @@ CREATE TABLE IF NOT EXISTS `wp_users` (
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1, 'pahno', '$P$BqLE7r1cN1K7ZCvxKJRgsZufUHj5a30', 'pahno', 'romangalchenkov@gmail.com', '', '2017-07-10 07:03:21', '', 0, 'pahno');
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `wp_woocommerce_api_keys`
---
-
-CREATE TABLE IF NOT EXISTS `wp_woocommerce_api_keys` (
-  `key_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `user_id` bigint(20) unsigned NOT NULL,
-  `description` varchar(200) DEFAULT NULL,
-  `permissions` varchar(10) NOT NULL,
-  `consumer_key` char(64) NOT NULL,
-  `consumer_secret` char(43) NOT NULL,
-  `nonces` longtext,
-  `truncated_key` char(7) NOT NULL,
-  `last_access` datetime DEFAULT NULL,
-  PRIMARY KEY (`key_id`),
-  KEY `consumer_key` (`consumer_key`),
-  KEY `consumer_secret` (`consumer_secret`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `wp_woocommerce_attribute_taxonomies`
---
-
-CREATE TABLE IF NOT EXISTS `wp_woocommerce_attribute_taxonomies` (
-  `attribute_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `attribute_name` varchar(200) NOT NULL,
-  `attribute_label` varchar(200) DEFAULT NULL,
-  `attribute_type` varchar(20) NOT NULL,
-  `attribute_orderby` varchar(20) NOT NULL,
-  `attribute_public` int(1) NOT NULL DEFAULT '1',
-  PRIMARY KEY (`attribute_id`),
-  KEY `attribute_name` (`attribute_name`(20))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `wp_woocommerce_downloadable_product_permissions`
---
-
-CREATE TABLE IF NOT EXISTS `wp_woocommerce_downloadable_product_permissions` (
-  `permission_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `download_id` varchar(32) NOT NULL,
-  `product_id` bigint(20) unsigned NOT NULL,
-  `order_id` bigint(20) unsigned NOT NULL DEFAULT '0',
-  `order_key` varchar(200) NOT NULL,
-  `user_email` varchar(200) NOT NULL,
-  `user_id` bigint(20) unsigned DEFAULT NULL,
-  `downloads_remaining` varchar(9) DEFAULT NULL,
-  `access_granted` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `access_expires` datetime DEFAULT NULL,
-  `download_count` bigint(20) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`permission_id`),
-  KEY `download_order_key_product` (`product_id`,`order_id`,`order_key`(16),`download_id`),
-  KEY `download_order_product` (`download_id`,`order_id`,`product_id`),
-  KEY `order_id` (`order_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `wp_woocommerce_log`
---
-
-CREATE TABLE IF NOT EXISTS `wp_woocommerce_log` (
-  `log_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `timestamp` datetime NOT NULL,
-  `level` smallint(4) NOT NULL,
-  `source` varchar(200) NOT NULL,
-  `message` longtext NOT NULL,
-  `context` longtext,
-  PRIMARY KEY (`log_id`),
-  KEY `level` (`level`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `wp_woocommerce_order_itemmeta`
---
-
-CREATE TABLE IF NOT EXISTS `wp_woocommerce_order_itemmeta` (
-  `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `order_item_id` bigint(20) unsigned NOT NULL,
-  `meta_key` varchar(255) DEFAULT NULL,
-  `meta_value` longtext,
-  PRIMARY KEY (`meta_id`),
-  KEY `order_item_id` (`order_item_id`),
-  KEY `meta_key` (`meta_key`(32))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `wp_woocommerce_order_items`
---
-
-CREATE TABLE IF NOT EXISTS `wp_woocommerce_order_items` (
-  `order_item_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `order_item_name` text NOT NULL,
-  `order_item_type` varchar(200) NOT NULL DEFAULT '',
-  `order_id` bigint(20) unsigned NOT NULL,
-  PRIMARY KEY (`order_item_id`),
-  KEY `order_id` (`order_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `wp_woocommerce_payment_tokenmeta`
---
-
-CREATE TABLE IF NOT EXISTS `wp_woocommerce_payment_tokenmeta` (
-  `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `payment_token_id` bigint(20) unsigned NOT NULL,
-  `meta_key` varchar(255) DEFAULT NULL,
-  `meta_value` longtext,
-  PRIMARY KEY (`meta_id`),
-  KEY `payment_token_id` (`payment_token_id`),
-  KEY `meta_key` (`meta_key`(32))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `wp_woocommerce_payment_tokens`
---
-
-CREATE TABLE IF NOT EXISTS `wp_woocommerce_payment_tokens` (
-  `token_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `gateway_id` varchar(200) NOT NULL,
-  `token` text NOT NULL,
-  `user_id` bigint(20) unsigned NOT NULL DEFAULT '0',
-  `type` varchar(200) NOT NULL,
-  `is_default` tinyint(1) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`token_id`),
-  KEY `user_id` (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `wp_woocommerce_sessions`
---
-
-CREATE TABLE IF NOT EXISTS `wp_woocommerce_sessions` (
-  `session_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `session_key` char(32) NOT NULL,
-  `session_value` longtext NOT NULL,
-  `session_expiry` bigint(20) unsigned NOT NULL,
-  PRIMARY KEY (`session_key`),
-  UNIQUE KEY `session_id` (`session_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
-
---
--- Дамп данных таблицы `wp_woocommerce_sessions`
---
-
-INSERT INTO `wp_woocommerce_sessions` (`session_id`, `session_key`, `session_value`, `session_expiry`) VALUES
-(1, '1', 'a:1:{s:8:"customer";s:675:"a:25:{s:2:"id";i:1;s:8:"postcode";s:0:"";s:4:"city";s:0:"";s:9:"address_1";s:0:"";s:7:"address";s:0:"";s:9:"address_2";s:0:"";s:5:"state";s:0:"";s:7:"country";s:2:"GB";s:17:"shipping_postcode";s:0:"";s:13:"shipping_city";s:0:"";s:18:"shipping_address_1";s:0:"";s:16:"shipping_address";s:0:"";s:18:"shipping_address_2";s:0:"";s:14:"shipping_state";s:0:"";s:16:"shipping_country";s:2:"GB";s:13:"is_vat_exempt";b:0;s:19:"calculated_shipping";b:0;s:10:"first_name";s:0:"";s:9:"last_name";s:0:"";s:7:"company";s:0:"";s:5:"phone";s:0:"";s:5:"email";s:25:"romangalchenkov@gmail.com";s:19:"shipping_first_name";s:0:"";s:18:"shipping_last_name";s:0:"";s:16:"shipping_company";s:0:"";}";}', 1499849880);
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `wp_woocommerce_shipping_zones`
---
-
-CREATE TABLE IF NOT EXISTS `wp_woocommerce_shipping_zones` (
-  `zone_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `zone_name` varchar(200) NOT NULL,
-  `zone_order` bigint(20) unsigned NOT NULL,
-  PRIMARY KEY (`zone_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `wp_woocommerce_shipping_zone_locations`
---
-
-CREATE TABLE IF NOT EXISTS `wp_woocommerce_shipping_zone_locations` (
-  `location_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `zone_id` bigint(20) unsigned NOT NULL,
-  `location_code` varchar(200) NOT NULL,
-  `location_type` varchar(40) NOT NULL,
-  PRIMARY KEY (`location_id`),
-  KEY `location_id` (`location_id`),
-  KEY `location_type_code` (`location_type`(10),`location_code`(20))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `wp_woocommerce_shipping_zone_methods`
---
-
-CREATE TABLE IF NOT EXISTS `wp_woocommerce_shipping_zone_methods` (
-  `zone_id` bigint(20) unsigned NOT NULL,
-  `instance_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `method_id` varchar(200) NOT NULL,
-  `method_order` bigint(20) unsigned NOT NULL,
-  `is_enabled` tinyint(1) NOT NULL DEFAULT '1',
-  PRIMARY KEY (`instance_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `wp_woocommerce_tax_rates`
---
-
-CREATE TABLE IF NOT EXISTS `wp_woocommerce_tax_rates` (
-  `tax_rate_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `tax_rate_country` varchar(2) NOT NULL DEFAULT '',
-  `tax_rate_state` varchar(200) NOT NULL DEFAULT '',
-  `tax_rate` varchar(8) NOT NULL DEFAULT '',
-  `tax_rate_name` varchar(200) NOT NULL DEFAULT '',
-  `tax_rate_priority` bigint(20) unsigned NOT NULL,
-  `tax_rate_compound` int(1) NOT NULL DEFAULT '0',
-  `tax_rate_shipping` int(1) NOT NULL DEFAULT '1',
-  `tax_rate_order` bigint(20) unsigned NOT NULL,
-  `tax_rate_class` varchar(200) NOT NULL DEFAULT '',
-  PRIMARY KEY (`tax_rate_id`),
-  KEY `tax_rate_country` (`tax_rate_country`),
-  KEY `tax_rate_state` (`tax_rate_state`(2)),
-  KEY `tax_rate_class` (`tax_rate_class`(10)),
-  KEY `tax_rate_priority` (`tax_rate_priority`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `wp_woocommerce_tax_rate_locations`
---
-
-CREATE TABLE IF NOT EXISTS `wp_woocommerce_tax_rate_locations` (
-  `location_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `location_code` varchar(200) NOT NULL,
-  `tax_rate_id` bigint(20) unsigned NOT NULL,
-  `location_type` varchar(40) NOT NULL,
-  PRIMARY KEY (`location_id`),
-  KEY `tax_rate_id` (`tax_rate_id`),
-  KEY `location_type_code` (`location_type`(10),`location_code`(20))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

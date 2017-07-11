@@ -29,8 +29,6 @@ function theme_name_scripts() {
 	wp_enqueue_style( 'fancybox', get_template_directory_uri() . '/fancybox/source/jquery.fancybox.css' );
 	wp_enqueue_style( 'main', get_template_directory_uri() . '/css/main.css' );	
 	
-	//Библиотека гугл карты
-	wp_enqueue_script( 'google-map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAoIhlfl0vA6Uv0DuIgbriry2cZYDbNw2g' );
 	//jquery
 	wp_enqueue_script( 'jquery-2', get_template_directory_uri() . '/js/jquery.min.js' );
 	
@@ -62,14 +60,21 @@ function theme_name_scripts() {
 	wp_enqueue_script( 'stellar', get_template_directory_uri() . '/js/jquery.stellar-paralax.min.js' );	
 	
 	//Скроллбар
-	wp_enqueue_script( 'stellar', get_template_directory_uri() . '/js/jquery.jscrollpane.min.js' );	
+	//wp_enqueue_script( 'jscrollpane', get_template_directory_uri() . '/js/jquery.jscrollpane.min.js' );	
+	//Скролбар из которого можно сделать слайдер с баром с автодоводом
+	wp_enqueue_script( 'mCustomScrollbar', get_template_directory_uri() . '/js/jquery.mCustomScrollbar.concat.min.js' );	
 	
 	//Общие плагины для стандартного функционла
 	wp_enqueue_script( 'malton-plagins', get_template_directory_uri() . '/js/malton-plagins.js' );
 	
 	//Инициализация всего
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js' );
-	wp_enqueue_script( 'map', get_template_directory_uri() . '/js/map.js' );
+	
+	
+	/*
+	//Библиотека гугл карты
+	wp_enqueue_script( 'google-map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAoIhlfl0vA6Uv0DuIgbriry2cZYDbNw2g' );
+	wp_enqueue_script( 'map', get_template_directory_uri() . '/js/map.js' );*/
 	
 	
 }

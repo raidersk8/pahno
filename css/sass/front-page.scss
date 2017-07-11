@@ -48,3 +48,157 @@
 	height: 100%;
 	background: url(../img/front-page-first-screen-right-img.png) right bottom no-repeat;
 }
+.front-page .services {
+	position: relative;
+	padding-top: 4px;
+	margin-bottom: 93px;
+}
+
+.front-page .services:before {
+	content: '';
+    position: absolute;
+    bottom: -56px;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    background: url(../img/services-bottom.png) right top no-repeat;
+    z-index: 5;
+	
+}
+
+.front-page .services .list .item .inner {
+	display: block;
+	position: relative;
+	height: 274px;
+	border: 4px solid #fff;
+	background: -moz-linear-gradient(117.85deg, #5CBCBB 0.56%, #99D8DD 24.34%, #B6E7EB 49.42%, #99D8E3 73.8%, #67C2D4 99.17%);
+	background: -webkit-linear-gradient(117.85deg, #5CBCBB 0.56%, #99D8DD 24.34%, #B6E7EB 49.42%, #99D8E3 73.8%, #67C2D4 99.17%);
+	background: linear-gradient(117.85deg, #5CBCBB 0.56%, #99D8DD 24.34%, #B6E7EB 49.42%, #99D8E3 73.8%, #67C2D4 99.17%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5CBCBB', endColorstr='#67C2D4',GradientType=0 );
+	margin: -4px 0 0 -4px;
+	z-index: 1;
+	@include animation-transition (0.5s, all);
+	color: #fff;
+	text-decoration: none;
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.front-page .services .list .item .inner .text {
+	position: absolute;
+	bottom: 25px;
+	right: 25px;
+	width: 240px;
+    text-align: right;
+}
+.front-page .services .list .item .inner img {
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+.front-page .services .list .item:first-child .inner {
+	border-left: none;
+	margin-left: 0;
+}
+.front-page .services .list .item:nth-of-type(3n) .inner {
+	border-right: none;
+}
+.front-page .services .list .item:nth-of-type(3n+1) .inner {
+	border-left: none;
+	margin-left: 0;
+}
+.front-page .services .list .item .inner:hover {
+	z-index: 5;
+	border-color: $a-color;	
+	background: -moz-linear-gradient(119.01deg, #FBF9FA 20.99%, #F69EB8 62.43%, #EF346C 100%);
+	background: -webkit-linear-gradient(119.01deg, #FBF9FA 20.99%, #F69EB8 62.43%, #EF346C 100%);
+	background: linear-gradient(119.01deg, #FBF9FA 20.99%, #F69EB8 62.43%, #EF346C 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FBF9FA', endColorstr='#EF346C',GradientType=0 );
+}
+.front-page .services .list .item:last-child .inner {
+	background: #8FBBBE;
+	z-index: 4;
+}
+.front-page .advantages {
+    margin-bottom: 17px;
+}
+.front-page .advantages .border-text {
+	border: 2px solid #00B6AD;
+	border-left: none;
+	border-right: none;
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 700;
+	padding: 28px 0;
+	margin-bottom: 26px;
+}
+.front-page .advantages .text {
+	margin-bottom: 71px;
+}
+
+.front-page .advantages .right-part {
+	padding-left: 30px;
+}
+
+.front-page .advantages .left-part {
+	padding-right: 30px;
+}
+.front-page .products .main-title {
+    margin-bottom: 88px;
+}
+.front-page .products ul .item {
+	display: block;
+	text-decoration: none;
+	border: 1px solid #E5E5E5;
+	border-right: none;
+	text-align: center;
+	padding: 40px 0 0;
+	height: 702px;
+	color: $main-color;
+}
+.front-page .products ul .item:last-child {
+	border-right: 1px solid #E5E5E5;
+}
+.front-page .products ul .item .img {
+	margin-bottom: 29px;
+	height: 200px;
+}
+.front-page .products ul .item .inner {
+	height: 252px;
+}
+.front-page .products ul .item .inner .text {
+	font-size: 16px;
+	line-height: 24px;
+	padding: 0 15px;
+}
+.front-page .products ul .item .price {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 700;
+	height: 28px;
+}
+.front-page .products ul .item .price span {
+    display: inline-block;
+    margin-left: 26px;
+	color: #C4C4C4;
+    text-decoration: line-through;
+}
+.front-page .products ul .item .dose {
+	font-size: 16px;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 36px;
+}
+.front-page .products ul .item .wrap-btn {
+	padding: 0 50px;
+}
+.front-page .products ul .item:hover .btn {
+  color: #fff;
+  background-color: #00B6AD;
+}
+
+

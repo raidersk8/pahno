@@ -26,7 +26,7 @@ if ( have_posts() ) : the_post(); ?>
 <img src="<?php echo get_the_post_thumbnail_url( get_the_ID(), 'image-455-auto' ); ?>" />
 <?php endif; ?>
 <?php //Пример вывода картинки из шаблона ?>
-<img src="<?php echo get_bloginfo('template_url'); ?>"/img/img.png" alt="" />
+<img src="<?php echo get_bloginfo('template_url'); ?>/img/img.png" alt="" />
 
 <?php 
 if(!is_front_page()) : ?>
