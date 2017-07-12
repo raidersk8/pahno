@@ -146,6 +146,9 @@
 .front-page .advantages .left-part {
 	padding-right: 30px;
 }
+.front-page .products {
+	margin-bottom: 85px;
+}
 .front-page .products .main-title {
     margin-bottom: 88px;
 }
@@ -200,5 +203,110 @@
   color: #fff;
   background-color: #00B6AD;
 }
+.front-page .brands {
+	background: #ECF1ED;
+	padding: 80px 0;
+}
+.front-page .brands li {
+	text-align: center;
+}
+.front-page .brands .wrap-jcarousel {
+	position: relative;
+}
+.front-page .brands .wrap-jcarousel .jcarousel-prev {
+	position: absolute;
+	top: 50%;
+	left: -68px;
+	@include left-arrow (2px, 23px, 23px, #C4C4C4);
+	margin: -11px 0 0 -11px;
+}
+.front-page .brands .wrap-jcarousel .jcarousel-prev:hover {
+	border-color: #00B6AD;
+}
+.front-page .brands .wrap-jcarousel .jcarousel-next {
+	position: absolute;
+	top: 50%;
+	right: -68px;
+	@include right-arrow (2px, 23px, 23px, #C4C4C4);
+	margin: 0 -11px -11px 0;
+}
+.front-page .brands .wrap-jcarousel .jcarousel-next:hover {
+	border-color: #00B6AD;
+}
+.front-page .brands .wrap-jcarousel .jcarousel-prev.inactive {
+	display: none;
+}
+.front-page .brands .wrap-jcarousel .jcarousel-next.inactive {
+	display: none;
+}
 
+.front-page .last-posts .img {
+	display: block;
+	height: 350px;
+	background-size: cover;
+}
+.front-page .last-posts .terms { 
+	position: relative;
+	padding: 48px 0 0;
+	text-align: center;
+	height: 79px;
+}
+.front-page .last-posts .type-2 .terms { 
+	padding: 0 0 48px;
+	
+}
+.front-page .last-posts .type-2 .terms:before {
+	border-right: 1px solid #65BEE6;
+}
+.front-page .last-posts .type-2 .terms a {
+	border: 1px solid #65BEE6;
+	color: #65BEE6;
+}
 
+.front-page .last-posts .type-3 .terms:before {
+	border-right: 1px solid #EF346C;
+}
+.front-page .last-posts .type-3 .terms a {
+	border: 1px solid #EF346C;
+	color: #EF346C;
+}
+.front-page .last-posts .terms:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 1px;
+	height: 100%;
+	border-right: 1px solid #00B6AD;
+	margin-left: -1px;
+} 
+.front-page .last-posts .terms a {
+	display: inline-block;
+	position: relative;
+	border: 1px solid #00B6AD;
+	background: #fff;
+	color: #00B6AD;
+	padding: 0 28px;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: 'PT Sans Narrow', sans-serif;
+	line-height: 28px;
+	text-transform: uppercase;
+}
+.front-page .last-posts .inner {
+	padding: 19px 50px 0;
+	text-align: center; 
+	height: 270px;
+}
+.front-page .last-posts .inner .title {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 700;
+	color: $main-color;
+	font-size: 28px;
+	line-height: 48px;
+	margin: 0 0 23px;
+}
+.front-page .last-posts .type-2 .inner {
+	padding-top: 28px;
+}

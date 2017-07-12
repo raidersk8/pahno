@@ -9,7 +9,7 @@ body {
 	font-weight: 400;
 	color: $main-color;
 	background: #fff;	
-	background: url(../img/template-main.png) center 0 no-repeat #fff;
+	//background: url(../img/template-service.png) center 0 no-repeat #fff;
 	height: 7000px;
 }
 a {
@@ -42,11 +42,11 @@ html {
     min-height: 100%;
 }
 footer {
-    position: absolute;
+   /* position: absolute;
     bottom: 0;
     width: 100%;
     height: 110px;
-	padding-top: 38px;
+	padding-top: 38px;*/
 }
 header {
 	position: fixed;

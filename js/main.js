@@ -7,7 +7,7 @@ $(window).load(
 		});
 		$('#preloader').hide();
 		fullWindowHeight();
-		$('.example-gallery .wrap-jcarousel').wrapJcarousel();		
+		$('.front-page .brands .wrap-jcarousel').wrapJcarousel();		
 	}
 );
 $( window ).resize(function() {

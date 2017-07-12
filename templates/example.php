@@ -18,7 +18,7 @@ if ( have_posts() ) : the_post(); ?>
 <?php $query = new WP_Query( array( 'post_type' => 'examples', 'posts_per_page' => -1 ) ); ?>
 <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 	<?php the_title(); ?>
-	<?php the_content(); ?>
+	<?php the_excerpt(); ?>
 <?php endwhile ?>
 
 <?php //Пример вывода картинки прикрепленной к записи ?>
@@ -27,6 +27,17 @@ if ( have_posts() ) : the_post(); ?>
 <?php endif; ?>
 <?php //Пример вывода картинки из шаблона ?>
 <img src="<?php echo get_bloginfo('template_url'); ?>/img/img.png" alt="" />
+
+
+<?php //Получаем текущую таксономию ?>
+<?php $act_term = get_queried_object(); ?>
+<?php //Получаем таксономию ?>
+<?php $terms = get_terms( 'example_term', array(
+	'hide_empty' => false,
+) ); ?>
+
+<?php //Получаем ссылку на таксономию ?>
+<?php echo get_term_link( $row ); ?>
 
 <?php 
 if(!is_front_page()) : ?>

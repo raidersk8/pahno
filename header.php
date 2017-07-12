@@ -32,3 +32,26 @@
 		<a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
 	</div>
   </header>
+	<?php if(!is_front_page()) : ?>
+	  <div class="total-first-screen">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<a href="/" class="logo">
+						<div class="title">Время красоты</div>
+						Центр медицинской косметологии<br />Ольги Пахно
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="phones">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-2 col-xs-offset-10">
+						+7 (4842) 76-24-76<br />+7 (910) 528-64-19
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	<?php endif; ?>
