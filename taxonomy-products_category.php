@@ -3,7 +3,7 @@ global $wp_query;
 $priceOrder = (isset($_GET['price-order']) && $_GET['price-order'] == 'desc') ? 'asc' : 'desc';
 ?>	
 <?php $act_term = get_queried_object(); ?>
-<div class="products-page">
+<div class="shop products-page">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-4">

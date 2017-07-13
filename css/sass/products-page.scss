@@ -1,14 +1,8 @@
-.products-page a {
-	color: #00B6AD;
-}
 .products-page .top-panel {
 	display: table;
 	height: 70px;
 	width: 100%;
 	margin-bottom: 27px;
-}
-.products-page .query-pagination a {
-	color: $main-color;
 }
 .products-page .filter a {
 	display: inline-block;
@@ -24,13 +18,8 @@
 	right: -22px;
 	top: 10px;
 	font-size: 14px;
-	line-height: 16px;
-	
+	line-height: 16px;	
 }
 .products-page .filter a.desc:before {
-	content: "\f160";
-	
-}
-.products-page .product-item {
-	color: $main-color;	
+	content: "\f160";	
 }

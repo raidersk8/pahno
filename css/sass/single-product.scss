@@ -1,0 +1,48 @@
+.single-product {
+	padding: 0 0 53px;
+}
+.single-product .top-part {
+	display: table;
+	height: 70px;
+	width: 100%;
+    margin-bottom: 50px;
+	text-align: right;
+}
+.single-product .top-part .to-back {
+	display: inline-block;
+	text-decoration: none;
+	border: 2px solid #00B6AD;
+	font-weight: 700;
+	line-height: 45px;
+    padding: 0 30px 0 20px;
+	@include border-radius(23px);
+}
+.single-product .top-part .to-back .fa {    
+    position: relative;
+	font-size: 30px;
+    top: 4px;
+}
+.single-product .dose {
+	font-size: 30px;
+	margin-bottom: 66px;
+}
+.single-product .img {
+	margin-bottom: 39px;
+}
+.single-product .price {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 48px;
+	line-height: 60px;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: 2.3px;
+}
+.single-product .price span {
+    display: inline-block;
+    margin-left: 26px;
+    color: #C4C4C4;
+    text-decoration: line-through;
+}
+.single-product .text-content {
+    padding: 98px 0 0 31px;
+}

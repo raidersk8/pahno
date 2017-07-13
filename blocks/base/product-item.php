@@ -10,7 +10,7 @@
 			<?php the_excerpt(); ?>
 		</div>
 	</div>
-	<div class="price"><?php the_field('price', get_the_ID()); ?> &#8381; <?php if(get_field('old_price', get_the_ID()) != '') : ?><span>18 740 &#8381;</span><?php endif; ?></div>
+	<div class="price"><?php the_field('price', get_the_ID()); ?> &#8381; <?php if(get_field('old_price', get_the_ID()) != '') : ?><span><?php the_field('old_price', get_the_ID()); ?> &#8381;</span><?php endif; ?></div>
 	<div class="dose"><?php the_field('dose', get_the_ID()); ?></div>
 	<div class="wrap-btn"><span class="btn btn-transparent btn-block">Подробнее</span></div>
 </a>
