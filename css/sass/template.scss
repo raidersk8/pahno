@@ -163,6 +163,13 @@ footer .copyrigh-part {
 	padding: 31px 0 27px;
 	border-top: 1px solid #ECF1ED;
 }
+.navigation-menu ul li.active a {
+	color: $a-color;
+}
+.navigation-menu.type-2 ul li.active a {
+	color: #00B6AD;
+	font-weight: 700;
+}
 .navigation-menu ul li ul {
 	text-transform: none;
 	padding: 38px 0;
@@ -170,6 +177,15 @@ footer .copyrigh-part {
 .navigation-menu ul li ul li a {
 	padding: 10px 0;
     border: none;
+}
+.navigation-menu ul li.active li a {
+	color: $main-color;
+	font-weight: 400;
+	
+}
+.navigation-menu ul li ul li.active a {
+	font-weight: 700;
+	color: $a-color;
 }
 
 
@@ -215,4 +231,78 @@ footer .copyrigh-part {
 
 .search-form .form-control {
 	border-color: #AABFB8;
+}
+
+.product-item {
+	display: block;
+	text-decoration: none;
+	border: 1px solid #E5E5E5;
+	text-align: center;
+	padding: 40px 0 0;
+	height: 702px;
+	color: $main-color;
+	margin-bottom: 28px;
+}
+.product-item .img {
+	margin-bottom: 29px;
+	height: 200px;
+}
+.product-item .inner {
+	height: 252px;
+}
+.product-item .inner .text {
+	font-size: 16px;
+	line-height: 24px;
+	padding: 0 15px;
+}
+.product-item .price {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 700;
+	height: 28px;
+}
+.product-item .price span {
+    display: inline-block;
+    margin-left: 26px;
+	color: #C4C4C4;
+    text-decoration: line-through;
+}
+.product-item .dose {
+	font-size: 16px;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 36px;
+}
+.product-item .wrap-btn {
+	padding: 0 50px;
+}
+.product-item:hover {
+	color: $main-color;
+}
+.product-item:hover .btn {
+  color: #fff;
+  background-color: #00B6AD;
+}
+
+.query-pagination .page-numbers {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 48px;
+	color: $main-color;
+	border: 2px solid $main-color;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+	@include border-radius (50%);
+	margin: 0 5px;
+}
+.query-pagination .page-numbers.current {
+	color: $a-color;
+	border-color: $a-color;
+}
+.query-pagination .page-numbers.dots {
+	border-color: transparent;
+	margin: 0 0;
 }

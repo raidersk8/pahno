@@ -1,57 +1,4 @@
 <?php
-//get_template_part('blocks/front-page');
-function setting_pre_get_posts_for_custom_post($query) {
-	
-	if ( ! is_admin() && $query->is_main_query() ) {
-	  
-		//Проверяем является ли запрос отображение записей в таксономии category_examples
-		if (is_tax('category_examples')) {
-			//Отключаем пагинацию на страница отображения по метки портфолио
-			$query->set( 'posts_per_page', -1 );
-		}
-		if(is_post_type_archive('service')) {
-			$query->set( 'posts_per_page', -1 );
-			//$query->set( 'post_parent__not_in', array('0') );
-			
-			
-			//Сортировка
-			if($_GET['sort-type']=='zone' && is_numeric($_GET['zone'])) {
-				$query->set( 'tax_query', 
-					array(array(
-						'taxonomy' => 'service_direction',
-						'field'    => 'id',
-						'terms'    => array( intval($_GET['zone']) ),
-					)));
-			}
-			if($_GET['sort-type']=='spec' && is_numeric($_GET['spec'])) {
-				$services = get_field('services', intval($_GET['spec']));
-				$arrId = array();
-				if($services) {
-					foreach($services as $row) {
-						$arrId[] = $row->ID;
-					}
-				}
-				$query->set( 'post_parent', $arrId );
-				$query->set( 'post__in', $arrId );
-			}		
-		}
-		if(is_post_type_archive('product') || is_tax( 'product_cat' ) || is_tax( 'product_cat' ) || is_tax( 'product_brand' )) {
-			$query->set( 'posts_per_page', 9);
-			
-		}
-		if(isset($_GET['on-page'])) {
-			$posts_per_page = $_GET['on-page'];
-			if($_GET['on-page'] == 'all') {
-				$posts_per_page = -1;
-			}
-			$query->set( 'posts_per_page', (int)$posts_per_page);
-		}
-	}
-}
-
-add_action( 'pre_get_posts', 'setting_pre_get_posts_for_custom_post' );
-
-
 //Меняем количество символов у краткого описания
 function new_excerpt_length($length) {
 	return 21;
@@ -213,6 +160,28 @@ function has_more() {
     global $post;
     if (empty($post)) return;
     return (bool) preg_match('/<!--more(.*?)?-->/', $post->post_content);
+}
+
+function queryPagination($pagination_query) {
+	$big = 999999999; // уникальное число для замены
+
+	$args = array(
+		'base'			=> str_replace( $big, '%#%', get_pagenum_link( $big ) ),
+		'format'		=> '',
+		'current'		=> max( 1, get_query_var('paged') ),
+		'total'			=> $pagination_query->max_num_pages,
+		'prev_text'		=> '<i class="fa fa-chevron-left" aria-hidden="true"></i>',
+		'next_text'		=> '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+		'end_size'		=> '1',//Сколько номеров показывать сначала и конца
+		'mid_size'		=> '1',//Сколько номеров показывать сначала и конца
+	);
+
+	$result = paginate_links( $args );
+
+	// удаляем добавку к пагинации для первой страницы
+	$result = str_replace( '/page/1/', '', $result );
+
+	echo $result;
 }
 
 ?>

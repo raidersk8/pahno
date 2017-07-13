@@ -16,10 +16,14 @@ if ( have_posts() ) : the_post(); ?>
 
 <?php //Пример цикла ?>
 <?php $query = new WP_Query( array( 'post_type' => 'examples', 'posts_per_page' => -1 ) ); ?>
+<?php if($query->have_posts()) : ?>
 <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 	<?php the_title(); ?>
 	<?php the_excerpt(); ?>
-<?php endwhile ?>
+	<?php //Таксономия которая прикреплена к посту ?>
+	<?php $terms = get_the_terms( $post->ID, 'my_tax' ); ?>
+<?php endwhile; wp_reset_postdata(); ?>
+<?php endif; ?>
 
 <?php //Пример вывода картинки прикрепленной к записи ?>
 <?php if(has_post_thumbnail()) : ?>

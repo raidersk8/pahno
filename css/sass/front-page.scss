@@ -152,57 +152,13 @@
 .front-page .products .main-title {
     margin-bottom: 88px;
 }
-.front-page .products ul .item {
-	display: block;
-	text-decoration: none;
-	border: 1px solid #E5E5E5;
-	border-right: none;
-	text-align: center;
-	padding: 40px 0 0;
-	height: 702px;
-	color: $main-color;
-}
-.front-page .products ul .item:last-child {
+.front-page .products ul li:last-child .product-item {
 	border-right: 1px solid #E5E5E5;
 }
-.front-page .products ul .item .img {
-	margin-bottom: 29px;
-	height: 200px;
+.front-page .products ul .product-item {
+	border-right: none;
 }
-.front-page .products ul .item .inner {
-	height: 252px;
-}
-.front-page .products ul .item .inner .text {
-	font-size: 16px;
-	line-height: 24px;
-	padding: 0 15px;
-}
-.front-page .products ul .item .price {
-	font-family: 'PT Sans Narrow', sans-serif;
-	font-size: 24px;
-	line-height: 28px;
-	font-weight: 700;
-	height: 28px;
-}
-.front-page .products ul .item .price span {
-    display: inline-block;
-    margin-left: 26px;
-	color: #C4C4C4;
-    text-decoration: line-through;
-}
-.front-page .products ul .item .dose {
-	font-size: 16px;
-	height: 30px;
-	line-height: 30px;
-	margin-bottom: 36px;
-}
-.front-page .products ul .item .wrap-btn {
-	padding: 0 50px;
-}
-.front-page .products ul .item:hover .btn {
-  color: #fff;
-  background-color: #00B6AD;
-}
+
 .front-page .brands {
 	background: #ECF1ED;
 	padding: 80px 0;

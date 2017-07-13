@@ -9,24 +9,9 @@ if($popular_goods) : ?>
 					<div class="col-xs-12 no-p">
 						<div id="sliderScrollbar" class="content slider-wich-scrollbar">
 							<ul>
-								<?php foreach($popular_goods as $row) : ?>
+								<?php global $post; foreach($popular_goods as $row) : $post = $row; setup_postdata( $post ); ?>
 									<li>
-										<a href="<?php echo get_the_permalink ( $row->ID ); ?>" class="item">
-										<?php if(has_post_thumbnail($row->ID)) : ?>
-											<div class="img">
-												<img src="<?php echo get_the_post_thumbnail_url( $row->ID, 'image-auto-200' ); ?>" />
-											</div>
-										<?php endif; ?>
-										<div class="inner">
-											<h3><?php echo $row->post_title; ?></h3>
-											<div class="text">
-												<?php echo $row->post_excerpt; ?>
-											</div>
-										</div>
-										<div class="price"><?php the_field('price', $row->ID); ?> &#8381; <?php if(get_field('old_price', $row->ID) != '') : ?><span>18 740 &#8381;</span><?php endif; ?></div>
-										<div class="dose"><?php the_field('dose', $row->ID); ?></div>
-										<div class="wrap-btn"><span class="btn btn-transparent btn-block">Подробнее</span></div>
-										</a>
+										<?php get_template_part('blocks/base/product-item'); ?>
 									</li>
 								<?php endforeach; ?>
 							</ul>

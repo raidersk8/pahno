@@ -34,6 +34,15 @@
   </header>
 	<?php if(!is_front_page()) : ?>
 	  <div class="total-first-screen">
+		<div class="phones">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-2 col-xs-offset-10">
+						+7 (4842) 76-24-76<br />+7 (910) 528-64-19
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-6">
@@ -41,15 +50,6 @@
 						<div class="title">Время красоты</div>
 						Центр медицинской косметологии<br />Ольги Пахно
 					</a>
-				</div>
-			</div>
-		</div>
-		<div class="phones">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xs-2 col-xs-offset-10">
-						+7 (4842) 76-24-76<br />+7 (910) 528-64-19
-					</div>
 				</div>
 			</div>
 		</div>

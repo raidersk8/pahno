@@ -5,6 +5,8 @@ show_admin_bar(false);
 add_theme_support( 'post-thumbnails');
 //Разные настройки темы
 require_once('setting/settings.php');
+//Меняем параметры вывода для query для разных типов записей и таксономий
+require_once('setting/setting-query.php');
 //Конфигурация размеров загружаемых изображений
 require_once('setting/image-sizes.php');
 //Регистрация и работы с меню

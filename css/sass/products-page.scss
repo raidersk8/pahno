@@ -1,0 +1,36 @@
+.products-page a {
+	color: #00B6AD;
+}
+.products-page .top-panel {
+	display: table;
+	height: 70px;
+	width: 100%;
+	margin-bottom: 27px;
+}
+.products-page .query-pagination a {
+	color: $main-color;
+}
+.products-page .filter a {
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	border-bottom: 1px dashed #00B6AD;
+}
+.products-page .filter a:before {
+	content: "\f161";
+	font: normal normal normal 14px/1 FontAwesome;
+	position: absolute;
+	display: block;
+	right: -22px;
+	top: 10px;
+	font-size: 14px;
+	line-height: 16px;
+	
+}
+.products-page .filter a.desc:before {
+	content: "\f160";
+	
+}
+.products-page .product-item {
+	color: $main-color;	
+}
