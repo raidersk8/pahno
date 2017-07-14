@@ -33,7 +33,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="copyrigh-part">© Калуга <?php echo date('Y'); ?>, Выполнено в студии «MALTON TECH.»</div>
+		<div class="copyrigh-part">© Калуга <?php echo date('Y'); ?></div>
 	</footer>
 	<?php wp_footer(); ?>
 	</body>

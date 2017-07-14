@@ -1,0 +1,130 @@
+.blog .item {
+	margin-bottom: 92px;
+}
+.blog .item .post-thumbnail {
+	display: block;
+	text-decoration: none;
+	margin: 0 0 33px;
+}
+.blog .item .post-thumbnail img {
+	width: 100%;
+}
+.blog .item .inner-href {
+	display: block;
+	text-decoration: none;
+	margin-bottom: 11px;
+}
+.blog .item .main-title {
+    margin-top: 0;
+}
+.blog .item .excerpt {
+	color: $main-color;
+}
+.blog .item .info-part {
+	border-top: 1px solid #ECF1ED;	
+	padding-top: 8px;
+}
+.blog .item .info-part em {
+	color: #AABFB8;
+}
+.blog .query-pagination {
+	padding: 40px 0;
+	text-align: center;
+}
+.single-blog {
+	padding-top: 8px;
+}
+.single-blog .img img {
+	width: 100%;
+}
+.single-blog .img {
+	margin-bottom: 48px;
+}
+.single-blog .info-part {
+	border-top: 1px solid #ECF1ED;	
+	padding: 8px 0 132px;
+}
+.single-blog .info-part em {
+	color: #AABFB8;
+}
+
+.comments-block {
+	background: #ECF1ED;
+	padding: 10px 0 130px;
+}
+.comments-block .comment-title {
+	color: $main-color;
+    margin-bottom: 54px;
+}
+.comments-block .comment-list {
+	display: block;
+	margin: 0 0 88px;
+	padding: 0;
+	list-style: none
+}
+.comments-block .comment-list .comment {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+.comments-block .comment-list .comment .item {
+	position: relative;
+	background: #fff;
+	padding: 49px 0 33px;
+	margin-bottom: 56px;
+}
+.comments-block .comment-list .comment .item:before {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -29px;
+	right: 22px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 27px 29px 0;
+	border-color: #ffffff transparent transparent transparent;
+}
+
+.comments-block .comment-list .comment .children .item:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: -29px;
+    right: 21px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 29px 0 0 27px;
+	border-color: transparent transparent transparent #ffffff;
+}
+.comments-block .comment-list .comment .item a {
+	color: #00B6AD;
+}
+.comments-block .comment-list .comment .item .title {
+	font-weight: 700;
+}
+.comments-block .comment-list .comment .item .text {
+	padding: 19px 0 0;
+}
+.comments-block .comment-list .comment .children {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 100px;
+}
+.comments-block .comment-reply-title {
+    margin: 0 0 36px;
+	text-align: center;
+	color: $main-color;
+}
+.comments-block .comment-respond textarea.form-control {
+	height: 170px;
+	resize: none; /* Запрещаем изменять размер */
+}
+.comments-block .comment-respond-message {
+	padding-top: 5px;
+}
+.comments-block .comment-respond-message span {
+	color: $a-color;
+}

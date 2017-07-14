@@ -51,7 +51,7 @@
 .front-page .services {
 	position: relative;
 	padding-top: 4px;
-	margin-bottom: 93px;
+	margin-bottom: 46px;
 }
 
 .front-page .services:before {
@@ -137,6 +137,10 @@
 }
 .front-page .advantages .text {
 	margin-bottom: 71px;
+}
+
+.front-page .advantages .text:last-child {
+	margin-bottom: 24px;
 }
 
 .front-page .advantages .right-part {

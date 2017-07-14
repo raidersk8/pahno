@@ -4,7 +4,7 @@ $act_post_id = get_the_ID();
 $act_term = get_the_terms( get_the_ID(), 'services_category' );
 if($act_term) $act_term = $act_term[0];
 ?>
-<div class="container">
+<div class="container single-services">
 	<div class="row">
 		<div class="col-xs-4">
 			<?php get_search_form(); ?>
@@ -41,6 +41,19 @@ if($act_term) $act_term = $act_term[0];
 				</ul>
 				</div>
 			<?php endif; ?>
+		</div>
+		<div class="col-xs-8">
+			<div class="row"><div class="col-xs-10-5 col-xs-offset-1-5"><h1><?php the_title(); ?></h1></div></div>
+			<div class="post-thumbnail to-the-right">
+				<?php if(has_post_thumbnail()) : ?>
+					<img src="<?php echo get_the_post_thumbnail_url( get_the_ID(), 'image-905-auto' ); ?>" />
+				<?php endif; ?>
+			</div>
+			<div class="row content-page">
+				<div class="col-xs-10-5 col-xs-offset-1-5">
+					<?php the_content(); ?>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
