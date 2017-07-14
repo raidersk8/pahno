@@ -268,11 +268,25 @@ footer .copyrigh-part {
 	letter-spacing: 0px;
 }
 .search-form {
-	margin-bottom: 28px;
+	position: relative;
+	margin: 0 0 28px -30px;
 }
 
 .search-form .form-control {
 	border-color: #AABFB8;
+}
+
+
+.search-form:before {
+	content: '';
+	display: block;
+    position: absolute;
+	top: 50%;
+	right: 22px;
+	background: url(../svg/search-icon.svg) center center no-repeat;
+	width: 26px;
+	height: 26px;
+	margin: -12px 0 0 0;
 }
 
 .product-item {
