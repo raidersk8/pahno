@@ -302,6 +302,10 @@ footer .copyrigh-part {
 .product-item .img {
 	margin-bottom: 29px;
 	height: 200px;
+	padding: 0 40px;
+}
+.product-item .img img {
+	max-width: 100%;
 }
 .product-item .inner {
 	height: 252px;
