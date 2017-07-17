@@ -22,7 +22,7 @@ if( $locations && isset($locations[ $menu_name ]) ) :
 			</div>
 			<?php endforeach; ?>
 			<div class="col-xs-4 item no-p">
-				<a href="#" class="inner"><div class="text">Все услуги</div></a>
+				<a href="/services" class="inner"><div class="text">Все услуги</div></a>
 			</div>
 		</div>
 	</div>

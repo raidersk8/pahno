@@ -6888,7 +6888,7 @@ p {
   margin: 0 0 20px; }
 
 b, strong {
-  font-weight: 400; }
+  font-weight: 700; }
 
 sub, sup {
   font-size: 64%; }
@@ -6943,6 +6943,25 @@ header .menu ul li a {
   color: #fff;
   text-decoration: none;
   padding: 21px 0 19px; }
+
+header .menu ul li:hover ul {
+  display: block; }
+
+header .menu ul li.menu-item-has-children:after {
+  content: "\f107";
+  font-family: FontAwesome;
+  color: #fff; }
+
+header .menu ul li.menu-item-has-children:hover:after {
+  content: "\f106"; }
+
+header .menu ul li ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #00B6AD;
+  text-align: center; }
 
 header .social {
   position: absolute;
@@ -7086,6 +7105,14 @@ footer .copyrigh-part {
   background: -webkit-linear-gradient(90deg, rgba(239, 52, 108, 0.25) 0%, rgba(239, 52, 108, 0) 100%);
   background: linear-gradient(90deg, rgba(239, 52, 108, 0.25) 0%, rgba(239, 52, 108, 0) 100%); }
 
+.navigation-menu.type-2 > ul > li.active > .active-bg.to-the-left {
+  border-left: 4px solid #00B6AD;
+  background: linear-gradient(90deg, rgba(0, 182, 173, 0.25) 0%, rgba(0, 182, 173, 0) 97.79%);
+  background: rgba(0, 128, 173, 0.25);
+  background: -moz-linear-gradient(90deg, rgba(0, 182, 173, 0.25) 0%, rgba(0, 182, 173, 0) 97.79%);
+  background: -webkit-linear-gradient(90deg, rgba(0, 182, 173, 0.25) 0%, rgba(0, 182, 173, 0) 97.79%);
+  background: linear-gradient(90deg, rgba(0, 182, 173, 0.25) 0%, rgba(0, 182, 173, 0) 97.79%); }
+
 .navigation-menu ul li .childs-bg.to-the-left {
   position: absolute;
   left: 0;
@@ -7144,13 +7171,8 @@ footer .copyrigh-part {
   margin: 0 0 65px; }
 
 .total-first-screen .phones {
-  position: absolute;
-  top: 16px;
-  left: 0;
-  width: 100%;
   color: #EF346C;
-  font-weight: 700;
-  text-align: center; }
+  font-weight: 700; }
 
 .total-first-screen .logo {
   display: block;
@@ -7191,6 +7213,7 @@ footer .copyrigh-part {
 
 .product-item {
   display: block;
+  position: relative;
   text-decoration: none;
   border: 1px solid #E5E5E5;
   text-align: center;
@@ -7198,6 +7221,22 @@ footer .copyrigh-part {
   height: 702px;
   color: #556D70;
   margin-bottom: 28px; }
+
+.product-item .type {
+  position: absolute;
+  font-family: 'PT Sans Narrow', sans-serif;
+  left: 14px;
+  top: 14px;
+  color: #fff;
+  font-weight: 700;
+  padding: 0 8px;
+  text-transform: uppercase; }
+
+.product-item .type.type-discount {
+  background: #00B6AD; }
+
+.product-item .type.type-new {
+  background: #EF346C; }
 
 .product-item .img {
   margin-bottom: 29px;
@@ -7311,6 +7350,44 @@ footer .copyrigh-part {
   width: 100% !important;
   height: auto !important;
   margin: 32px 0 28px; }
+
+.wrap-input-text {
+  position: relative; }
+
+.wrap-input-text .placeholder {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  color: #708D90;
+  text-align: center;
+  width: 100%;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  -o-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s; }
+
+.wrap-input-text.is-focus .placeholder {
+  top: 0;
+  padding-left: 12px;
+  text-align: left;
+  font-size: 14px; }
+
+.wrap-input-text .placeholder span {
+  color: #EF346C; }
+
+span.wpcf7-not-valid-tip {
+  display: none !important; }
+
+div.wpcf7-response-output {
+  border: none;
+  margin: 0;
+  padding: 20px 0 0; }
+
+div.wpcf7 .ajax-loader {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  margin-top: -8px; }
 
 .front-page .first-screen {
   position: relative;
@@ -7812,6 +7889,32 @@ footer .copyrigh-part {
   padding-top: 5px; }
 
 .comments-block .comment-respond-message span {
+  color: #EF346C; }
+
+.contacts {
+  position: relative; }
+
+.contacts .map {
+  height: 855px;
+  margin: -65px 0 0; }
+
+.contacts .content {
+  position: absolute;
+  width: 100%;
+  top: 136px; }
+
+.contacts .content .inner {
+  background: #fff;
+  border: 1px solid #AABFB8;
+  padding: 60px; }
+
+.contacts .content .inner .main-title {
+  font-size: 26px; }
+
+.contacts .content .inner a {
+  color: #00B6AD; }
+
+.contacts .content .inner span {
   color: #EF346C; }
 
 @font-face {

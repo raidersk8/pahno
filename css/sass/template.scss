@@ -31,6 +31,26 @@ header .menu ul li a {
 	text-decoration: none;
 	padding: 21px 0 19px;
 }
+
+header .menu ul li:hover ul {
+	display: block;
+}
+header .menu ul li.menu-item-has-children:after {
+	content: "\f107";
+	font-family: FontAwesome;
+	color: #fff;
+}
+header .menu ul li.menu-item-has-children:hover:after {
+	content: "\f106";	
+}
+header .menu ul li ul {
+	display: none;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background: #00B6AD;
+	text-align: center;
+}
 header .social {
 	position: absolute;
 	right: 30px;	
@@ -175,6 +195,19 @@ footer .copyrigh-part {
 
 	
 }
+.navigation-menu.type-2 > ul > li.active > .active-bg.to-the-left {
+	border-left: 4px solid #00B6AD;
+
+
+	background: linear-gradient(90deg, rgba(0, 182, 173, 0.25) 0%, rgba(0, 182, 173, 0) 97.79%);
+
+	background: rgba(0, 128, 173, 0.25);
+	background: -moz-linear-gradient(90deg, rgba(0, 182, 173, 0.25) 0%, rgba(0, 182, 173, 0) 97.79%);
+	background: -webkit-linear-gradient(90deg, rgba(0, 182, 173, 0.25) 0%, rgba(0, 182, 173, 0) 97.79%);
+	background: linear-gradient(90deg, rgba(0, 182, 173, 0.25) 0%, rgba(0, 182, 173, 0) 97.79%);
+
+	
+}
 
 .navigation-menu ul li .childs-bg.to-the-left {
 	position: absolute;
@@ -240,13 +273,8 @@ footer .copyrigh-part {
 	margin: 0 0 65px;
 }
 .total-first-screen .phones {
-	position: absolute;
-    top: 16px;
-	left: 0;
-	width: 100%;
 	color: $a-color;
 	font-weight: 700;
-	text-align: center;
 }
 .total-first-screen .logo {
 	display: block;
@@ -291,6 +319,7 @@ footer .copyrigh-part {
 
 .product-item {
 	display: block;
+	position: relative;
 	text-decoration: none;
 	border: 1px solid #E5E5E5;
 	text-align: center;
@@ -298,6 +327,22 @@ footer .copyrigh-part {
 	height: 702px;
 	color: $main-color;
 	margin-bottom: 28px;
+}
+.product-item .type {
+	position: absolute;
+	font-family: 'PT Sans Narrow', sans-serif;
+	left: 14px;
+	top: 14px;
+	color: #fff;
+	font-weight: 700;
+	padding: 0 8px;
+	text-transform: uppercase;
+}
+.product-item .type.type-discount {
+	background: #00B6AD;
+}
+.product-item .type.type-new {
+	background: $a-color;
 }
 .product-item .img {
 	margin-bottom: 29px;
@@ -407,4 +452,42 @@ footer .copyrigh-part {
 	width: 100% !important;
 	height: auto !important;
 	margin: 32px 0 28px;
+}
+
+.wrap-input-text {
+	position: relative;
+}
+.wrap-input-text .placeholder {
+	position: absolute;
+	left: 0;
+    top: 20px;
+	color: #708D90;
+	text-align: center;
+	width: 100%;
+	@include animation-transition (0.15s, all);
+}
+.wrap-input-text.is-focus .placeholder {
+    top: 0;
+	padding-left: 12px;
+	text-align: left;
+	font-size: 14px;
+}
+.wrap-input-text .placeholder span {
+	color: $a-color;
+}
+
+span.wpcf7-not-valid-tip {
+	display: none !important;
+}
+div.wpcf7-response-output {
+	border: none;
+	margin: 0;
+	padding: 20px 0 0;
+}
+
+div.wpcf7 .ajax-loader {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    margin-top: -8px;
 }

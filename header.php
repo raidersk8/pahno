@@ -19,30 +19,21 @@
   <header>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="col-xs-12 position-static">
 				<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container_class' => 'menu', 'menu_class' => '' ) ); ?>
 			</div>
 		</div>
 	</div>
-	<div class="social">
-		<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-		<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-		<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-		<a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
-		<a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+	<?php if( have_rows('social', 'options') ): ?>
+	<div class="social">							
+		<?php while ( have_rows('social', 'options') ) : the_row(); ?>		
+			<a href="<?php the_sub_field('href'); ?>"><i class="fa <?php the_sub_field('icon'); ?>" aria-hidden="true"></i></a>		
+		<?php endwhile; ?>
 	</div>
+	<?php endif; ?>
   </header>
 	<?php if(!is_front_page()) : ?>
 	  <div class="total-first-screen">
-		<div class="phones">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xs-2 col-xs-offset-10">
-						+7 (4842) 76-24-76<br />+7 (910) 528-64-19
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-6">
@@ -50,6 +41,10 @@
 						<div class="title">Время красоты</div>
 						Центр медицинской косметологии<br />Ольги Пахно
 					</a>
+				</div>
+				
+				<div class="col-xs-6 text-right phones">
+					+7 (4842) 76-24-76<br />+7 (910) 528-64-19
 				</div>
 			</div>
 		</div>

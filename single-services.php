@@ -58,4 +58,5 @@ if($act_term) $act_term = $act_term[0];
 	</div>
 </div>
 <?php endif;?>
+<?php get_template_part('blocks/front-page/have-questions'); ?>
 <?php get_footer(); ?>

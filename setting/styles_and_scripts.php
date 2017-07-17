@@ -71,10 +71,10 @@ function theme_name_scripts() {
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js' );
 	
 	
-	/*
+	
 	//Библиотека гугл карты
 	wp_enqueue_script( 'google-map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAoIhlfl0vA6Uv0DuIgbriry2cZYDbNw2g' );
-	wp_enqueue_script( 'map', get_template_directory_uri() . '/js/map.js' );*/
+	wp_enqueue_script( 'map', get_template_directory_uri() . '/js/map.js' );
 	
 	
 }

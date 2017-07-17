@@ -1,0 +1,26 @@
+.contacts {
+	position: relative;
+}
+.contacts .map {
+	height: 855px;
+	margin: -65px 0 0;
+}
+.contacts .content {
+	position: absolute;
+	width: 100%;
+	top: 136px;
+}
+.contacts .content .inner {
+	background: #fff;
+	border: 1px solid #AABFB8;
+	padding: 60px;
+}
+.contacts .content .inner .main-title {
+	font-size: 26px;
+}
+.contacts .content .inner a {
+	color: #00B6AD;
+}
+.contacts .content .inner span {
+	color: $a-color;
+}

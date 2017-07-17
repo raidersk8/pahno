@@ -8,14 +8,14 @@
 							Центр медицинской косметологии<br />
 							Ольги Пахно
 						</div>
-						<div class="text">Центр медицинской косметологии «Время красоты» — место, где мечта становится реальностью, а реальность обретает новые краски.</div>						
-						<div class="social">
-							<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+						<div class="text">Центр медицинской косметологии «Время красоты» — место, где мечта становится реальностью, а реальность обретает новые краски.</div>		
+						<?php if( have_rows('social', 'options') ): ?>
+						<div class="social">							
+							<?php while ( have_rows('social', 'options') ) : the_row(); ?>		
+								<a href="<?php the_sub_field('href'); ?>"><i class="fa <?php the_sub_field('icon'); ?>" aria-hidden="true"></i></a>		
+							<?php endwhile; ?>
 						</div>
+						<?php endif; ?>
 					</div>
 				</div>
 				<div class="col-xs-4">
@@ -26,10 +26,17 @@
 				</div>
 				<div class="col-xs-4">
 					<div class="main-title">Контактная информация</div>
-					<p>248000, город Калуга,<br />улица Вооруженного Восстания, 2/23</p>
-					<p>тел.: (4842) 76-24-76<br />
-					тел.: 8-910-528-64-19</p>
-					<p>e-mail: beauty_time@mail.ru</p>
+					<p><?php the_field('address', 'options'); ?></p>
+					<?php if( have_rows('phones', 'options') ): ?>
+						<p>
+							<?php while ( have_rows('phones', 'options') ) : the_row(); ?>							
+								тел.: <?php the_sub_field('text'); ?><br />
+							<?php endwhile; ?>
+						</p>
+					<?php endif; ?>
+					<?php if(get_field('email', 'options')) : ?>
+					<p>e-mail: <?php the_field('email', 'options'); ?></p>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>

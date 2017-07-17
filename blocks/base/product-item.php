@@ -1,9 +1,14 @@
 <a href="<?php echo get_the_permalink ( get_the_ID() ); ?>" class="product-item">
-		<div class="img">
-			<?php if(has_post_thumbnail(get_the_ID())) : ?>
-				<img src="<?php echo get_the_post_thumbnail_url( get_the_ID(), 'image-905-auto' ); ?>" />
-			<?php endif; ?>
-		</div>
+	<?php if(get_field('old_price', get_the_ID()) != '') : ?>
+		<div class="type type-discount">скидка</div>
+	<?php elseif(get_field('is-new', get_the_ID())) : ?>
+		<div class="type type-new">Новинка</div>	
+	<?php endif; ?>
+	<div class="img">
+		<?php if(has_post_thumbnail(get_the_ID())) : ?>
+			<img src="<?php echo get_the_post_thumbnail_url( get_the_ID(), 'image-905-auto' ); ?>" />
+		<?php endif; ?>
+	</div>
 	<div class="inner">
 		<h3><?php the_title(); ?></h3>
 		<div class="text">

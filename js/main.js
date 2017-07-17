@@ -59,6 +59,17 @@ function toTheLeft() {
 		$('.navigation-menu > ul > li.active > .childs-bg').height($('.navigation-menu > ul > li.active > ul').innerHeight());
 	}
 }
+$('.wrap-input-text .placeholder').click(function(){
+	$(this).parents('.wrap-input-text').find('input').focus();
+});
+$('.wrap-input-text input').focusin(function() {
+	$(this).parents('.wrap-input-text').addClass('is-focus');
+});
+$('.wrap-input-text input').focusout(function() {
+	if($(this).val() == '') {
+		$(this).parents('.wrap-input-text').removeClass('is-focus');
+	}
+});
 /*
 //Иницализация костомных selectov
 $('.selectpicker').selectpicker({

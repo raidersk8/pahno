@@ -8,13 +8,15 @@
 					Ольги Пахно
 				</div>
 				<div class="first-text">Время можно остановить,<br />красоту — сохранить</div>
-				<div class="phones">
-					+7 (4842) 76-24-76 <br />
-					+7 (910) 528-64-19
-				</div>
+				<?php if( have_rows('phones', 'options') ): ?>
+					<div class="phones">
+						<?php while ( have_rows('phones', 'options') ) : the_row(); ?>							
+							<?php the_sub_field('text'); ?><br />
+						<?php endwhile; ?>
+					</div>
+				<?php endif; ?>
 				<div class="address">
-					г. Калуга, ул. Вооруженного Восстания, 2/23 <br />
-					Пн — Пт: с 9:00 до 20:00
+					<?php the_field('address'); ?>
 				</div>
 			</div>
 		</div>

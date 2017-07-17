@@ -27,7 +27,7 @@ if($act_term) $act_term = $act_term[0];
 			<div class="col-xs-8">
 				<div class="top-part">
 					<div class="vertical-middle">
-						<a class="to-back" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Назад в каталог</a>
+						<a class="to-back" href="#" onclick="history.back();"><i class="fa fa-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Назад в каталог</a>
 					</div>
 				</div>
 				<div class="row">
@@ -58,5 +58,6 @@ if($act_term) $act_term = $act_term[0];
 		</div>
 	</div>
 </div>
+<?php get_template_part('blocks/base/order-prod'); ?>
 <?php endif; ?>
 <?php get_footer(); ?>
