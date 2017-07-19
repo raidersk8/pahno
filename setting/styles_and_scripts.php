@@ -28,6 +28,7 @@ function theme_name_scripts() {
 	
 	wp_enqueue_style( 'fancybox', get_template_directory_uri() . '/fancybox/source/jquery.fancybox.css' );
 	wp_enqueue_style( 'main', get_template_directory_uri() . '/css/main.css' );	
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css' );	
 	
 	//jquery
 	wp_enqueue_script( 'jquery-2', get_template_directory_uri() . '/js/jquery.min.js' );

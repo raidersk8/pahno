@@ -7,9 +7,8 @@ Template Post Type: example
 <?php //Пример подключения файла ?>
 <?php get_template_part('blocks/examples/example'); ?>
 <?php get_header(); ?>	
-<?php 
-//Пример инициализации поста перед выводом
-if ( have_posts() ) : the_post(); ?>
+<?php //Пример инициализации поста перед выводом ?>
+<?php if ( have_posts() ) : the_post(); ?>
 	<?php the_title(); ?>
 	<?php the_content(); ?>
 <?php endif; ?>
