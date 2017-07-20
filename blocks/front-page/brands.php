@@ -1,6 +1,4 @@
-<?php $terms = get_terms( 'brands', array(
-	'hide_empty' => false,
-) ); ?>
+<?php $terms = get_terms( 'brands' ); ?>
 <?php if($terms) : ?>
 <div class="brands">
 	<div class="container">

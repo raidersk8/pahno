@@ -1,0 +1,85 @@
+@media (max-width: $media-xs-max-width) {
+	.front-page .first-screen {
+		padding-top: 40px;
+		height: 420px;
+	}
+	.front-page .first-screen .logo {
+		padding: 17px 0 0 63px; 
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.2px;
+		margin: 0 0 9px;
+	}
+	.front-page .first-screen .logo .text {
+		font-size: 37px;
+		line-height: 40px;
+		letter-spacing: 0.3px;
+	}
+	.front-page .first-screen .logo:before {
+		width: 58px;
+		height: 96px;
+		background: url(../svg/logo.svg) left top no-repeat;
+		background-size: cover;
+	}
+	.front-page .first-screen .first-text {
+		font-size: 20px;
+		line-height: 28px;
+		margin-bottom: 13px;
+	}
+	.front-page .first-screen .phones {
+		font-size: 20px;
+		line-height: 41px;
+		margin-bottom: 19px;
+	}
+	.front-page .first-screen .address {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.front-page .services {
+		margin-bottom: 48px;
+	}
+	.front-page .services .list .item .inner {
+		border: 2px solid #fff;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+		height: 186px;
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.front-page .services .list .item .inner .text {
+		width: 189px;
+	}
+	.front-page .services .list .item:last-child .inner {
+		height: 85px;
+	}
+	.front-page .services .list .item:last-child .inner .text {
+		right: 0;
+		width: 100%;
+		text-align: center;
+	}	
+	.front-page .advantages .border-text {
+		font-size: 18px;
+		line-height: 28px;
+		padding: 16px 0 18px;
+		margin-bottom: 17px;
+	}
+	.front-page .advantages .text {
+		margin-bottom: 49px;
+	}
+	.front-page .products .main-title {
+		margin-top: 0;
+		margin-bottom: 55px;
+	}
+	.front-page .products ul .product-item {
+		border-right: 1px solid #E5E5E5;
+		border-bottom: none;
+		margin-bottom: 0;
+	}
+	.front-page .products ul li:last-child .product-item {
+		border-bottom: 1px solid #E5E5E5;
+	}
+	.slider-wich-scrollbar.content li {
+		float: none !important;
+	}
+}

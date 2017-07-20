@@ -15,9 +15,30 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="<?php if(wpmd_is_phone()) echo 'is-phone'; ?> <?php if(wpmd_is_tablet()) echo 'is-tablet'; ?>">
   <header>
-	<div class="container">
+	<div class=" visible-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-9 text-center">
+					<?php if( have_rows('social', 'options') ): ?>
+					<div class="social">							
+						<?php while ( have_rows('social', 'options') ) : the_row(); ?>		
+							<a href="<?php the_sub_field('href'); ?>"><i class="fa <?php the_sub_field('icon'); ?>" aria-hidden="true"></i></a>		
+						<?php endwhile; ?>
+					</div>
+					<?php endif; ?>
+				</div>
+				<div class="col-xs-3">
+					<a class="switch-menu collapsed" data-toggle="collapse" href="#collapse-menu"><div class="icon"><div class="middle-line"></div></div></a>
+				</div>
+			</div>
+		</div>
+		<div id="collapse-menu" class="collapse text-center">
+			<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container_class' => 'menu', 'menu_class' => '' ) ); ?>
+		</div>
+	</div>
+	<div class="container hidden-xs">
 		<div class="row">
 			<div class="col-xs-12 position-static">
 				<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container_class' => 'menu', 'menu_class' => '' ) ); ?>
@@ -25,7 +46,7 @@
 		</div>
 	</div>
 	<?php if( have_rows('social', 'options') ): ?>
-	<div class="social">							
+	<div class="social hidden-xs">							
 		<?php while ( have_rows('social', 'options') ) : the_row(); ?>		
 			<a href="<?php the_sub_field('href'); ?>"><i class="fa <?php the_sub_field('icon'); ?>" aria-hidden="true"></i></a>		
 		<?php endwhile; ?>
@@ -42,10 +63,13 @@
 						Центр медицинской косметологии<br />Ольги Пахно
 					</a>
 				</div>
-				
+				<?php if( have_rows('phones', 'options') ): ?>
 				<div class="col-xs-6 text-right phones">
-					+7 (4842) 76-24-76<br />+7 (910) 528-64-19
+					<?php while ( have_rows('phones', 'options') ) : the_row(); ?>	
+					<?php the_sub_field('text'); ?><br />
+					<?php endwhile; ?>
 				</div>
+				<?php endif; ?>
 			</div>
 		</div>
 	  </div>

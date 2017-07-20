@@ -6,15 +6,24 @@
 	height: 730px;
 }
 .front-page .first-screen .logo {
+	position: relative;
 	padding: 37px 0 0 126px;
-	height: 189px;
-	background: url(../svg/logo.svg) left top no-repeat;
 	font-size: 35px;
 	line-height: 42px;
 	color: #667884;
 	font-family: 'PT Sans Narrow', sans-serif;
 	letter-spacing: 0.5px;
 	margin: 0 0 59px;
+}
+.front-page .first-screen .logo:before {
+	content: '';
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 116px;
+	height: 189px;
+	background: url(../svg/logo.svg) left top no-repeat;
 }
 .front-page .first-screen .logo .text {
 	font-size: 74px;
@@ -135,21 +144,17 @@
 	padding: 28px 0;
 	margin-bottom: 26px;
 }
+.front-page .advantages .border-text p {
+	margin: 0;
+}
 .front-page .advantages .text {
 	margin-bottom: 71px;
 }
-
+/*
 .front-page .advantages .text:last-child {
 	margin-bottom: 24px;
-}
+}*/
 
-.front-page .advantages .right-part {
-	padding-left: 30px;
-}
-
-.front-page .advantages .left-part {
-	padding-right: 30px;
-}
 .front-page .products {
 	margin-bottom: 85px;
 }

@@ -1,0 +1,44 @@
+@media (max-width: $media-xs-max-width) {
+	body {
+		padding-top: 48px;
+	}
+	header {
+		padding: 4px 0;
+	}
+	header .social {
+		position: relative;
+		right: auto;
+		top: auto;
+		padding: 4px 0 0;
+	}
+	header .menu ul li {
+		display: block;
+		margin: 0;
+	}
+	header .menu ul li ul {
+		position: relative;
+		left: auto;
+	}
+	header .menu ul li:hover ul {
+		display: none;
+	}
+	header .menu ul li.menu-item-has-children > a:hover:after {
+	    content: "\f107";
+	}
+	
+	header .menu ul li.menu-item-has-children.show-children > a:after {
+	    content: "\f106";
+	}
+	.product-item {
+		height: 561px;
+	}
+	.product-item .img {
+		margin-bottom: 18px;
+	}
+	.product-item .inner {
+		height: 118px;
+	}
+	.product-item .dose {
+		margin-bottom: 26px;
+	}
+}

@@ -2,7 +2,7 @@
 //Для инициализации плагинов которым важно дождаться загрузки картинок
 $(window).load(
 	function() {	
-		$('#sliderScrollbar').sliderScrollbar({
+		$('body:not(.is-phone) #sliderScrollbar').sliderScrollbar({
 			responsivecountitem: 4,
 		});
 		$('#preloader').hide();
@@ -59,6 +59,23 @@ function toTheLeft() {
 		$('.navigation-menu > ul > li.active > .childs-bg').height($('.navigation-menu > ul > li.active > ul').innerHeight());
 	}
 }
+
+$('.menu-item-has-children > a').click(function() {
+	return false;
+});
+$('.is-mobile .menu-item-has-children > a').click(function() {
+	var parent = $(this).parents('.menu-item-has-children');
+	if(parent.hasClass('show-children')) {
+		parent.removeClass('show-children');
+		parent.find('ul').slideUp( "slow");
+	} else {
+		parent.addClass('show-children');
+		parent.find('ul').slideDown( "slow");
+	}
+	return false;
+});
+
+
 $('.wrap-input-text .placeholder').click(function(){
 	$(this).parents('.wrap-input-text').find('input').focus();
 });
@@ -70,6 +87,7 @@ $('.wrap-input-text input').focusout(function() {
 		$(this).parents('.wrap-input-text').removeClass('is-focus');
 	}
 });
+$('.scroll-to').scrollToAnim({topOffset: 70});
 /*
 //Иницализация костомных selectov
 $('.selectpicker').selectpicker({
@@ -85,7 +103,7 @@ $('.selectpicker-ref').on('changed.bs.select', function (e) {
 
 //Перелистование на главной на первом экране
 $('.front-page .first-screen .slider').runByElements();
-$('.scroll-to').scrollToAnim();
+
 
 $(".fancybox-full-screen").fancybox({
 	width: "100%", 

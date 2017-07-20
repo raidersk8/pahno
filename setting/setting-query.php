@@ -1,6 +1,5 @@
 <?php
 function setting_pre_get_posts_for_custom_post($query) {
-	
 	if ( ! is_admin() && $query->is_main_query() ) {
 	  
 	  
@@ -10,6 +9,11 @@ function setting_pre_get_posts_for_custom_post($query) {
 			$query->set( 'meta_key', 'price');
 			$query->set( 'orderby', 'meta_value');
 			$query->set( 'order', $priceOrder);
+		}
+		if(is_search()) {
+			if($_GET['post-type']) {
+				$query->set('post_type', esc_sql($_GET['post-type']));
+			}
 		}
 	  
 		/*

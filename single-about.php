@@ -16,9 +16,7 @@ $queryArgs = array( 'post_type' => 'about', 'posts_per_page' => -1,
 	<div class="row">
 		<div class="col-xs-4">
 			<?php get_search_form(); ?>
-			<?php $terms = get_terms( 'about_category', array(
-				'hide_empty' => false,
-			)); 
+			<?php $terms = get_terms( 'about_category'); 
 			if($terms) : ?>
 				<div class="navigation-menu">
 				<ul>
@@ -29,7 +27,7 @@ $queryArgs = array( 'post_type' => 'about', 'posts_per_page' => -1,
 							$query = new WP_Query; 
 							$queryPost = $query->query($queryArgs);
 						?>
-						<a href="<?php if($queryPost && count($queryPost) == 1) echo get_post_permalink($queryPost[0]->ID); else echo get_term_link( $row ); ?>"><?php echo $row->name; ?></a>
+						<a href="<?php if($queryPost) echo get_post_permalink($queryPost[0]->ID); else echo get_term_link( $row ); ?>"><?php echo $row->name; ?></a>
 						<?php if($row->term_id == $act_term->term_id && count($queryPost) > 1) : ?>
 							<?php 
 								$query = new WP_Query($queryArgs); 

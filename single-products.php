@@ -1,4 +1,5 @@
 <?php get_header(); 
+$postType = 'products';
 if( have_posts() ) : the_post(); 
 $act_post_id = get_the_ID();
 $act_term = get_the_terms( get_the_ID(), 'products_category' );
@@ -9,9 +10,7 @@ if($act_term) $act_term = $act_term[0];
 		<div class="row">
 			<div class="col-xs-4">
 				<?php get_search_form(); ?>
-				<?php $terms = get_terms( 'products_category', array(
-					'hide_empty' => false,
-				)); 
+				<?php $terms = get_terms( 'products_category'); 
 				if($terms) : ?>
 					<div class="navigation-menu type-2">
 					<ul>
@@ -44,7 +43,7 @@ if($act_term) $act_term = $act_term[0];
 						<div class="dose">
 							(<?php the_field('dose'); ?>)
 						</div>
-						<a href="#" class="btn btn-block btn-persian-green btn-lg">Заказать товар</a>
+						<a href="#order-product" class="btn btn-block btn-persian-green btn-lg scroll-to">Заказать товар</a>
 					</div>
 				</div>
 				<div class="row">
@@ -58,6 +57,7 @@ if($act_term) $act_term = $act_term[0];
 		</div>
 	</div>
 </div>
+<div id="order-product"></div>
 <?php get_template_part('blocks/base/order-prod'); ?>
 <?php endif; ?>
 <?php get_footer(); ?>

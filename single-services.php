@@ -4,21 +4,21 @@ $act_post_id = get_the_ID();
 $act_term = get_the_terms( get_the_ID(), 'services_category' );
 if($act_term) $act_term = $act_term[0];
 $queryArgs = array( 'post_type' => 'services', 'posts_per_page' => -1, 
+'order'   => 'ASC',
 'tax_query' => array(
 	array(
 		'taxonomy' => 'services_category',
 		'field'    => 'id',
-		'terms'    => $act_term->term_id
+		'terms'    => $act_term->term_id,
 	)
 ));
+$postType = 'services';
 ?>
 <div class="container single-services">
 	<div class="row">
 		<div class="col-xs-4">
 			<?php get_search_form(); ?>
-			<?php $terms = get_terms( 'services_category', array(
-				'hide_empty' => false,
-			)); 
+			<?php $terms = get_terms( 'services_category'); 
 			if($terms) : ?>
 				<div class="navigation-menu">
 				<ul>
@@ -29,7 +29,7 @@ $queryArgs = array( 'post_type' => 'services', 'posts_per_page' => -1,
 							$query = new WP_Query; 
 							$queryPost = $query->query($queryArgs);
 						?>
-						<a href="<?php if($queryPost && count($queryPost) == 1) echo get_post_permalink($queryPost[0]->ID); else echo get_term_link( $row ); ?>"><?php echo $row->name; ?></a>
+						<a href="<?php if($queryPost) echo get_post_permalink($queryPost[0]->ID); else echo get_term_link( $row ); ?>"><?php echo $row->name; ?></a>
 						<?php if($row->term_id == $act_term->term_id && count($queryPost) > 1) : ?>
 							<?php 
 								$query = new WP_Query($queryArgs); 
@@ -49,10 +49,20 @@ $queryArgs = array( 'post_type' => 'services', 'posts_per_page' => -1,
 			<?php endif; ?>
 		</div>
 		<div class="col-xs-8">
-			<div class="row"><div class="col-xs-10-5 col-xs-offset-1-5"><h1><?php the_title(); ?></h1></div></div>
+			<div class="row">
+				<div class="col-xs-10-5 col-xs-offset-1-5"><h1><?php the_title(); ?></h1></div>
+			</div>
 				<?php if(has_post_thumbnail()) : ?>
-					<div class="post-thumbnail to-the-right">
-						<img src="<?php echo get_the_post_thumbnail_url( get_the_ID(), 'image-905-auto' ); ?>" />
+					<div class="post-thumbnail to-the-right" style="background-image: url(<?php echo get_the_post_thumbnail_url( get_the_ID(), 'image-1140-auto' ); ?>);">
+					</div>
+					<div class="row img-title">
+						<div class="col-xs-9 col-xs-offset-1-5">
+							<div class="inner">
+								<div class="vertical-middle">
+									<h2><?php the_field('img-title'); ?></h2>
+								</div>
+							</div>
+						</div>
 					</div>
 				<?php endif; ?>
 			<div class="row content-page">

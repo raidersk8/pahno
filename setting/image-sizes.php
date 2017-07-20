@@ -13,6 +13,7 @@ add_image_size('image-210-auto', 210, 9999);
 add_image_size('image-480-350', 480, 350, array('center', 'top'));
 //Для Услуг
 add_image_size('image-905-auto', 905, 9999);
+add_image_size('image-1140-auto', 1140, 9999);
 
 
 

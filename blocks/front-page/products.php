@@ -6,7 +6,7 @@ if($popular_goods) : ?>
 			<div class="col-xs-12">
 				<h2 class="text-center main-title">популярные косметические средства</h2>				
 				<div class="row">
-					<div class="col-xs-12 no-p">
+					<div class="col-xs-12 no-p yes-p-xs">
 						<div id="sliderScrollbar" class="content slider-wich-scrollbar">
 							<ul>
 								<?php global $post; foreach($popular_goods as $row) : $post = $row; setup_postdata( $post ); ?>

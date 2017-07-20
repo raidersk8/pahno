@@ -10,7 +10,7 @@ if( $locations && isset($locations[ $menu_name ]) ) :
 	<div class="container-fluid">
 		<div class="row list">
 			<?php foreach($menu_items as $row) : ?>
-			<div class="col-xs-4 item no-p">
+			<div class="col-sm-4 col-xs-12 item no-p">
 				<?php $term = get_term($row->object_id); ?>
 				<a href="<?php echo get_term_link( $term ); ?>" class="inner">
 					<?php $img = get_field('img', $term); 
@@ -21,7 +21,7 @@ if( $locations && isset($locations[ $menu_name ]) ) :
 				</a>
 			</div>
 			<?php endforeach; ?>
-			<div class="col-xs-4 item no-p">
+			<div class="col-sm-4 col-xs-12 item no-p">
 				<a href="/services" class="inner"><div class="text">Все услуги</div></a>
 			</div>
 		</div>

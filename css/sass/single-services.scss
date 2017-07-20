@@ -3,4 +3,23 @@
 }
 .single-services .post-thumbnail {
 	margin: 0 0 48px;
+	height: 480px;
+	overflow: hidden;
+	background-size: cover;
+}
+.single-services .img-title {
+	margin-top: -528px;
+	height: 480px;
+	margin-bottom: 48px;
+}
+.single-services .img-title .inner {
+	height: 480px;
+	width: 100%;
+	display: table;
+}
+.single-services .img-title h2 {
+	color: #fff;
+	margin: 0;
+	font-size: 72px;
+    line-height: 72px;
 }

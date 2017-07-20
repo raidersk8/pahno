@@ -3,9 +3,7 @@
 	<div class="row">
 		<div class="col-xs-4">
 			<?php get_search_form(); ?>
-			<?php $terms = get_terms( 'services_category', array(
-				'hide_empty' => false,
-			)); 
+			<?php $terms = get_terms( 'services_category'); 
 			if($terms) : ?>
 				<div class="navigation-menu">
 				<ul>

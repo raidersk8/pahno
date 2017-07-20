@@ -11,7 +11,7 @@
 	</div>
 	<div class="inner">
 		<h3><?php the_title(); ?></h3>
-		<div class="text">
+		<div class="text hidden-xs">
 			<?php the_excerpt(); ?>
 		</div>
 	</div>
