@@ -178,6 +178,19 @@
 .front-page .brands .wrap-jcarousel {
 	position: relative;
 }
+.front-page .brands .wrap-jcarousel .jcarousel-scroll-pagination {
+	position: relative;
+	background: #AABFB8;
+	height: 4px;
+}
+.front-page .brands .wrap-jcarousel .jcarousel-scroll-pagination .jcarousel-slider {
+	position: absolute;
+	background: #00B6AD;
+	height: 100%;
+	left: 0;
+	top: 0;
+	@include animation-transition (0.5s, left);
+}
 .front-page .brands .wrap-jcarousel .jcarousel-prev {
 	position: absolute;
 	top: 50%;

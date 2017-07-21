@@ -6,11 +6,24 @@
 		padding-right: 15px !important;
 		padding-left: 15px !important;
 	}
+	.no-p-xs {
+		padding-right: 0;
+		padding-left: 0;
+	}
 	
 	h2, .h2 {
 		font-size: 24px;
 		line-height: 36px;
 		margin: 47px 0 33px;
 		letter-spacing: 1px;
+	}
+	.form-group {
+		margin-bottom: 20px;
+	}
+	.form-control {
+		height: 60px;
+	}
+	.btn-lg, .btn-group-lg > .btn {
+		padding: 13px 16px;
 	}
 }

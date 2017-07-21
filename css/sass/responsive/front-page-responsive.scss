@@ -67,6 +67,9 @@
 	.front-page .advantages .text {
 		margin-bottom: 49px;
 	}
+	.front-page .products {
+		margin-bottom: 37px;
+	}
 	.front-page .products .main-title {
 		margin-top: 0;
 		margin-bottom: 55px;
@@ -81,5 +84,30 @@
 	}
 	.slider-wich-scrollbar.content li {
 		float: none !important;
+	}
+	.front-page .brands {
+		padding: 15px 0 0;
+	}
+	.front-page .brands li img {
+	    width: 90%;
+	}
+	.front-page .last-posts .img {
+		height: 299px;
+	}
+	.front-page .last-posts .terms {
+		padding: 40px 0 0;
+		height: 70px;
+	}
+	.front-page .last-posts .inner {
+		padding: 30px 28px 0;
+		height: 230px;
+	}
+	.front-page .last-posts .inner .title {
+		font-size: 20px;
+		line-height: 28px;
+		margin-bottom: 12px;
+	}
+	.front-page .last-posts .inner .text {
+		height: 70px;
 	}
 }

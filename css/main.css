@@ -6962,7 +6962,9 @@ header .menu ul li ul {
   text-align: center; }
 
 header .menu ul li ul li {
-  margin: 0 2px; }
+  margin: 0 4px;
+  font-size: 18px;
+  letter-spacing: 0.2px; }
 
 header .social {
   position: absolute;
@@ -7143,10 +7145,10 @@ footer .left-part .logo .title {
 footer .left-part .text {
   margin-bottom: 40px; }
 
-footer .left-part .social {
+footer .social {
   margin: 0 -8px; }
 
-footer .left-part .social a {
+footer .social a {
   display: inline-block;
   margin: 0 8px;
   width: 45px;
@@ -7164,7 +7166,13 @@ footer .left-part .social a {
   border-radius: 50%;
   /* CSS3 */ }
 
-footer .left-part .social a:hover {
+footer .social a:first-child {
+  margin-left: 0; }
+
+footer .social a:last-child {
+  margin-right: 0; }
+
+footer .social a:hover {
   background: #fff;
   color: #556D70; }
 
@@ -7675,6 +7683,22 @@ div.wpcf7 .ajax-loader {
 .front-page .brands .wrap-jcarousel {
   position: relative; }
 
+.front-page .brands .wrap-jcarousel .jcarousel-scroll-pagination {
+  position: relative;
+  background: #AABFB8;
+  height: 4px; }
+
+.front-page .brands .wrap-jcarousel .jcarousel-scroll-pagination .jcarousel-slider {
+  position: absolute;
+  background: #00B6AD;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -webkit-transition: left 0.5s ease-out 0s;
+  -moz-transition: left 0.5s ease-out 0s;
+  -o-transition: left 0.5s ease-out 0s;
+  transition: left 0.5s ease-out 0s; }
+
 .front-page .brands .wrap-jcarousel .jcarousel-prev {
   position: absolute;
   top: 50%;
@@ -8059,16 +8083,28 @@ div.wpcf7 .ajax-loader {
     padding-right: 15px !important;
     padding-left: 15px !important; }
 
+  .no-p-xs {
+    padding-right: 0;
+    padding-left: 0; }
+
   h2, .h2 {
     font-size: 24px;
     line-height: 36px;
     margin: 47px 0 33px;
-    letter-spacing: 1px; } }
+    letter-spacing: 1px; }
+
+  .form-group {
+    margin-bottom: 20px; }
+
+  .form-control {
+    height: 60px; }
+
+  .btn-lg, .btn-group-lg > .btn {
+    padding: 13px 16px; } }
 @media (max-width: 768px) {
   body {
     font-size: 16px;
-    line-height: 24px;
-    background: url(../img/main-320.png) center -552px no-repeat #fff; } }
+    line-height: 24px; } }
 @media (max-width: 768px) {
   body {
     padding-top: 48px; }
@@ -8109,7 +8145,46 @@ div.wpcf7 .ajax-loader {
     height: 118px; }
 
   .product-item .dose {
-    margin-bottom: 26px; } }
+    margin-bottom: 26px; }
+
+  .wrap-form {
+    padding: 42px 0 21px; }
+
+  .wrap-form .main-title {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 0 12px; }
+
+  .wrap-form .text {
+    margin-bottom: 31px; }
+
+  footer {
+    padding: 39px 0;
+    height: auto; }
+
+  footer .left-part {
+    padding-left: 0; }
+
+  footer .left-part .logo {
+    padding: 26px 0 0 64px;
+    margin: 0;
+    letter-spacing: 0.2px;
+    margin: 0 0 40px; }
+
+  footer .left-part .logo .title {
+    font-size: 37px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    line-height: 34px; }
+
+  footer p {
+    margin: 0 0 24px; }
+
+  footer .social a {
+    margin: 0 6px; }
+
+  footer .copyrigh-part {
+    padding-top: 28px; } }
 @media (max-width: 768px) {
   .front-page .first-screen {
     padding-top: 40px;
@@ -8179,6 +8254,9 @@ div.wpcf7 .ajax-loader {
   .front-page .advantages .text {
     margin-bottom: 49px; }
 
+  .front-page .products {
+    margin-bottom: 37px; }
+
   .front-page .products .main-title {
     margin-top: 0;
     margin-bottom: 55px; }
@@ -8192,7 +8270,32 @@ div.wpcf7 .ajax-loader {
     border-bottom: 1px solid #E5E5E5; }
 
   .slider-wich-scrollbar.content li {
-    float: none !important; } }
+    float: none !important; }
+
+  .front-page .brands {
+    padding: 15px 0 0; }
+
+  .front-page .brands li img {
+    width: 90%; }
+
+  .front-page .last-posts .img {
+    height: 299px; }
+
+  .front-page .last-posts .terms {
+    padding: 40px 0 0;
+    height: 70px; }
+
+  .front-page .last-posts .inner {
+    padding: 30px 28px 0;
+    height: 230px; }
+
+  .front-page .last-posts .inner .title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 12px; }
+
+  .front-page .last-posts .inner .text {
+    height: 70px; } }
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");

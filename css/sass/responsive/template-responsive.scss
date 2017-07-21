@@ -41,4 +41,44 @@
 	.product-item .dose {
 		margin-bottom: 26px;
 	}
+	
+	.wrap-form {
+		padding: 42px 0 21px;
+	}
+	.wrap-form .main-title {  
+		font-size: 20px;
+		line-height: 28px;
+		margin: 0 0 12px;
+	}
+	.wrap-form .text {
+		margin-bottom: 31px;
+	}	
+	footer {
+		padding: 39px 0;
+		height: auto;
+	}
+	footer .left-part {
+		padding-left: 0;
+	}
+	footer .left-part .logo {
+		padding: 26px 0 0 64px;
+		margin: 0;
+		letter-spacing: 0.2px;    
+		margin: 0 0 40px;
+	}
+	footer .left-part .logo .title {
+		font-size: 37px;
+		font-weight: 400;
+		margin-bottom: 0px;
+		line-height: 34px;
+	}
+	footer p {
+		margin: 0 0 24px;
+	}
+	footer .social a {
+		margin: 0 6px;
+	}
+	footer .copyrigh-part {
+		padding-top: 28px;
+	}
 }

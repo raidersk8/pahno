@@ -5,11 +5,9 @@
 		<?php get_template_part('blocks/front-page/services'); ?>
 		<?php get_template_part('blocks/front-page/advantages'); ?>
 		<?php get_template_part('blocks/front-page/products'); ?>
-<div class=" hidden-xs">
 		<?php get_template_part('blocks/front-page/brands'); ?>
 		<?php get_template_part('blocks/front-page/last-posts'); ?>
 		<?php get_template_part('blocks/front-page/have-questions'); ?>
-</div>
 	<?php endif; ?>
 </div>
 <?php get_footer(); ?>

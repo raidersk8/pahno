@@ -53,7 +53,9 @@ header .menu ul li ul {
 	text-align: center;
 }
 header .menu ul li ul li {
-	margin: 0 2px;
+	margin: 0 4px;
+    font-size: 18px;
+    letter-spacing: 0.2px;
 }
 header .social {
 	position: absolute;
@@ -157,10 +159,10 @@ footer .left-part .logo .title {
 footer .left-part .text {
 	margin-bottom: 40px;
 }
-footer .left-part .social {
+footer .social {
 	margin: 0 -8px;
 }
-footer .left-part .social a {
+footer .social a {
 	display: inline-block;
     margin: 0 8px;
     width: 45px;
@@ -171,7 +173,13 @@ footer .left-part .social a {
     text-align: center;
 	@include border-radius (50%);
 }
-footer .left-part .social a:hover {
+footer .social a:first-child {
+	margin-left: 0;
+}
+footer .social a:last-child {
+	margin-right: 0;
+}
+footer .social a:hover {
 	background: #fff;
 	color: $main-color;
 }

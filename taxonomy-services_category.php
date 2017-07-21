@@ -1,5 +1,6 @@
 <?php $act_term = get_queried_object(); 
-$queryArgs = array( 'post_type' => 'services', 'posts_per_page' => -1, 
+$queryArgs = array( 'post_type' => 'services', 'posts_per_page' => -1,  
+'order'   => 'ASC',
 'tax_query' => array(
 	array(
 		'taxonomy' => 'services_category',

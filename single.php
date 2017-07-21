@@ -29,20 +29,9 @@ if($act_term) $act_term = $act_term[0];
 				<?php endif; ?>
 			</div>
 			<div class="row content-page">
-				<?php if( have_rows('content') ): ?>
-
-				<?php while ( have_rows('content') ) : the_row(); ?>
-					<?php 						
-						$openDiv = '<div class="col-xs-10-5 col-xs-offset-1-5">';
-						if(get_sub_field('type') == 'type-2') {
-							$openDiv = '<div class="col-xs-12">';
-						}
-						echo $openDiv;
-					?>
-					<?php the_sub_field('text'); ?>
-					</div>
-				<?php endwhile; ?>
-				<?php endif; ?>
+				<div class="col-xs-10-5 col-xs-offset-1-5">
+					<?php the_content(); ?>
+				</div>
 			</div>
 			<div class="row"><div class="col-xs-10-5 col-xs-offset-1-5">
 			<div class="info-part">

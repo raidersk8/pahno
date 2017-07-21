@@ -3,7 +3,14 @@
 		<div class="row">
 			<?php $query = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 3 ) ); ?>
 			<?php $i=0; while ( $query->have_posts() ) : $query->the_post(); $i++; ?>
-				<div class="col-xs-4 no-p type-<?php echo $i; ?>">	
+				<div class="col-sm-4 col-xs-12 no-p <?php if(wpmd_is_phone()) : ?>type-1 <?php else : ?>type-<?php echo $i; ?>"<?php endif; ?>">	
+					<?php if(wpmd_is_phone()) : ?>
+					<?php
+						frontPageLastPostImg(); 
+						frontPageLastPostTerm();
+						frontPageLastPostInner();
+					?>
+					<?php else : ?>
 					<?php 
 					if($i == 2) { 
 						frontPageLastPostInner();
@@ -16,6 +23,7 @@
 						frontPageLastPostInner();						
 					}
 					?>
+					<?php endif; ?>
 				</div>
 			<?php endwhile ?>
 		</div>
