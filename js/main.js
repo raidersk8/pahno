@@ -2,6 +2,7 @@
 //Для инициализации плагинов которым важно дождаться загрузки картинок
 $(window).load(
 	function() {	
+		$('#loader').fadeOut();
 		$('body:not(.is-phone) #sliderScrollbar').sliderScrollbar({
 			responsivecountitem: 4,
 		});
@@ -34,36 +35,40 @@ function fullWindowHeight() {
 }
 //Элементы с классом to-the-right растягиваем по ширине до правого края
 function toTheRight() {
-	var element = $('.to-the-right');
-	var windowWidth = $(window).innerWidth();
-	for(var i=0; i<element.length; i++) {
-		var offset = element.eq(i).offset();
-		element.eq(i).width(windowWidth - offset.left);
+	if(!$('body.is-phone').length) {
+		var element = $('.to-the-right');
+		var windowWidth = $(window).innerWidth();
+		for(var i=0; i<element.length; i++) {
+			var offset = element.eq(i).offset();
+			element.eq(i).width(windowWidth - offset.left);
+		}
 	}
 }
 //Элементы с классом to-the-left растягиваем по ширине до левого края
 function toTheLeft() {	
-	var element = $('.to-the-left');
-	var windowWidth = $(window).innerWidth();
-	for(var i=0; i<element.length; i++) {
-		//Очищаем style что бы не помешало перерисовки
-		element.eq(i).attr('style', '');
+	if(!$('body.is-phone').length) {
+		var element = $('.to-the-left');
+		var windowWidth = $(window).innerWidth();
+		for(var i=0; i<element.length; i++) {
+			//Очищаем style что бы не помешало перерисовки
+			element.eq(i).attr('style', '');
+			
+			var offset = element.eq(i).offset();
+			element.eq(i).width(offset.left + element.eq(i).width());
+			element.eq(i).offset({left: 0});
+		}
 		
-		var offset = element.eq(i).offset();
-		element.eq(i).width(offset.left + element.eq(i).width());
-		element.eq(i).offset({left: 0});
-	}
-	
-	if($('.navigation-menu > ul > li.active > .active-bg').length) {
-		$('.navigation-menu > ul > li.active > .active-bg').height($('.navigation-menu > ul > li.active > a').innerHeight());
-		$('.navigation-menu > ul > li.active > .childs-bg').height($('.navigation-menu > ul > li.active > ul').innerHeight());
+		if($('.navigation-menu > ul > li.active > .active-bg').length) {
+			$('.navigation-menu > ul > li.active > .active-bg').height($('.navigation-menu > ul > li.active > a').innerHeight());
+			$('.navigation-menu > ul > li.active > .childs-bg').height($('.navigation-menu > ul > li.active > ul').innerHeight());
+		}
 	}
 }
 
 $('.menu-item-has-children > a').click(function() {
 	return false;
 });
-$('.is-mobile .menu-item-has-children > a').click(function() {
+$('.is-phone .menu-item-has-children > a').click(function() {
 	var parent = $(this).parents('.menu-item-has-children');
 	if(parent.hasClass('show-children')) {
 		parent.removeClass('show-children');

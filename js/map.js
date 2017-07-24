@@ -1,7 +1,6 @@
 if($('#map').length) {
 	google.maps.event.addDomListener(window, 'load', initMapJs);
 }
-        
 function initMapJs() {
 	var mapElement = document.getElementById('map');
 	

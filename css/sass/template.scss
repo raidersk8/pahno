@@ -1,6 +1,18 @@
 body {
 	padding-top: 70px;
 }
+#collapse-menu {
+	position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: scroll;
+    padding-top: 48px;
+}
+#collapse-menu .menu {
+	background: #667884;
+}
 header {
 	position: fixed;
 	z-index: 100;
@@ -9,10 +21,18 @@ header {
 	width: 100%;
 	background: #667884;
 }
+header.is-full-height {
+	overflow: scroll;
+	height: 100%;
+}
 header .menu {
 	font-size: 24px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+}
+header .top-block {
+	position: relative;
+	background: #667884;
 }
 header .menu ul {
 	display: block;
@@ -22,16 +42,22 @@ header .menu ul {
 }
 header .menu ul li {
 	display: inline-block;
-	margin: 0 80px 0 0;
+	margin: 0 70px 0 0;
 	padding: 0;
 }
 header .menu ul li a {
 	display: inline-block;
 	color: #fff;
 	text-decoration: none;
-	padding: 21px 0 19px;
+	padding: 21px 10px 19px;
+	@include animation-transition (0.2s, all);
 }
-
+header .menu ul li:hover > a {
+	background: #00B6AD;
+}
+header .menu ul li.current-menu-item > a {
+	background: #00B6AD;	
+}
 header .menu ul li:hover ul {
 	display: block;
 }
@@ -41,7 +67,7 @@ header .menu ul li.menu-item-has-children > a:after {
 	color: #fff;
 	margin-left: 10px;
 }
-header .menu ul li.menu-item-has-children > a:hover:after {
+header .menu ul li.menu-item-has-children:hover > a:after {
 	content: "\f106";	
 }
 header .menu ul li ul {
@@ -51,11 +77,19 @@ header .menu ul li ul {
 	width: 100%;
 	background: #00B6AD;
 	text-align: center;
+	padding: 10px 0 10px;
 }
 header .menu ul li ul li {
 	margin: 0 4px;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0.2px;
+}
+header .menu ul li ul li a {    
+	padding: 5px 5px;
+}
+header .menu ul li ul li a:hover {
+	color: #fff;
+	background: rgba(255, 255, 255, 0.25);
 }
 header .social {
 	position: absolute;
@@ -68,26 +102,33 @@ header .social a {
     margin: 0 0 0 19px;
 	color: #fff;
 }
-
-header .switch-menu {
-	display: block;
-	width: 40px;
-	height: 40px;
-	border: 1px solid #00B6AD;
-	text-align: center;
-	padding: 8px 0 0;
-	@include border-radius(50%);
+@mixin switch-mobile-menu ($color, $bg, $border) {
+	.switch-mobile-menu {
+		display: block;
+		width: 40px;
+		height: 40px;
+		border: 1px solid $bg;
+		text-align: center;
+		padding: 8px 0 0;
+		@include border-radius(50%);
+	}
+	.switch-mobile-menu {
+		@include menu-icon ($color);
+		@include close-menu-icon ();
+		border-color: $color;
+		background: transparent;
+	}
+	.switch-mobile-menu.collapsed {
+		@include open-menu-icon ();
+		border-color: $border;
+		background: $bg;
+	}	
 }
-header .switch-menu {
-	@include menu-icon (#fff);
-	@include close-menu-icon ();
-	border-color: #fff;
-	background: transparent;
+header {
+	@include switch-mobile-menu(#fff, #00B6AD, #00B6AD);
 }
-header .switch-menu.collapsed {
-	@include open-menu-icon ();
-	border-color: #00B6AD;
-	background: #00B6AD;
+.total-first-screen {
+	@include switch-mobile-menu(#00B6AD, transparent, #00B6AD);
 }
 
 .wrap-form {
@@ -286,9 +327,14 @@ footer .copyrigh-part {
 	color: $main-color;
 	font-weight: 400;
 	text-decoration: underline;	
+	text-decoration: none;
 }
 .navigation-menu ul li.active li a:hover {
 	text-decoration: none;	
+	color: $a-color;
+}
+.navigation-menu.type-2 ul li.active li a:hover {
+	color: #00B6AD;
 }
 .navigation-menu ul li ul li.active a {
 	font-weight: 700;
@@ -299,8 +345,7 @@ footer .copyrigh-part {
 
 .total-first-screen {
 	position: relative;
-	padding: 10px 0 0;
-	height: 95px;
+	padding: 10px 0 7px;
 	background: url(../img/front-page-first-screen-bg.png) left top no-repeat;
 	background-size: 100% auto;
 	margin: 0 0 65px;
@@ -310,7 +355,7 @@ footer .copyrigh-part {
 	font-weight: 700;
 }
 .total-first-screen .logo {
-	display: block;
+	display: inline-block;
 	font-family: 'PT Sans Narrow', sans-serif;
 	font-size: 13px;
 	line-height: 16px;
@@ -385,6 +430,7 @@ footer .copyrigh-part {
 }
 .product-item .img img {
 	max-width: 100%;
+	max-height: 100%;
 }
 .product-item .inner {
 	height: 252px;
@@ -529,4 +575,17 @@ div.wpcf7 .ajax-loader {
     top: 50%;
     right: 40px;
     margin-top: -8px;
+}
+
+#loader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+.form-control.wpcf7-not-valid {
+	border-color: $a-color;
 }

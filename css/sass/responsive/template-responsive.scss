@@ -3,17 +3,23 @@
 		padding-top: 48px;
 	}
 	header {
+		padding: 0
+	}
+	header .top-block {
 		padding: 4px 0;
 	}
 	header .social {
 		position: relative;
 		right: auto;
 		top: auto;
-		padding: 4px 0 0;
+		padding: 8px 0 0;
 	}
 	header .menu ul li {
 		display: block;
 		margin: 0;
+	}
+	header .menu ul li ul li a {
+		padding: 10px 5px;
 	}
 	header .menu ul li ul {
 		position: relative;
@@ -24,6 +30,9 @@
 	}
 	header .menu ul li.menu-item-has-children > a:hover:after {
 	    content: "\f107";
+	}
+	header .menu ul li a {
+		display: block;
 	}
 	
 	header .menu ul li.menu-item-has-children.show-children > a:after {
@@ -80,5 +89,72 @@
 	}
 	footer .copyrigh-part {
 		padding-top: 28px;
+	}
+	.total-first-screen {
+		margin: 0;
+	}
+	.total-first-screen .logo {
+		background-size: auto 40px;
+		padding: 0;
+		height: 40px;
+		width: 25px;
+	}
+	.navigation-menu {
+		background: #ECF1ED;
+	}
+	.navigation-menu ul {
+		font-size: 18px;
+		line-height: 24px;
+		padding: 20px 0;
+	}
+	.navigation-menu > ul > li {
+		display: none;
+	}
+	.navigation-menu > ul > li.active {
+		display: block;
+	}
+	.navigation-menu > ul > li.active > a {
+		display: none;
+	}
+	.navigation-menu ul li a {
+		padding: 10px 0;
+	}
+	.navigation-menu.show-parents ul li a {
+		display: block;
+	}
+	.navigation-menu.show-parents > ul > li {
+		display: block;
+	}
+	.navigation-menu ul li .active-bg.to-the-left {
+		display: none;
+	}
+	.navigation-menu ul li .childs-bg.to-the-left {
+		display: none;
+	}
+	.navigation-menu ul li ul {
+		padding: 0;
+	}
+	.navigation-menu ul li a {
+		border: none;
+	}
+	.navigation-menu ul li ul li a {
+		padding: 10px 0;
+	}
+	
+	
+	.alignleft {
+		position: relative;
+		float:none;
+		margin: 0 0 30px 0 !important;
+		    width: 100%;
+			height: auto;
+	}
+
+	.alignright {
+		position: relative;
+		float:none;
+		margin: 0 0 30px 0 !important;
+		    width: 100%;
+			height: auto;
 	}
 }

@@ -18,25 +18,28 @@
   </head>
   <body class="<?php if(wpmd_is_phone()) echo 'is-phone'; ?> <?php if(wpmd_is_tablet()) echo 'is-tablet'; ?>">
   <header>
-	<div class=" visible-xs">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-9 text-center">
-					<?php if( have_rows('social', 'options') ): ?>
-					<div class="social">							
-						<?php while ( have_rows('social', 'options') ) : the_row(); ?>		
-							<a href="<?php the_sub_field('href'); ?>"><i class="fa <?php the_sub_field('icon'); ?>" aria-hidden="true"></i></a>		
-						<?php endwhile; ?>
-					</div>
-					<?php endif; ?>
-				</div>
-				<div class="col-xs-3">
-					<a class="switch-menu collapsed" data-toggle="collapse" href="#collapse-menu"><div class="icon"><div class="middle-line"></div></div></a>
-				</div>
-			</div>
-		</div>
+	<div id="loader"></div>
+	<div class=" visible-xs">  
 		<div id="collapse-menu" class="collapse text-center">
 			<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container_class' => 'menu', 'menu_class' => '' ) ); ?>
+		</div>
+		<div class="top-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-9 text-center">
+						<?php if( have_rows('social', 'options') ): ?>
+						<div class="social">							
+							<?php while ( have_rows('social', 'options') ) : the_row(); ?>		
+								<a href="<?php the_sub_field('href'); ?>"><i class="fa <?php the_sub_field('icon'); ?>" aria-hidden="true"></i></a>		
+							<?php endwhile; ?>
+						</div>
+						<?php endif; ?>
+					</div>
+					<div class="col-xs-3">
+						<a class="switch-mobile-menu collapsed" data-toggle="collapse" href="#collapse-menu"><div class="icon"><div class="middle-line"></div></div></a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="container hidden-xs">
@@ -58,19 +61,22 @@
 	  <div class="total-first-screen">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-6">
+				<div class="col-sm-6 col-xs-3 text-center-xs">
 					<a href="/" class="logo">
-						<div class="title">Время красоты</div>
-						Центр медицинской косметологии<br />Ольги Пахно
+						<div class="hidden-xs"><div class="title">Время красоты</div>
+						Центр медицинской косметологии<br />Ольги Пахно</div>
 					</a>
 				</div>
 				<?php if( have_rows('phones', 'options') ): ?>
-				<div class="col-xs-6 text-right phones">
+				<div class="col-sm-6 col-xs-6 text-right text-center-xs phones text-center-xs">
 					<?php while ( have_rows('phones', 'options') ) : the_row(); ?>	
 					<?php the_sub_field('text'); ?><br />
 					<?php endwhile; ?>
 				</div>
 				<?php endif; ?>
+				<div class="col-xs-3 visible-xs">
+					<a class="switch-mobile-menu collapsed" data-toggle="collapse" href="#collapse-sub-menu"><div class="icon"><div class="middle-line"></div></div></a>
+				</div>
 			</div>
 		</div>
 	  </div>

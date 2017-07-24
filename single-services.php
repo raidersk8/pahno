@@ -16,11 +16,11 @@ $postType = 'services';
 ?>
 <div class="container single-services">
 	<div class="row">
-		<div class="col-xs-4">
+		<div class="col-sm-4 col-xs-12 no-p-xs text-center-xs">
 			<?php get_search_form(); ?>
 			<?php $terms = get_terms( 'services_category'); 
 			if($terms) : ?>
-				<div class="navigation-menu">
+				<div class="navigation-menu <?php if(wpmd_is_phone()) echo 'collapse'; ?>" id="collapse-sub-menu">
 				<ul>
 				<?php foreach($terms as $row) : ?>
 					<li class="<?php if($row->term_id == $act_term->term_id) echo 'active'; ?>">
@@ -48,15 +48,15 @@ $postType = 'services';
 				</div>
 			<?php endif; ?>
 		</div>
-		<div class="col-xs-8">
+		<div class="col-sm-8 col-xs-12">
 			<div class="row">
-				<div class="col-xs-10-5 col-xs-offset-1-5"><h1><?php the_title(); ?></h1></div>
+				<div class="col-sm-10-5 col-sm-offset-1-5 col-xs-12 col-xs-offset-0"><h1><?php the_title(); ?></h1></div>
 			</div>
 				<?php if(has_post_thumbnail()) : ?>
 					<div class="post-thumbnail to-the-right" style="background-image: url(<?php echo get_the_post_thumbnail_url( get_the_ID(), 'image-1140-auto' ); ?>);">
 					</div>
 					<div class="row img-title">
-						<div class="col-xs-9 col-xs-offset-1-5">
+						<div class="col-sm-9 col-sm-offset-1-5 col-xs-12 col-xs-offset-0">
 							<div class="inner">
 								<div class="vertical-middle">
 									<h2><?php the_field('img-title'); ?></h2>
@@ -66,7 +66,7 @@ $postType = 'services';
 					</div>
 				<?php endif; ?>
 			<div class="row content-page">
-				<div class="col-xs-10-5 col-xs-offset-1-5">
+				<div class="col-sm-10-5 col-sm-offset-1-5 col-xs-12 col-xs-offset-0">
 					<?php the_content(); ?>
 				</div>
 			</div>

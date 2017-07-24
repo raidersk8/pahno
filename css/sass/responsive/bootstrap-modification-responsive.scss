@@ -2,6 +2,9 @@
 	.text-center-xs {
 		text-align: center;
 	}
+	.text-left-xs {
+		text-align: left;
+	}
 	.yes-p-xs {
 		padding-right: 15px !important;
 		padding-left: 15px !important;
@@ -25,5 +28,10 @@
 	}
 	.btn-lg, .btn-group-lg > .btn {
 		padding: 13px 16px;
+	}
+	h1, .h1 {
+		font-size: 34px;
+		line-height: 50px;
+		margin-bottom: 15px;
 	}
 }

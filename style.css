@@ -11,15 +11,3 @@ Tags: malton-template
 */
 
 /* Custom styles */
-
-.alignleft {
-position: relative;
-float:left;
-margin: 0 30px 30px -100px !important;
-}
-
-.alignright {
-position: relative;
-float:right;
-margin: 0 -100px 30px 30px !important;
-}

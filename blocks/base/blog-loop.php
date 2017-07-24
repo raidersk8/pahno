@@ -6,11 +6,11 @@ $act_term = get_queried_object();
 ?>
 <div class="container blog">
 	<div class="row">
-		<div class="col-xs-4">
+		<div class="col-sm-4 col-xs-12 no-p-xs text-center-xs">
 			<?php get_search_form(); ?>
 			<?php $terms = get_terms( 'category'); 
 			if($terms) : ?>
-				<div class="navigation-menu">
+				<div class="navigation-menu show-parents <?php if(wpmd_is_phone()) echo 'collapse'; ?>" id="collapse-sub-menu">
 				<ul>
 				<?php foreach($terms as $row) : ?>
 					<li class="<?php if($row->term_id == $act_term->term_id) echo 'active'; ?>">
@@ -21,7 +21,7 @@ $act_term = get_queried_object();
 				</div>
 			<?php endif; ?>
 		</div>
-		<div class="col-xs-8">
+		<div class="col-sm-8 col-xs-12">
 			<?php if( have_posts() ) : ?>
 				<?php while( have_posts() ) : the_post(); ?>
 					<?php get_template_part('blocks/blog/item'); ?>
